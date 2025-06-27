@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true, // 隐藏所有层级的 __pycache__ 文件夹
+    "**/*.pyc": true // 隐藏所有 .pyc 文件
+  }
+}
