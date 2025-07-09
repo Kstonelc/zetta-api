@@ -49,6 +49,9 @@ class ChatQW(LLM):
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any
     ) -> Iterator[GenerationChunk]:
+        stop_signal = kwargs.pop("stop_signal", False)
         for chunk_str in self.client.stream(input=prompt, stop=stop, **kwargs):
+            if stop_signal:
+                break
             chunk = GenerationChunk(text=chunk_str)
             yield chunk

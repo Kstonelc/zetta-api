@@ -7,12 +7,13 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from enums import QWModelType
 from llm.qwen import ChatQW
+from utils.chroma import ChromaWrapper
 
 router = APIRouter(prefix="/ai", tags=["AI"])
 
 
 @router.post("/demo1")
-async def test():
+async def demo1():
     # 提示 + 模型 + 输出解析器
     prompt = ChatPromptTemplate.from_template(
         "请根据下面的主题写一篇小红书的营销短文: {topics}"
@@ -30,8 +31,23 @@ async def test():
 
 
 @router.post("/demo2")
-async def test():
+async def demo2():
     llm = ChatQW(model_name=QWModelType.qw_turbo)
-    for chunk in llm.stream("中国的首都是谁"):
+    for chunk in llm.stream("中国的首都是啥? 请用中文回答"):
         print(chunk, end="", flush=True)
     return {"ok": True}
+
+
+@router.post("/demo3")
+async def demo3():
+    chroma_client = ChromaWrapper(collection_name="docs")
+    # 添加数据
+    chroma_client.add(
+        doc_id="2",
+        content="中国是一个伟大的国家111",
+        embedding=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    )
+    # 查数据
+    data = chroma_client.collection.get(include=["embeddings"])
+    print(data)
+    pass
