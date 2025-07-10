@@ -1,0 +1,33 @@
+2025-07-10 11:58:04 | INFO | ✅Zetta Server Start
+2025-07-10 11:58:04 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 11:58:25 | INFO | ✅Zetta Server Start
+2025-07-10 11:58:25 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 11:58:30 | INFO | ➡️POST /ai/demo3
+2025-07-10 11:58:30 | INFO | ⬅️POST /ai/demo3 -> 200
+2025-07-10 11:59:41 | INFO | ✅Zetta Server Start
+2025-07-10 11:59:41 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 12:50:06 | INFO | ✅Zetta Server Start
+2025-07-10 12:50:06 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:25:34 | INFO | ✅Zetta Server Start
+2025-07-10 13:27:32 | INFO | ✅Zetta Server Start
+2025-07-10 13:27:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-10 13:27:32 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:28:47 | INFO | ✅Zetta Server Start
+2025-07-10 13:28:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-10 13:28:47 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:32:38 | INFO | ✅Zetta Server Start
+2025-07-10 13:32:39 | ERROR | [DB]: ❌DB Connection Failed: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-10 13:32:39 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:32:57 | INFO | ✅Zetta Server Start
+2025-07-10 13:32:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-10 13:32:57 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:34:26 | INFO | ✅Zetta Server Start
+2025-07-10 13:34:26 | INFO | [DB]: ✅DB Connection Success
+2025-07-10 13:34:26 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-10 13:34:39 | INFO | ✅Zetta Server Start
+2025-07-10 13:34:39 | ERROR | [DB]: ❌DB Connection Failed: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-10 13:34:39 | INFO | [Chroma]: ✅ChromaDB Connection Success

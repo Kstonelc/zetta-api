@@ -1,7 +1,7 @@
 from chromadb import HttpClient
 from chromadb.api.models import Collection
 from config import settings
-from loguru import logger
+from utils.logger import logger
 
 
 class ChromaWrapper:
@@ -13,17 +13,16 @@ class ChromaWrapper:
     ):
         if not collection_name:
             raise ValueError(
-                "Parameter 'collection_name' is required and cannot be empty."
+                "[Chroma]: ❌ Parameter 'collection_name' is required and cannot be empty."
             )
         self.client = HttpClient(host=host, port=port)
         self.collection = self._get_or_create_collection(collection_name)
 
     def ping(self):
         try:
-            print(self.client.list_collections())
+            self.client.list_collections()
             return True
         except Exception as e:
-            logger.error("[ChromaWrapper connect failed]:", e)
             return False
 
     def _get_or_create_collection(self, name: str) -> Collection:
@@ -42,3 +41,7 @@ class ChromaWrapper:
         self.collection.update(
             ids=[doc_id], documents=[content], embeddings=[embedding]
         )
+
+
+# 全局实例化默认集合
+chroma_client = ChromaWrapper(collection_name="default_collection")

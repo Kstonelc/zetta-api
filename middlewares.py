@@ -24,3 +24,6 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
         # 响应日志
         logger.info(f"⬅️{request.method} {request.url.path} -> {response.status_code}")
         return response
+
+
+# JWT 认证

@@ -1,9 +1,11 @@
 from fastapi import FastAPI
+from contextlib import asynccontextmanager
 import uvicorn
 from controllers import user, ai_test
 from middlewares import RequestLoggingMiddleware
-import utils.chroma as chroma_client
-from loguru import logger
+from utils.chroma import chroma_client
+from models.db import check_db_connection
+from utils.logger import logger
 
 app = FastAPI()
 
@@ -16,15 +18,29 @@ app.include_router(user.router)
 app.include_router(ai_test.router)
 
 
-@app.on_event("startup")
+# 生命周期管理
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    try:
+        check_db_connection()
+        logger.success("✅ 数据库连接成功")
+        check_chroma_connection()
+    except Exception as e:
+        logger.error(f"❌ 数据库连接失败: {e}")
+        raise RuntimeError("数据库连接失败") from e
+
+    yield
+    logger.info("❌ 应用即将关闭")
+
+
 def check_chroma_connection():
     if not chroma_client.ping():
-        raise RuntimeError("❌ Chroma 向量数据库连接失败，应用启动中止")
-    print("✅ 成功连接 Chroma 向量数据库")
+        logger.error("[Chroma]: ❌ChromaDB Connection Failed")
+    logger.info("[Chroma]: ✅ChromaDB Connection Success")
 
 
 if __name__ == "__main__":
-    logger.info("Zetta Server Start")
+    logger.info("✅Zetta Server Start")
     uvicorn.run(
         "main:app",
         host="0.0.0.0",

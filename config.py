@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     # 向量数据库
     VECTOR_DB_HOST: str
     VECTOR_DB_PORT: int
+    # 数据库
+    DB_URL: str
 
     class Config:
         env_file = ".env"

@@ -13,7 +13,7 @@ logger.add(
 
 # 日志文件输出
 logger.add(
-    "prod.log",
+    "logs/prod.log",
     level="INFO",
     format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
     rotation="10 MB",
