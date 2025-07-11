@@ -31,3 +31,429 @@
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2025-07-10 13:34:39 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 10:56:31 | INFO | ✅Zetta Server Start
+2025-07-11 10:57:18 | INFO | ✅Zetta Server Start
+2025-07-11 10:57:57 | INFO | ✅Zetta Server Start
+2025-07-11 10:58:46 | INFO | ✅Zetta Server Start
+2025-07-11 10:59:29 | INFO | ✅Zetta Server Start
+2025-07-11 11:02:02 | INFO | ✅ 数据库连接成功
+2025-07-11 11:02:02 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 11:02:26 | INFO | ✅Zetta Server Start
+2025-07-11 11:02:29 | INFO | ✅ 数据库连接成功
+2025-07-11 11:02:29 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 11:02:49 | INFO | ✅Zetta Server Start
+2025-07-11 11:02:52 | ERROR | ❌ 数据库连接失败: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:03:59 | ERROR | ❌ 数据库连接失败: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:04:51 | ERROR | ❌ 数据库连接失败: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:05:03 | ERROR | ❌ 数据库连接失败: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:05:09 | ERROR | ❌ DB Connect Failed: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:05:16 | INFO | ✅Zetta Server Start
+2025-07-11 11:05:21 | ERROR | ❌ DB Connect Failed: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:05:36 | INFO | ✅Zetta Server Start
+2025-07-11 11:05:42 | INFO | ✅ DB Connect Success
+2025-07-11 11:05:42 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 11:07:46 | INFO | ✅ DB Connect Success
+2025-07-11 11:07:46 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 11:07:51 | INFO | ✅ DB Connect Success
+2025-07-11 11:07:51 | INFO | [Chroma]: ✅ChromaDB Connection Success
+2025-07-11 11:28:12 | INFO | ✅Zetta Server Start
+2025-07-11 11:28:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:28:16 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:28:35 | INFO | ✅Zetta Server Start
+2025-07-11 11:28:39 | ERROR | [DB]: ❌DB Connection Failed: (psycopg2.OperationalError) connection to server at "121.5.5.83", port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-11 11:32:36 | INFO | ✅Zetta Server Start
+2025-07-11 11:32:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:32:41 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:33:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:33:47 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:33:58 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:33:58 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:34:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:34:25 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:35:04 | INFO | ✅Zetta Server Start
+2025-07-11 11:35:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:35:08 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:35:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:35:59 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:37:24 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:37:25 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:37:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:37:42 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:40:11 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:40:11 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:44:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:44:08 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:44:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:44:15 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:44:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:44:25 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:45:06 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:45:06 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:47:17 | INFO | ✅Zetta Server Start
+2025-07-11 11:47:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:47:22 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:55:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:55:04 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:55:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:55:08 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:55:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:55:18 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:55:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:55:38 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:57:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:57:25 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:59:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:59:16 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 11:59:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 11:59:56 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 12:50:12 | INFO | ✅Zetta Server Start
+2025-07-11 12:50:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 12:50:15 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:09:05 | INFO | ✅Zetta Server Start
+2025-07-11 13:09:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:09:09 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:26:48 | INFO | ✅Zetta Server Start
+2025-07-11 13:26:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:26:52 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:35:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:35:17 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:36:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:36:29 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:39:26 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:39:26 | INFO | ⬅️POST /user/sign-up -> 422
+2025-07-11 13:40:13 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:40:26 | INFO | ✅Zetta Server Start
+2025-07-11 13:40:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:40:30 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:41:01 | INFO | ✅Zetta Server Start
+2025-07-11 13:41:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:41:05 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:41:07 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:42:10 | INFO | ✅Zetta Server Start
+2025-07-11 13:42:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:42:14 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:42:18 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:47:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:47:21 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:47:38 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:49:42 | INFO | ✅Zetta Server Start
+2025-07-11 13:49:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:49:48 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 13:50:08 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 13:50:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 13:50:52 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:23:30 | INFO | ✅Zetta Server Start
+2025-07-11 14:23:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:23:35 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:23:54 | INFO | ✅Zetta Server Start
+2025-07-11 14:24:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:24:00 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:24:03 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:24:03 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:24:12 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:26:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:26:14 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:30:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:30:14 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:30:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:30:52 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:32:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:32:03 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:32:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:32:28 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:32:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:32:33 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:32:38 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:32:39 | ERROR | unhashable type: 'dict'
+2025-07-11 14:32:39 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:32:54 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:32:54 | ERROR | unhashable type: 'dict'
+2025-07-11 14:32:54 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:33:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:33:23 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:33:26 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:33:26 | ERROR | unhashable type: 'dict'
+2025-07-11 14:33:26 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:34:13 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:34:13 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:34:25 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:34:25 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:34:39 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:34:39 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:35:37 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:35:37 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:35:49 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:35:49 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:35:51 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:35:51 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:35:53 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:35:53 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:35:55 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:35:55 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:35:57 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:35:57 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:38:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:38:08 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:38:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:38:33 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:40:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:40:29 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:40:36 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:40:36 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_users_email"
+DETAIL:  Key (email)=(2609753201@qq.com) already exists.
+
+[SQL: INSERT INTO users (email, password, active) VALUES (%(email)s, %(password)s, %(active)s) RETURNING users.id, users.created_at, users.updated_at]
+[parameters: {'email': '2609753201@qq.com', 'password': '111111', 'active': True}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-11 14:40:36 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:40:50 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:40:50 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_users_email"
+DETAIL:  Key (email)=(2609753201@qq.com) already exists.
+
+[SQL: INSERT INTO users (email, password, active) VALUES (%(email)s, %(password)s, %(active)s) RETURNING users.id, users.created_at, users.updated_at]
+[parameters: {'email': '2609753201@qq.com', 'password': '111111', 'active': True}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-11 14:40:50 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:41:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:41:28 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:41:29 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:41:29 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:41:33 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:41:33 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:41:36 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 14:41:36 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 14:46:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:46:46 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:47:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:47:10 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:47:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:47:16 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:47:24 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:47:24 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:49:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:49:01 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:50:19 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:50:19 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:51:27 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:51:27 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:51:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:51:59 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:52:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:52:50 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:52:53 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:52:53 | INFO | ⬅️POST /user/find-user -> 405
+2025-07-11 14:53:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:53:03 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:53:03 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:53:03 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:53:28 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 14:53:28 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:53:32 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 14:53:32 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:54:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:54:03 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:54:14 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:54:14 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:54:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:54:23 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:55:39 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:55:39 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:55:41 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:55:41 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:56:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:56:12 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:56:16 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:56:16 | ERROR | 'UserQueryRequest' object has no attribute 'id'
+2025-07-11 14:56:16 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 14:56:38 | INFO | ✅Zetta Server Start
+2025-07-11 14:56:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:56:41 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:57:36 | INFO | ✅Zetta Server Start
+2025-07-11 14:57:39 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 14:57:39 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 14:57:41 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 14:57:41 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 15:00:52 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 15:00:52 | INFO | ⬅️POST /user/find-user -> 422
+2025-07-11 15:04:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:04:12 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:04:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:04:40 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:04:43 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 15:04:43 | INFO | ⬅️POST /user/find-user -> 422
+2025-07-11 15:06:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:06:40 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:07:09 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 15:07:09 | INFO | ⬅️POST /user/find-user -> 422
+2025-07-11 15:07:12 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 15:07:12 | INFO | ⬅️POST /user/find-user -> 422
+2025-07-11 15:07:14 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@@qq.com"
+}
+2025-07-11 15:07:14 | INFO | ⬅️POST /user/find-user -> 422
+2025-07-11 15:07:20 | INFO | ➡️POST /user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-11 15:07:20 | INFO | ⬅️POST /user/find-user -> 200
+2025-07-11 15:07:28 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 15:07:28 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 15:08:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:08:07 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:08:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:08:18 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:08:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:08:30 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:09:49 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:09:49 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:10:20 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:10:20 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:10:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:10:40 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:10:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:10:57 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:11:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:11:04 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:11:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:11:42 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:12:20 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:12:20 | INFO | [Chroma]: ✅Chroma Connection Success
+2025-07-11 15:12:23 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753202@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 15:12:24 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 15:12:52 | INFO | ➡️POST /user/sign-up Request Body:{
+    "userEmail": "2609753203@qq.com",
+    "userPassword": "111111"
+}
+2025-07-11 15:12:53 | INFO | ⬅️POST /user/sign-up -> 200
+2025-07-11 15:44:21 | INFO | ✅Zetta Server Start
+2025-07-11 15:44:26 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:44:26 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:44:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:44:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:45:15 | INFO | ➡️POST /ai/demo3
+2025-07-11 15:45:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:45:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:45:48 | INFO | ➡️POST /ai/demo3
+2025-07-11 15:46:20 | INFO | ✅Zetta Server Start
+2025-07-11 15:46:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:46:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:46:28 | INFO | ➡️POST /ai/demo3
+2025-07-11 15:51:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:51:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:52:06 | INFO | ✅Zetta Server Start
+2025-07-11 15:52:10 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:52:10 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:52:13 | INFO | ➡️POST /ai/demo3
+2025-07-11 15:52:56 | INFO | ✅Zetta Server Start
+2025-07-11 15:53:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:53:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-11 15:53:02 | INFO | ➡️POST /ai/demo3
+2025-07-11 15:53:02 | INFO | ⬅️POST /ai/demo3 -> 200
+2025-07-11 15:53:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-11 15:53:53 | INFO | [Qdrant]: ✅Qdrant Connection Success

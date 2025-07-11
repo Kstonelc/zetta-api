@@ -1,3 +1,10 @@
+"""
+@File        : utils/jwt.py
+@Description : jwt工具类
+@Author      : Kstone
+@Date        : 2025/07/11
+"""
+
 import jwt
 from datetime import datetime, timedelta, UTC
 from typing import Optional

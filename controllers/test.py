@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from uuid import uuid4
 
 from config import settings
 from langchain_community.llms.tongyi import Tongyi
@@ -7,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from enums import QWModelType
 from llm.qwen import ChatQW
-from utils.chroma import ChromaWrapper
+from utils.vector_db import vector_client
 
 router = APIRouter(prefix="/ai", tags=["AI"])
 
@@ -40,14 +41,30 @@ async def demo2():
 
 @router.post("/demo3")
 async def demo3():
-    chroma_client = ChromaWrapper(collection_name="docs")
-    # 添加数据
-    chroma_client.add(
-        doc_id="2",
-        content="中国是一个伟大的国家111",
-        embedding=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+
+    # 插入向量
+    vector_client.insert(
+        [
+            {
+                "id": str(uuid4()),
+                "vector": [0.01] * 768,
+                "payload": {"text": "说明文档", "source": "API"},
+            }
+        ]
     )
-    # 查数据
-    data = chroma_client.collection.get(include=["embeddings"])
-    print(data)
-    pass
+
+    # 搜索
+    # results = store.search(
+    #     query_vector=[0.1, 0.2, ...], limit=3, filter_payload={"source": "API"}
+    # )
+
+    # 删除
+    # store.delete_by_id("doc1")
+
+    # 更新
+    # store.update(
+    #     "doc1",
+    #     new_vector=[0.3, 0.4, ...],
+    #     new_payload={"text": "更新文档", "source": "manual"},
+    # )
+    return {"ok": True}
