@@ -15,3 +15,10 @@ uvicorn main:app --reload
 ```
 pip freeze > requirements.txt
 ```
+
+## DB Auto Generate
+```bash
+alembic revision --autogenerate -m <description>
+alembic upgrade head
+```
+
