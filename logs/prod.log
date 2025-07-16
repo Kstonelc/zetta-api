@@ -457,3 +457,209 @@ DETAIL:  Key (email)=(2609753201@qq.com) already exists.
 2025-07-11 15:53:02 | INFO | ⬅️POST /ai/demo3 -> 200
 2025-07-11 15:53:53 | INFO | [DB]: ✅DB Connection Success
 2025-07-11 15:53:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 12:59:22 | INFO | ✅Zetta Server Start
+2025-07-15 12:59:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 12:59:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:01:06 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:01:07 | INFO | ⬅️POST /api/model/create-model-provider -> 422
+2025-07-15 13:01:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:01:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:01:28 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:01:28 | ERROR | type object 'ModelProvider' has no attribute 'findOne'
+2025-07-15 13:01:28 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 13:01:55 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:01:55 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:03:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:03:42 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:03:42 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:03:42 | ERROR | 'NoneType' object has no attribute 'modeName'
+2025-07-15 13:03:42 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 13:04:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:04:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:04:14 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:04:14 | ERROR | 'NoneType' object has no attribute 'modeName'
+2025-07-15 13:04:14 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 13:04:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:04:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:04:42 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:04:42 | ERROR | 'NoneType' object has no attribute 'modelName'
+2025-07-15 13:04:42 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 13:05:57 | INFO | ✅Zetta Server Start
+2025-07-15 13:06:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:06:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:06:04 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:06:04 | ERROR | 'NoneType' object has no attribute 'modelName'
+2025-07-15 13:06:04 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 13:06:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:06:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:07:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 13:07:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 13:07:37 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 13:07:37 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:35:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:35:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:35:55 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:35:55 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:35:56 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 16:35:57 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:36:12 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 16:36:12 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:36:16 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 16:36:16 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:36:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:36:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:36:44 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 16:36:44 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:37:11 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:37:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:37:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:37:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:37:22 | INFO | ➡️POST /api/model/create-model-provider Request Body:{
+    "modelName": "通义千问",
+    "modelDesc": ""
+}
+2025-07-15 16:37:22 | INFO | ⬅️POST /api/model/create-model-provider -> 200
+2025-07-15 16:44:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:44:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:44:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:44:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:44:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:44:16 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 16:44:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 16:44:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:04:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:04:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:07:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:07:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:16:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:16:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:21:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:21:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:21:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:21:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:22:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:22:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:22:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:22:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:22:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:22:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:23:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:23:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:23:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:23:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:26:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:26:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:26:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:26:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:26:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:26:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:26:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:26:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:27:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:27:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:28:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:28:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:28:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:28:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:29:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:29:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:29:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:29:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:30:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:30:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:31:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:31:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:32:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:32:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:34:11 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:34:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:34:20 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:34:20 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:34:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:34:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:39:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:39:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:40:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:40:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:40:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:40:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:40:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:40:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:40:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:40:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:41:19 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:41:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:41:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:41:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:41:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:41:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:42:08 | INFO | ➡️POST /api/model
+2025-07-15 17:42:08 | INFO | ⬅️POST /api/model -> 404
+2025-07-15 17:45:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:45:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:45:39 | INFO | ➡️POST /api/model/create-model Request Body:{
+   "modelName": "qwen-turbo-latest(Qwen3)",
+   "modelProviderId": 4
+}
+2025-07-15 17:45:39 | ERROR | Mapper 'Mapper[ModelProvider(model_provider)]' has no property 'models'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-15 17:45:39 | INFO | ⬅️POST /api/model/create-model -> 200
+2025-07-15 17:46:40 | INFO | ✅Zetta Server Start
+2025-07-15 17:46:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:46:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:46:54 | INFO | ➡️POST /api/model/create-model Request Body:{
+   "modelName": "qwen-turbo-latest(Qwen3)",
+   "modelProviderId": 4
+}
+2025-07-15 17:46:54 | ERROR | Mapper 'Mapper[ModelProvider(model_provider)]' has no property 'models'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-15 17:46:54 | INFO | ⬅️POST /api/model/create-model -> 200
+2025-07-15 17:55:35 | INFO | ✅Zetta Server Start
+2025-07-15 17:55:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:55:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:55:45 | INFO | ➡️POST /api/model/create-model Request Body:{
+   "modelName": "qwen-turbo-latest(Qwen3)",
+   "modelProviderId": 4
+}
+2025-07-15 17:55:45 | ERROR | 'ModelAddRequest' object has no attribute 'apiKey'
+2025-07-15 17:55:45 | INFO | ⬅️POST /api/model/create-model -> 200
+2025-07-15 17:56:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:56:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:57:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-15 17:57:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-15 17:57:19 | INFO | ➡️POST /api/model/create-model Request Body:{
+   "modelName": "qwen-turbo-latest(Qwen3)",
+   "modelProviderId": 4
+}
+2025-07-15 17:57:19 | INFO | ⬅️POST /api/model/create-model -> 200

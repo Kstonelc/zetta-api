@@ -15,6 +15,6 @@ class Wiki(BaseModel):
     user_id = Column(Integer, ForeignKey("users.id"))  # 创建者ID
     desc = Column(String, nullable=True)
 
-    embedding = relationship("Embedding")
-    rerank = relationship("Rerank")
-    user = relationship("User")
+    # embedding = relationship("Embedding")
+    # rerank = relationship("Rerank")
+    # user = relationship("User")

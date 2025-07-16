@@ -6,7 +6,7 @@ from models.user import User
 from utils.common import hash_password
 from utils.logger import logger
 
-router = APIRouter(prefix="/user", tags=["User"])
+router = APIRouter(prefix="/api/user", tags=["User"])
 
 
 @router.post("/find-user")

@@ -6,7 +6,7 @@ from models.user import User
 from utils.common import hash_password
 from utils.logger import logger
 
-router = APIRouter(prefix="/wiki", tags=["Wiki"])
+router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
 
 @router.post("/create-wiki")

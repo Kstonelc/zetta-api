@@ -30,7 +30,7 @@ if config.config_file_name is not None:
 [Framework] SQLAlchemy
 """
 target_metadata = BaseModel.metadata
-print("💡 Alembic 能看到的表：", target_metadata.tables.keys())
+print("💡 Alembic Find Models：", target_metadata.tables.keys())
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
