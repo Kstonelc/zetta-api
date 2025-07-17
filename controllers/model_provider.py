@@ -1,5 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, joinedload
+
+from llm.qwen import ChatQW
 from schemas.model import (
     ModelProviderAddRequest,
     ModelProviderQueryRequest,
@@ -77,7 +79,11 @@ async def update_model_provider(
         if not provider:
             response = {"ok": False, "message": "模型提供商不存在"}
             return
-
+        # 验证 api_key
+        llm = ChatQW(api_key=body.modelProviderApiKey)
+        if not llm.test_api_key():
+            response = {"ok": False, "message": "API KEY 无效"}
+            return
         provider.api_key = body.modelProviderApiKey
         db.commit()
         db.refresh(provider)

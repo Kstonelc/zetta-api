@@ -1,9 +1,10 @@
-from typing import Any, Optional, List, Iterator
+from typing import Any, Optional, List, Iterator, Tuple
 
 from langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain_core.language_models.llms import LLM
 from langchain_community.llms.tongyi import Tongyi
 from langchain_core.outputs import GenerationChunk
+from marshmallow.fields import Boolean
 
 from config import settings
 from enums import QWModelType
@@ -55,3 +56,10 @@ class ChatQW(LLM):
                 break
             chunk = GenerationChunk(text=chunk_str)
             yield chunk
+
+    def test_api_key(self, test_prompt: str = "你好") -> bool:
+        try:
+            self.client.invoke(test_prompt)
+            return True
+        except Exception as e:
+            return False
