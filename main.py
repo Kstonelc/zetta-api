@@ -4,8 +4,9 @@ from fastapi.responses import JSONResponse
 from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY
 from contextlib import asynccontextmanager
 import uvicorn
-from controllers import test, user, model
+from controllers import test, user, model, model_provider
 from middlewares import RequestLoggingMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 from utils.vector_db import vector_client
 from models.db import engine
 from utils.logger import logger
@@ -42,11 +43,20 @@ app = FastAPI(lifespan=lifespan)
 
 # 注册中间件
 app.add_middleware(RequestLoggingMiddleware)
+# 允许跨域
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # ✅ 允许所有 origin
+    allow_credentials=False,  # ⚠️ 必须为 False，不能和 "*" 同时使用
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # 注册 routers
 app.include_router(user.router)
 app.include_router(test.router)
 app.include_router(model.router)
+app.include_router(model_provider.router)
 
 
 # 参数校验处理

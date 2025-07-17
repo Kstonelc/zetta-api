@@ -6,7 +6,6 @@ from .base import BaseModel
 class Wiki(BaseModel):
     __tablename__ = "wiki"
 
-    id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     type = Column(Integer, nullable=False)  # 结构化数据和非结构化数据
     embedding_id = Column(Integer, ForeignKey("embedding.id"))  # 嵌入模型ID

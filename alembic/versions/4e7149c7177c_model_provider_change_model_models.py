@@ -1,8 +1,8 @@
-"""add new fields to users11
+"""model provider change model -> models
 
-Revision ID: 1ef154312700
-Revises: 208900f8172c
-Create Date: 2025-07-11 14:15:14.792501
+Revision ID: 4e7149c7177c
+Revises: 5e8447c2abed
+Create Date: 2025-07-17 16:38:00.429021
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '1ef154312700'
-down_revision: Union[str, Sequence[str], None] = '208900f8172c'
+revision: str = '4e7149c7177c'
+down_revision: Union[str, Sequence[str], None] = '5e8447c2abed'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 

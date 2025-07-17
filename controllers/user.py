@@ -10,10 +10,10 @@ router = APIRouter(prefix="/api/user", tags=["User"])
 
 
 @router.post("/find-user")
-async def find_user(user: UserQueryRequest, db: Session = Depends(get_db)):
+async def find_user(body: UserQueryRequest, db: Session = Depends(get_db)):
     response = {}
     try:
-        if not user.has_valid_key():
+        if not body.has_valid_key():
             response = {"ok": False, "message": "必须提供 id 或 email"}
             return
     except Exception as e:
@@ -23,15 +23,15 @@ async def find_user(user: UserQueryRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/sign-up")
-async def sign_up(user: UserRegisterRequest, db: Session = Depends(get_db)):
+async def sign_up(body: UserRegisterRequest, db: Session = Depends(get_db)):
     response = {}
     try:
-        if db.query(User).filter(User.email == user.userEmail).first():
+        if db.query(User).filter(User.email == body.userEmail).first():
             response = {"ok": False, "message": "用户已存在"}
             return
 
         new_user = User(
-            email=user.userEmail, password=hash_password(user.userPassword), active=True
+            email=body.userEmail, password=hash_password(body.userPassword), active=True
         )
         db.add(new_user)
         db.commit()
