@@ -13,7 +13,7 @@ class Model(BaseModel):
     model_provider_id = Column(
         Integer, ForeignKey("model_provider.id"), nullable=False
     )  # 模型提供商ID
-    max_context_tokens = Column(Integer, nullable=True)
+    max_context_tokens = Column(String, nullable=True)
     token_limit = Column(Integer, nullable=True)  # 令牌限制
 
     # 开启双向绑定

@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
+from enums import ModelProviderUpdateType
 
 
 class ModelProviderQueryRequest(BaseModel):
@@ -12,6 +13,7 @@ class ModelProviderAddRequest(BaseModel):
 
 
 class ModelProviderUpdateRequest(BaseModel):
+    modelProviderUpdateType: ModelProviderUpdateType
     modelProviderApiKey: Optional[str] = None
     modelProviderId: int
 
@@ -27,3 +29,8 @@ class ModelAddRequest(BaseModel):
 
 class ModelQueryRequest(BaseModel):
     modelProviderId: Optional[int] = None
+
+
+class ModelUpdateRequest(BaseModel):
+    modelId: int
+    active: Optional[bool] = None

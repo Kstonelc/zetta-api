@@ -10,3 +10,8 @@ class ModelType(str, Enum):
     TextEmbedding = "TextEmbedding"
     TextGeneration = "TextGeneration"
     ReRank = "ReRank"
+
+
+class ModelProviderUpdateType(str, Enum):
+    Update = "update"
+    Clear = "clear"

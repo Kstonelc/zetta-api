@@ -8,6 +8,7 @@ from schemas.model import (
     ModelProviderUpdateRequest,
 )
 from models import ModelProvider, get_db
+from enums import ModelProviderUpdateType
 from utils.logger import logger
 
 router = APIRouter(prefix="/api/model-provider", tags=["ModelProvider"])
@@ -56,7 +57,8 @@ async def find_model_provider(
         model_providers = (
             db.query(ModelProvider).options(joinedload(ModelProvider.models)).all()
         )
-        response = {"ok": True, "data": model_providers}
+        res = [mp.to_dict() for mp in model_providers]
+        response = {"ok": True, "data": res}
     except Exception as e:
         db.rollback()
         response = {"ok": False, "message": "获取模型提供商失败"}
@@ -71,27 +73,40 @@ async def update_model_provider(
 ):
     response = {}
     try:
+        model_provider_id = body.modelProviderId
+        model_provider_api_key = body.modelProviderApiKey
+        model_provider_update_type = body.modelProviderUpdateType
+
         provider = (
             db.query(ModelProvider)
-            .filter(ModelProvider.id == body.modelProviderId)
+            .filter(ModelProvider.id == model_provider_id)
             .first()
         )
         if not provider:
             response = {"ok": False, "message": "模型提供商不存在"}
             return
+
         # 验证 api_key
-        llm = ChatQW(api_key=body.modelProviderApiKey)
-        if not llm.test_api_key():
-            response = {"ok": False, "message": "API KEY 无效"}
-            return
-        provider.api_key = body.modelProviderApiKey
+        if not model_provider_update_type == ModelProviderUpdateType.Clear:
+            llm = ChatQW(api_key=model_provider_api_key)
+            if not llm.test_api_key():
+                response = {"ok": False, "message": "API KEY 无效"}
+                return
+        provider.api_key = model_provider_api_key
         db.commit()
         db.refresh(provider)
 
-        response = {"ok": True, "data": "API KEY 更新成功"}
+        response = {
+            "ok": True,
+            "data": (
+                "API KEY 更新成功"
+                if model_provider_update_type == ModelProviderUpdateType.Update
+                else "移除API KEY成功"
+            ),
+        }
     except Exception as e:
         db.rollback()
-        response = {"ok": False, "message": "获取模型提供商失败"}
+        response = {"ok": False, "message": "更新模型提供商失败"}
         logger.error(e)
     finally:
         return response
