@@ -20,9 +20,12 @@ async def create_model_provider(
 ):
     response = {}
     try:
+        model_provider_name = body.modelProviderName
+        model_provider_desc = body.modelProviderDesc if body.modelProviderDesc else ""
+
         model_provider = (
             db.query(ModelProvider)
-            .filter(ModelProvider.name == body.modelProviderName)
+            .filter(ModelProvider.name == model_provider_name)
             .first()
         )
         if model_provider:
@@ -30,8 +33,8 @@ async def create_model_provider(
             return response
         new_model_provider = ModelProvider(
             active=True,
-            name=body.modelProviderName,
-            desc=(body.modelProviderDesc if body.modelProviderDesc else ""),
+            name=model_provider_name,
+            desc=model_provider_desc,
         )
         db.add(new_model_provider)
         db.commit()

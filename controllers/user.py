@@ -26,12 +26,15 @@ async def find_user(body: UserQueryRequest, db: Session = Depends(get_db)):
 async def sign_up(body: UserRegisterRequest, db: Session = Depends(get_db)):
     response = {}
     try:
-        if db.query(User).filter(User.email == body.userEmail).first():
+        user_email = body.userEmail
+        user_password = body.userPassword
+
+        if db.query(User).filter(User.email == user_email).first():
             response = {"ok": False, "message": "用户已存在"}
             return
 
         new_user = User(
-            email=body.userEmail, password=hash_password(body.userPassword), active=True
+            email=body.userEmail, password=hash_password(user_password), active=True
         )
         db.add(new_user)
         db.commit()

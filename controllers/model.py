@@ -15,20 +15,25 @@ router = APIRouter(prefix="/api/model", tags=["Model"])
 async def create_model(body: ModelAddRequest, db: Session = Depends(get_db)):
     response = {}
     try:
-        model = db.query(Model).filter(Model.name == body.modelName).first()
+        model_name = body.modelName
+        model_display_name = body.modelDisplayName if body.modelDisplayName else None
+        model_provider_id = body.modelProviderId
+        model_max_context_tokens = (
+            body.modelMaxContextTokens if body.modelMaxContextTokens else None
+        )
+        model_token_limit = body.modelTokenLimit if body.modelTokenLimit else None
+
+        model = db.query(Model).filter(Model.name == model_name).first()
         if model:
             response = {"ok": False, "message": "模型已存在"}
             return
         new_model = Model(
             active=True,
-            name=body.modelName,
-            display_name=(body.modelDisplayName if body.modelDisplayName else None),
-            model_provider_id=body.modelProviderId,
-            api_key=body.apiKey if body.modelApiKey else None,
-            max_context_tokens=(
-                body.modelMaxContextTokens if body.modelMaxContextTokens else None
-            ),
-            token_limit=(body.modelTokenLimit if body.modelTokenLimit else None),
+            name=model_name,
+            display_name=model_display_name,
+            model_provider_id=model_provider_id,
+            max_context_tokens=model_max_context_tokens,
+            token_limit=model_token_limit,
         )
         db.add(new_model)
         db.commit()
@@ -49,10 +54,10 @@ async def create_model(body: ModelAddRequest, db: Session = Depends(get_db)):
 async def find_models(body: ModelQueryRequest, db: Session = Depends(get_db)):
     response = {}
     try:
+        model_provider_id = body.modelProviderId
+
         models = (
-            db.query(Model)
-            .filter(Model.model_provider_id == body.modelProviderId)
-            .all()
+            db.query(Model).filter(Model.model_provider_id == model_provider_id).all()
         )
         response = {
             "ok": True,

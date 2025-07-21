@@ -22,7 +22,6 @@ class ModelAddRequest(BaseModel):
     modelName: str
     modelDisplayName: Optional[str] = None
     modelProviderId: int
-    modelApiKey: Optional[str] = None
     modelMaxContextTokens: Optional[int] = None
     modelTokenLimit: Optional[int] = None
 

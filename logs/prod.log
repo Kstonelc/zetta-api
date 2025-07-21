@@ -2523,3 +2523,215 @@ FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = mode
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2025-07-20 23:05:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
 2025-07-20 23:05:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:32:39 | INFO | ✅Zetta Server Start
+2025-07-21 09:32:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-21 09:32:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-21 09:33:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:33:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:33:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:33:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:33:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:33:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:34:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:34:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:34:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:34:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:58:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:58:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:58:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:58:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:58:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:58:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:59:21 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:59:21 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 09:59:21 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 09:59:21 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:15:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:15:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:15:22 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-21 11:15:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:15:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:19:52 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:19:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:20:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:20:13 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-21 11:20:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:20:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:20:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:20:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:20:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:20:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:20:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:51:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:51:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 11:51:55 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-21 11:51:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 11:51:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:04:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:04:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:04:38 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-21 14:04:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:04:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:05:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:05:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:05:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:05:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:19:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:19:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:25:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:25:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:27:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:27:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:27:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:27:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:27:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:27:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:36:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:36:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:36:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:36:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:37:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:37:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:37:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:37:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:42:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:42:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:42:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:42:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:44:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:44:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:45:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:45:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:45:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:45:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:45:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:45:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:45:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:45:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:49:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:49:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:49:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:49:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:49:36 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:49:36 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:49:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:49:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:52:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:52:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 14:54:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 14:54:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:22:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:22:38 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-21 15:22:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:32:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:32:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:32:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:32:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:36:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:36:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:36:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:36:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:38:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:38:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:38:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:38:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:38:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:38:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:38:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:38:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:40:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:40:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:40:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:40:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:49:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:49:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:00 | INFO | ➡️POST /api/model-provider/update-model-provider Request Body:{"modelProviderId":1,"modelProviderApiKey":"","modelProviderUpdateType":"clear"}
+2025-07-21 15:50:00 | INFO | ⬅️POST /api/model-provider/update-model-provider -> 200
+2025-07-21 15:50:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:04 | INFO | ➡️POST /api/model-provider/update-model-provider Request Body:{"modelProviderId":1,"modelProviderApiKey":"sk-72b635b190514c8b90cfcbfe750fa61a","modelProviderUpdateType":"update"}
+2025-07-21 15:50:08 | INFO | ⬅️POST /api/model-provider/update-model-provider -> 200
+2025-07-21 15:50:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:14 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":2,"active":false}
+2025-07-21 15:50:14 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:15 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":2,"active":true}
+2025-07-21 15:50:15 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:17 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":1,"active":false}
+2025-07-21 15:50:17 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:17 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":1,"active":true}
+2025-07-21 15:50:17 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:18 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":1,"active":false}
+2025-07-21 15:50:18 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:18 | INFO | ➡️POST /api/model/update-model Request Body:{"modelId":1,"active":true}
+2025-07-21 15:50:18 | INFO | ⬅️POST /api/model/update-model -> 200
+2025-07-21 15:50:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:50:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:50:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:51:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:51:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:51:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:51:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:54:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:54:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 15:56:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 15:56:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:01:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:01:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:01:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:01:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:01:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:01:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:01:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:01:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:02:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:02:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:02:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:02:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:02:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:02:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:03:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-21 16:03:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-21 16:04:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-21 16:04:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
