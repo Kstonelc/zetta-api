@@ -2475,3 +2475,51 @@ WHERE model.id = %(id_1)s
 2025-07-18 17:30:23 | INFO | ⬅️POST /api/model-provider/update-model-provider -> 200
 2025-07-18 17:30:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
 2025-07-18 17:30:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:27:59 | INFO | ✅Zetta Server Start
+2025-07-20 14:28:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-20 14:28:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-20 14:28:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:28:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:28:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:28:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:28:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:28:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:28:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:28:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:28:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:28:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:29:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:29:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:29:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:29:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:29:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:29:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:29:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:29:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:30:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:30:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:30:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:30:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:30:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:30:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:30:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:30:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:57:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:57:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:57:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:57:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:58:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:58:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 14:58:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 14:58:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 23:05:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 23:05:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-20 23:05:06 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-20 23:05:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-20 23:05:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
