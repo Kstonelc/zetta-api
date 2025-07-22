@@ -58,10 +58,12 @@ async def find_model_provider(
     response = {}
     try:
         model_providers = (
-            db.query(ModelProvider).options(joinedload(ModelProvider.models)).all()
+            db.query(ModelProvider)
+            .options(joinedload(ModelProvider.models))
+            .filter(ModelProvider.active.is_(True))
+            .all()
         )
-        res = [mp.to_dict() for mp in model_providers]
-        response = {"ok": True, "data": res}
+        response = {"ok": True, "data": model_providers}
     except Exception as e:
         db.rollback()
         response = {"ok": False, "message": "获取模型提供商失败"}

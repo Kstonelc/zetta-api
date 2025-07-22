@@ -1,11 +1,28 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, String
+from sqlalchemy.orm import relationship
 from .base import BaseModel
 
 
 class User(BaseModel):
     __tablename__ = "user"
 
-    avatar = Column(String, nullable=False)
-    email = Column(String, unique=True, index=True, nullable=False)
-    password = Column(String, nullable=False)
-    secret = Column(String, nullable=True)  # 用于邮箱验证的密钥
+    name = Column(String(255), nullable=True)
+    avatar = Column(String(255), nullable=True)
+    email = Column(String(255), unique=True, index=True, nullable=False)
+    password = Column(String(255), nullable=False)
+    status = Column(String(32), nullable=False)
+    secret = Column(String(32), nullable=True)  # 用于邮箱验证的密钥
+
+    tenant_user_joins = relationship(
+        "TenantUserJoin",
+        back_populates="user",
+        passive_deletes=True,
+        overlaps="tenants",
+    )
+
+    tenants = relationship(
+        "Tenant",
+        secondary="tenant_user_join",
+        back_populates="users",
+        overlaps="tenant_user_joins",
+    )

@@ -2782,3 +2782,964 @@ FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = mode
 2025-07-21 21:56:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
 2025-07-21 21:56:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
 2025-07-21 21:56:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 09:45:08 | INFO | ✅Zetta Server Start
+2025-07-22 09:45:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 09:45:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 09:45:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 09:45:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 09:45:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 09:45:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 09:50:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 09:50:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:16:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:16:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:18:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:18:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:18:27 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:18:27 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:18:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:18:39 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:18:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:18:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:19:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:19:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:19:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:19:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:33:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:33:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:33:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:33:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:34:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:34:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:34:26 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:34:26 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:34:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:34:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:35:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:35:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:35:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:35:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:36:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:36:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:36:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:36:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:36:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:36:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:37:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:37:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:37:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:37:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:37:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:37:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:38:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:38:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:38:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:38:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:38:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:38:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:40:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:40:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:40:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:40:42 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:42:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:42:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 10:43:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 10:43:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 11:42:39 | INFO | ✅Zetta Server Start
+2025-07-22 11:42:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 11:42:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:48:01 | INFO | ✅Zetta Server Start
+2025-07-22 13:48:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:48:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:48:34 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:48:34 | INFO | ⬅️POST /api/tenant/find-admin -> 404
+2025-07-22 13:49:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:49:08 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:49:12 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:49:12 | INFO | ⬅️POST /api/tenant/find-admin -> 404
+2025-07-22 13:49:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:49:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:49:59 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:49:59 | INFO | ⬅️POST /api/tenant/find-admin -> 422
+2025-07-22 13:51:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:51:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:51:20 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:51:20 | INFO | ⬅️POST /api/tenant/find-admin -> 422
+2025-07-22 13:53:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:53:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:53:11 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:53:11 | ERROR | Could not determine join condition between parent/child tables on relationship ModelProvider.models - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-07-22 13:53:11 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 13:53:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:53:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:54:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:54:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:54:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:54:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:54:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:54:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:56:25 | INFO | ✅Zetta Server Start
+2025-07-22 13:56:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 13:56:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 13:56:30 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 13:56:31 | ERROR | Could not determine join condition between parent/child tables on relationship ModelProvider.models - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-07-22 13:56:31 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 14:01:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:01:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:02:14 | INFO | ✅Zetta Server Start
+2025-07-22 14:02:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:02:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:02:21 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 14:02:21 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 14:06:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:06:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:07:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:07:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:10:02 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:10:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:10:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:10:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:10:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:10:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:10:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:10:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:12:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:12:08 | ERROR | 'ModelProvider' object has no attribute 'to_dict'
+2025-07-22 14:12:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:12:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:12:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:12:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:12:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:12:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:12:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:15:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:15:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:17:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:17:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:17:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:17:32 | ERROR | cannot unpack non-iterable ModelProvider object
+2025-07-22 14:17:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:20:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:20:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:20:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:20:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:21:19 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:21:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:21:21 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:21:21 | ERROR | 'function' object has no attribute 'session'
+2025-07-22 14:21:21 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:21:37 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:21:37 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:21:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:21:40 | ERROR | 'function' object has no attribute 'query'
+2025-07-22 14:21:40 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:22:26 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:22:26 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:23:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:23:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:25:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:25:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:25:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:25:54 | ERROR | 'generator' object has no attribute 'query'
+2025-07-22 14:25:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:27:37 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:27:37 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:27:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:27:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:27:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:27:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:28:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:28:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:28:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:28:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:28:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:28:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:41:58 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:41:58 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:42:06 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:42:06 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:45:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:45:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:46:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:46:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:46:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:46:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:47:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:47:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:47:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:47:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:48:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:48:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:49:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:49:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:49:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 14:49:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 14:52:35 | INFO | ✅Zetta Server Start
+2025-07-22 14:52:39 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:52:39 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:52:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:52:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:53:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:53:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:53:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:53:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:54:06 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:54:06 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:54:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:54:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:55:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:55:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:55:55 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:55:55 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:56:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:56:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:56:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:56:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:56:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:56:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:56:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:56:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:57:10 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:57:10 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:57:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:57:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:57:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 14:57:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 14:57:56 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 14:57:56 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:01:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:01:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:02:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:02:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:02:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:02:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:02:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:02:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:03:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:03:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:03:56 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:03:57 | ERROR | 'list' object is not callable
+2025-07-22 15:03:57 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:04:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:04:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:04:19 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:04:19 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:04:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:04:42 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:04:44 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:04:44 | ERROR | property 'tenants' of 'User' object has no setter
+2025-07-22 15:04:44 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:14:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:14:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:14:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:14:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:14:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:14:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:14:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:14:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:14:49 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:14:49 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:14:54 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:14:54 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:14:59 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:14:59 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:15:01 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:15:02 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:15:04 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:15:04 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:20:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:20:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:21:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:21:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:21:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:21:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:21:25 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:21:26 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:23:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:23:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:23:06 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:23:06 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:23:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:23:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:28:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:28:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:29:57 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:29:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:30:17 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:30:17 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:30:21 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:30:21 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:30:23 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:30:24 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:30:25 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:30:25 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:33:02 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:33:02 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:33:06 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:33:06 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:33:07 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:33:07 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:33:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:33:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:33:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:33:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:33:54 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:33:54 | ERROR | 'User' object is not iterable
+2025-07-22 15:33:54 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:34:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:34:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:34:15 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:34:15 | ERROR | 'User' object is not iterable
+2025-07-22 15:34:15 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:34:24 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:34:24 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:35:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:35:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:35:47 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:35:47 | ERROR | cannot unpack non-iterable User object
+2025-07-22 15:35:47 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:36:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:36:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:36:26 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:36:26 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:36:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:36:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:36:55 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:37:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:37:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:37:17 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:37:17 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:40:02 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:40:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:40:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:40:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:40:31 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:40:31 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:41:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:41:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:44:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:44:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:44:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:44:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:44:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:44:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:44:55 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:44:56 | ERROR | type object 'datetime.datetime' has no attribute 'datetime'
+2025-07-22 15:44:56 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:45:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:45:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:45:11 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:45:11 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:49:36 | INFO | ✅Zetta Server Start
+2025-07-22 15:49:39 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:49:39 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:49:40 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:49:40 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:49:45 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 15:49:45 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 15:53:03 | INFO | ✅Zetta Server Start
+2025-07-22 15:53:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:53:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:53:24 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:53:24 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:53:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:53:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:54:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:54:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:54:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:54:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:55:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 15:55:00 | ERROR | Don't know how to join to <Mapper at 0x129db0a38d0; ModelProvider>. Please use the .select_from() method to establish an explicit left side, as well as providing an explicit ON clause if not present already to help resolve the ambiguity.
+2025-07-22 15:55:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 15:55:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:55:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:56:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:56:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 15:56:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 15:56:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 15:56:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 15:56:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:04:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:04:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:04:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:04:46 | ERROR | not enough values to unpack (expected 2, got 1)
+2025-07-22 16:04:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:05:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:05:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:06:19 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:06:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:06:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:06:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:06:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:06:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:07:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:07:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:08:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:30 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:30 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:08:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:08:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:10:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:10:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:10:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:10:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:10:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:10:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:11:01 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:11:01 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:11:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:11:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:11:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:11:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:11:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:11:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:13:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:13:42 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:13:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:13:47 | ERROR | 'Model' object is not iterable
+2025-07-22 16:13:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:14:27 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:14:27 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:14:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:14:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:15:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:15:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:16:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:16:16 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:16:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:16:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:17:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:17:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:17:36 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:17:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:18:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:18:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:18:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:18:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:18:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:18:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:19:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:19:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:19:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:19:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:19:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:19:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:23:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:23:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:25:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:25:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:25:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:25:27 | ERROR | [TypeError('cannot convert dictionary update sequence element #0 to a sequence'), TypeError('vars() argument must have __dict__ attribute')]
+2025-07-22 16:25:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:25:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:25:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:26:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:26:03 | ERROR | [TypeError('cannot convert dictionary update sequence element #0 to a sequence'), TypeError('vars() argument must have __dict__ attribute')]
+2025-07-22 16:26:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:26:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:26:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:27:13 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:27:13 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:27:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 16:27:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 16:32:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:32:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:32:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:32:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:32:55 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:32:55 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:34:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:34:16 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:34:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:34:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:35:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:35:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:35:41 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:35:41 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:36:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:36:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:37:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:37:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:38:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:38:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:38:28 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:38:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:40:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:40:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:40:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:40:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:41:22 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:41:22 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:41:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:41:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:43:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:43:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:43:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:43:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:44:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:44:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 16:45:58 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 16:45:58 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:00:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:00:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:04:42 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:04:42 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:05:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:05:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:06:07 | INFO | ✅Zetta Server Start
+2025-07-22 17:06:11 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:06:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:07:13 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:07:13 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:07:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:07:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:08:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:08:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:08:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:08:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:14:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:14:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:14:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:14:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:14:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:14:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:14:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:14:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:14:34 | INFO | ✅Zetta Server Start
+2025-07-22 17:14:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:14:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:14:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:14:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:16:02 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:16:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:17:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:17:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:17:31 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:17:31 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:17:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:17:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:18:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:18:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:18:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:18:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:18:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:18:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:18:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:18:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:19:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:19:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:19:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:19:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:19:19 | INFO | ✅Zetta Server Start
+2025-07-22 17:19:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:19:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:19:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:19:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:19:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:19:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:20:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:20:01 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:01 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:20:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:20:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:20:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:20:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 17:20:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 17:23:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:23:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:24:37 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:24:37 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:25:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:25:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:25:17 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 17:25:17 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 17:25:25 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-22 17:25:25 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-22 17:25:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:25:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:25:55 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:25:55 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:26:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:26:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:27:13 | INFO | ➡️POST /api/tenant/find-admin
+2025-07-22 17:27:13 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:27:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 17:27:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 17:33:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:37 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:37 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:37 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:37 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:40 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:40 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:40 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:40 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:42 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:42 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:42 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:42 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:43 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:43 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:43 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:43 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:45 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:45 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:45 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:45 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:48 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:48 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:33:48 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:33:48 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:03 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:03 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:25 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:25 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:56 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:56 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:56 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:56 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:58 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:58 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:34:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:34:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:00 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:00 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:00 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:00 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:02 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:02 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:02 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:02 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:04 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:04 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:04 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:04 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:05 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:05 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:05 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:05 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:08 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:08 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:17 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:17 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:19 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:19 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:19 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:19 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:24 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:24 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 17:35:24 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 17:35:24 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:07 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT tenant_user_join.tenant_id AS tenant_user_join_tenant_id, tenant_user_join.user_id AS tenant_user_join_user_id, tenant_user_join.role AS tenant_user_join_role, tenant_user_join.invited_by AS tenant_user_join_invited_by, tenant_user_join.id AS tenant_user_join_id, tenant_user_join.active AS tenant_user_join_active, tenant_user_join.created_at AS tenant_user_join_created_at, tenant_user_join.updated_at AS tenant_user_join_updated_at 
+FROM tenant_user_join 
+WHERE tenant_user_join.role = %(role_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'role_1': 'admin', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-22 18:06:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:17 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:17 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:19 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:19 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:19 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:19 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:26 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:26 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:27 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:27 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:27 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:27 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:28 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:28 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:28 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:28 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:29 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:29 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:06:29 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:29 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:06:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:06:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:06:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:06:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:06:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:06:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:07:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:07:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:07:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:07:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:07:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:07:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:07:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:07:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:07:37 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:07:37 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:07:37 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:07:37 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:08:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:08:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:08:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:08:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:11:43 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:11:43 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:13:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:13:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:13:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:13:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:14:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:14:08 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:14:25 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:14:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:14:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:14:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:15:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:15:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:15:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:15:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:16:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:16:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:17:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:17:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:18:24 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:18:24 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:18:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:18:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:19:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:19:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:19:19 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:19:19 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:20:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:20:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:20:38 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:20:39 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:21:47 | INFO | ✅Zetta Server Start
+2025-07-22 18:21:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:21:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:21:55 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:21:56 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:22:21 | INFO | ✅Zetta Server Start
+2025-07-22 18:22:27 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:22:27 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:22:29 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:22:29 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:22:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:22:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:22:47 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:22:48 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:23:18 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:23:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:23:19 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:23:19 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:24:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:24:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:24:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:24:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:24:32 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:24:33 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:27:26 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:27:26 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:27:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:27:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:27:58 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:27:58 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:28:07 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "1234561"
+}
+2025-07-22 18:28:07 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:28:12 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:28:13 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:28:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:28:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:28:32 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:28:32 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:28:37 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:28:37 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:28:40 | INFO | ➡️POST /api/user/email-login Request Body:{
+    "userEmail": "2609753201@qq.com",
+    "userPassword": "123456"
+}
+2025-07-22 18:28:40 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:31:52 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:31:52 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:31:52 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:31:52 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:32:33 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:32:33 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:32:33 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:32:33 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:36:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:36:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:39:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:39:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:39:39 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:39:39 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:40:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:40:25 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:40:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:40:26 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:40:40 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-22 18:40:41 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:40:59 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-22 18:40:59 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:41:45 | INFO | [DB]: ✅DB Connection Success
+2025-07-22 18:41:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-22 18:41:58 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-22 18:41:58 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-22 18:41:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:41:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-22 18:41:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:41:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-22 18:42:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:42:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:42:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:42:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:42:27 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:42:27 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-22 18:42:27 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-22 18:42:27 | INFO | ⬅️POST /api/tenant/find-admin -> 200

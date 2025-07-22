@@ -1,5 +1,5 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Float, Text
-from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.dialects.postgresql import ARRAY, UUID
 from sqlalchemy.orm import relationship
 from .base import BaseModel
 
@@ -7,14 +7,13 @@ from .base import BaseModel
 class Model(BaseModel):
     __tablename__ = "model"
 
-    name = Column(String, nullable=False, unique=True, default="")
-    display_name = Column(String, nullable=True, default="")
-    types = Column(ARRAY(String), nullable=True)  # 模型类型
+    name = Column(String(255), nullable=False, unique=True, default="")
+    display_name = Column(String(255), nullable=True, default="")
+    types = Column(ARRAY(String(255)), nullable=True)  # 模型类型
     model_provider_id = Column(
-        Integer, ForeignKey("model_provider.id"), nullable=False
+        UUID, ForeignKey("model_provider.id", ondelete="SET NULL"), nullable=False
     )  # 模型提供商ID
-    max_context_tokens = Column(String, nullable=True)
+    max_context_tokens = Column(String(255), nullable=True)
     token_limit = Column(Integer, nullable=True)  # 令牌限制
 
-    # 开启双向绑定
     provider = relationship("ModelProvider", back_populates="models")

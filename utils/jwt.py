@@ -9,9 +9,9 @@ import jwt
 from datetime import datetime, timedelta, UTC
 from typing import Optional
 
-SECRET_KEY = "your-secret-key"
+SECRET_KEY = "zetta"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+ACCESS_TOKEN_EXPIRE_MINUTES = 10080  # 一周
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:

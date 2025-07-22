@@ -15,3 +15,19 @@ class ModelType(str, Enum):
 class ModelProviderUpdateType(str, Enum):
     Update = "update"
     Clear = "clear"
+
+
+class UserStatus(str, Enum):
+    Pending = "pending"
+    Unintialized = "unintialized"
+    Active = "active"
+    Banned = "banned"
+    Closed = "closed"
+
+
+class TenantUserRole(str, Enum):
+    Owner = "owner"
+    Admin = "admin"
+    Editor = "editor"
+    Normal = "normal"
+    DatasetOperator = "datasetOperator"
