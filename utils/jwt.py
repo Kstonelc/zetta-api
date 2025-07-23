@@ -6,6 +6,8 @@
 """
 
 import jwt
+from fastapi import Request
+from exceptions import AuthTokenException
 from datetime import datetime, timedelta, UTC
 from typing import Optional
 
@@ -34,3 +36,20 @@ def decode_token(token: str) -> Optional[dict]:
     except jwt.InvalidTokenError:
         # 无效 Token
         return None
+
+
+# 用于验证Token
+def verify_token(request: Request):
+    auth = request.headers.get("Authorization")
+    if not auth or not auth.startswith("Bearer "):
+        raise AuthTokenException(message="缺少或无效的 Authorization 头")
+
+    token = auth[7:]
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        print(payload)
+        return payload
+    except jwt.ExpiredSignatureError:
+        raise AuthTokenException(message="Token已过期")
+    except jwt.InvalidTokenError:
+        raise AuthTokenException(message="Token无效")

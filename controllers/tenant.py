@@ -5,6 +5,7 @@ from models.db import get_db
 from enums import TenantUserRole
 from models.tenant import TenantUserJoin
 from models.user import User
+from utils.jwt import verify_token
 from utils.logger import logger
 
 router = APIRouter(prefix="/api/tenant", tags=["Tenant"])
@@ -14,6 +15,7 @@ router = APIRouter(prefix="/api/tenant", tags=["Tenant"])
 async def find_admin(body: Request, db: Session = Depends(get_db)):
     # Tips: 使用 Request 跳过入参验证
     response = {}
+    print(111111)
     try:
         res = (
             db.query(TenantUserJoin)

@@ -17,6 +17,7 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
         except Exception:
             pass
 
+        # 仅限开发环境使用
         logger.info(log_info)
 
         response = await call_next(request)

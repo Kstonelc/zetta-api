@@ -7,6 +7,7 @@ from schemas.model import (
     ModelProviderQueryRequest,
     ModelProviderUpdateRequest,
 )
+from utils.jwt import verify_token
 from models import ModelProvider, get_db
 from enums import ModelProviderUpdateType
 from utils.logger import logger
@@ -16,7 +17,9 @@ router = APIRouter(prefix="/api/model-provider", tags=["ModelProvider"])
 
 @router.post("/create-model-provider")
 async def create_model_provider(
-    body: ModelProviderAddRequest, db: Session = Depends(get_db)
+    body: ModelProviderAddRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
 ):
     response = {}
     try:
@@ -53,7 +56,10 @@ async def create_model_provider(
 
 @router.post("/find-model-provider")
 async def find_model_provider(
-    body: ModelProviderQueryRequest, db: Session = Depends(get_db)
+    body: ModelProviderQueryRequest,
+    db: Session = Depends(get_db),
+    # 加上表示验证token合法
+    token=Depends(verify_token),
 ):
     response = {}
     try:
@@ -74,7 +80,9 @@ async def find_model_provider(
 
 @router.post("/update-model-provider")
 async def update_model_provider(
-    body: ModelProviderUpdateRequest, db: Session = Depends(get_db)
+    body: ModelProviderUpdateRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
 ):
     response = {}
     try:

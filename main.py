@@ -1,13 +1,14 @@
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY
+from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY, HTTP_401_UNAUTHORIZED
 from contextlib import asynccontextmanager
 import uvicorn
 from controllers import test, user, model, model_provider, tenant
 from middlewares import RequestLoggingMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from utils.vector_db import vector_client
+from exceptions import AuthTokenException
 from models.db import engine
 from utils.logger import logger
 
@@ -67,6 +68,15 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
     return JSONResponse(
         status_code=HTTP_422_UNPROCESSABLE_ENTITY,
         content={"ok": False, "message": "请求参数不合法", "errors": exc.errors()},
+    )
+
+
+# 全局异常处理
+@app.exception_handler(AuthTokenException)
+async def auth_token_exception_handler(request: Request, exc: AuthTokenException):
+    return JSONResponse(
+        status_code=HTTP_401_UNAUTHORIZED,
+        content={"ok": False, "message": exc.detail},
     )
 
 

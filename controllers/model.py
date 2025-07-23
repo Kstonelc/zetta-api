@@ -6,13 +6,18 @@ from schemas.model import (
     ModelUpdateRequest,
 )
 from models import Model, get_db
+from utils.jwt import verify_token
 from utils.logger import logger
 
 router = APIRouter(prefix="/api/model", tags=["Model"])
 
 
 @router.post("/create-model")
-async def create_model(body: ModelAddRequest, db: Session = Depends(get_db)):
+async def create_model(
+    body: ModelAddRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
     response = {}
     try:
         model_name = body.modelName
@@ -51,7 +56,9 @@ async def create_model(body: ModelAddRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/find-models")
-async def find_models(body: ModelQueryRequest, db: Session = Depends(get_db)):
+async def find_models(
+    body: ModelQueryRequest, db: Session = Depends(get_db), token=Depends(verify_token)
+):
     response = {}
     try:
         model_provider_id = body.modelProviderId
@@ -73,7 +80,11 @@ async def find_models(body: ModelQueryRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/update-model")
-async def update_model(body: ModelUpdateRequest, db: Session = Depends(get_db)):
+async def update_model(
+    body: ModelUpdateRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
     response = {}
     try:
         modelId = body.modelId
