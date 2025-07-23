@@ -4387,3 +4387,327 @@ WHERE tenant_user_join.role = %(role_1)s
 2025-07-23 14:24:49 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
 2025-07-23 14:24:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
 2025-07-23 14:24:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:31:48 | INFO | ✅Zetta Server Start
+2025-07-23 14:31:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:31:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:32:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:32:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:32:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:33:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:33:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:33:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:33:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:35:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:35:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:35:27 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:35:27 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:39:00 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 14:39:00 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 14:39:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 14:39:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 14:39:11 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-23 14:39:11 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-23 14:39:11 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-23 14:39:11 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 14:39:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:39:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:39:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:39:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:47:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:47:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:47:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:47:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:47:05 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 14:47:05 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 14:47:05 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 14:47:05 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 14:47:18 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-23 14:47:18 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-23 14:47:18 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-23 14:47:18 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 14:47:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:47:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:47:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:47:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:48:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 14:48:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 14:50:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:50:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:50:15 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 14:50:15 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 14:50:22 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": None
+}
+2025-07-23 14:50:22 | INFO | ⬅️POST /api/user/find-user -> 422
+2025-07-23 14:50:30 | INFO | ➡️POST /api/user/find-user Request Body:{
+}
+2025-07-23 14:50:30 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 14:51:08 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:51:08 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:53:44 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 14:53:44 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 14:54:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 14:54:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 14:54:35 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 14:54:35 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 15:02:20 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 15:02:20 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 16:24:49 | INFO | ✅Zetta Server Start
+2025-07-23 16:24:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 16:24:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 16:24:54 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 16:24:54 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 16:24:54 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 16:24:54 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 16:26:48 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 16:26:48 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 16:41:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 16:41:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 16:41:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 16:41:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 16:42:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 16:42:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:10:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:10:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:14:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:14:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:14:54 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:14:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:16:16 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-23 18:16:17 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-23 18:16:17 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-23 18:16:17 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 18:16:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:16:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:16:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:17:05 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 18:17:05 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 18:19:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:19:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-23 18:30:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:30:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-23 18:33:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:33:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:34:02 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:34:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:34:08 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 18:34:08 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 18:34:46 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:34:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:37:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:37:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:38:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:38:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:38:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:38:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 18:48:10 | INFO | ✅Zetta Server Start
+2025-07-23 18:48:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 18:48:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:03:11 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:03:11 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:07:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:07:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:08:02 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:08:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:08:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:08:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:09:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:09:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:09:19 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:09:20 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:09:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:09:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:09:34 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:09:34 | ERROR | 'Session' object has no attribute 'session'
+2025-07-23 19:09:34 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:10:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:10:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:10:05 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:10:05 | ERROR | 'Session' object has no attribute 'session'
+2025-07-23 19:10:05 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:11:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:11:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:11:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:11:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:16:47 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:16:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:20:58 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:20:58 | ERROR | 'Session' object has no attribute 'session'
+2025-07-23 19:20:58 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:21:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:21:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:22:24 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:22:24 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:22:48 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:22:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:22:51 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:22:52 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:35:25 | INFO | ✅Zetta Server Start
+2025-07-23 19:35:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:35:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:35:40 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:37:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:37:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:42:57 | INFO | ✅Zetta Server Start
+2025-07-23 19:43:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:43:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:43:07 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:43:07 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:43:14 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:43:15 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:43:18 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:43:18 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:44:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:44:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:44:13 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:44:14 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:48:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:48:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:48:43 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:48:43 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:49:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:49:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:49:03 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:49:04 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:49:25 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:49:25 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:49:27 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:49:27 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:13 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:51:13 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:51:16 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:16 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:20 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:21 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:51:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:51:39 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:39 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:40 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:40 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:42 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:42 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:44 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:44 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:51:45 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:51:45 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:54:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:54:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:54:14 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:54:14 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:54:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:54:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:54:45 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 19:54:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 19:54:47 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:54:47 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 19:54:51 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-23 19:54:51 | INFO | ⬅️POST /api/user/find-user -> 200

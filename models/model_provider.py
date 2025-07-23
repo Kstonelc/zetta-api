@@ -9,6 +9,6 @@ class ModelProvider(BaseModel):
 
     name = Column(String, nullable=False, unique=True)
     api_key = Column(String, nullable=True)  # API KEY
-    desc = Column(Text)
+    desc = Column(Text, nullable=True)
 
     models = relationship("Model", back_populates="provider", passive_deletes=True)

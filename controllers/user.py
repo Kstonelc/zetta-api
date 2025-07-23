@@ -1,6 +1,11 @@
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, joinedload
-from schemas.user import UserEmailRegisterRequest, UserEmailLoginRequest
+from schemas.user import (
+    UserEmailRegisterRequest,
+    UserEmailLoginRequest,
+    UserQueryRequest,
+)
+from fastapi.encoders import jsonable_encoder
 from models.db import get_db
 from models.user import User
 from utils.common import hash_password, verify_password
@@ -11,16 +16,22 @@ router = APIRouter(prefix="/api/user", tags=["User"])
 
 
 @router.post("/find-user")
-async def find_user(body: Request, db: Session = Depends(get_db)):
+async def find_user(body: UserQueryRequest, db: Session = Depends(get_db)):
     response = {}
     try:
+        user_email = body.userEmail if body.userEmail else None
         user = (
             db.query(User)
             .options(joinedload(User.tenants))
-            .filter(User.active.is_(True), User.email == "2609753201@qq.com")
+            .filter(User.active.is_(True), User.email == user_email)
             .first()
         )
-        response = {"ok": True, "data": user}
+        if not user:
+            response = {"ok": False, "message": "用户不存在"}
+            return
+        user_dict = jsonable_encoder(user)
+        user_dict["current_tenant"] = jsonable_encoder(user.current_tenant)
+        response = {"ok": True, "data": user_dict}
     except Exception as e:
         response = {"ok": False, "message": "获取用户信息失败"}
         logger.error(e)

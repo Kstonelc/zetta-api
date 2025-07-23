@@ -15,7 +15,6 @@ router = APIRouter(prefix="/api/tenant", tags=["Tenant"])
 async def find_admin(body: Request, db: Session = Depends(get_db)):
     # Tips: 使用 Request 跳过入参验证
     response = {}
-    print(111111)
     try:
         res = (
             db.query(TenantUserJoin)

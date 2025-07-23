@@ -1,6 +1,7 @@
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 from .base import BaseModel
+from .tenant import Tenant, TenantUserJoin
 
 
 class User(BaseModel):
@@ -26,3 +27,11 @@ class User(BaseModel):
         back_populates="users",
         overlaps="tenant_user_joins",
     )
+
+    # 虚拟属性
+    @property
+    def current_tenant(self):
+        for join in self.tenant_user_joins:
+            if join.current and join.active:
+                return join.tenant
+        return None

@@ -3,12 +3,14 @@ from sqlalchemy import (
     String,
     Text,
     text,
+    Boolean,
+    JSON,
     Index,
     ForeignKey,
     UniqueConstraint,
     PrimaryKeyConstraint,
 )
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import relationship
 from .base import BaseModel
 from enums import UserStatus
@@ -24,12 +26,7 @@ class Tenant(BaseModel):
         nullable=False,
         server_default=text("'basic'::character varying"),
     )
-    status = Column(
-        String(255),
-        nullable=False,
-        server_default=UserStatus.Unintialized.value,
-    )
-    custom_config = Column(Text, nullable=True)
+    custom_config = Column(JSONB, nullable=True)
 
     tenant_user_joins = relationship(
         "TenantUserJoin",
@@ -60,6 +57,9 @@ class TenantUserJoin(BaseModel):
         UUID, ForeignKey("tenant.id", ondelete="SET NULL"), nullable=False
     )
     user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=False)
+    current = Column(
+        Boolean, nullable=False, server_default="false"
+    )  # 当前用户激活的租户
     role = Column(String(16), nullable=False, server_default="normal")
     invited_by = Column(UUID, nullable=True)
 
