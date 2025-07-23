@@ -17,7 +17,6 @@ class User(BaseModel):
     tenant_user_joins = relationship(
         "TenantUserJoin",
         back_populates="user",
-        passive_deletes=True,
         overlaps="tenants",
     )
 
@@ -26,6 +25,7 @@ class User(BaseModel):
         secondary="tenant_user_join",
         back_populates="users",
         overlaps="tenant_user_joins",
+        cascade="all, delete-orphan",
     )
 
     # 虚拟属性

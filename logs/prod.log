@@ -4711,3 +4711,35 @@ WHERE tenant_user_join.role = %(role_1)s
     "userEmail": "2609753201@qq.com"
 }
 2025-07-23 19:54:51 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-23 21:36:31 | INFO | ✅Zetta Server Start
+2025-07-23 21:36:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 21:36:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 21:36:40 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 21:36:40 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-23 21:36:41 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 21:36:41 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-23 22:35:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:35:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:35:49 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:35:49 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:35:53 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:35:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:37:17 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:37:18 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:37:35 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:37:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:38:30 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:38:30 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:39:51 | INFO | ✅Zetta Server Start
+2025-07-23 22:39:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:39:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:53:11 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:53:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 22:53:42 | INFO | ✅Zetta Server Start
+2025-07-23 22:53:44 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 22:53:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 23:08:36 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 23:08:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-23 23:10:21 | INFO | ✅Zetta Server Start
+2025-07-23 23:10:23 | INFO | [DB]: ✅DB Connection Success
+2025-07-23 23:10:23 | INFO | [Qdrant]: ✅Qdrant Connection Success

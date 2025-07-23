@@ -11,4 +11,4 @@ class ModelProvider(BaseModel):
     api_key = Column(String, nullable=True)  # API KEY
     desc = Column(Text, nullable=True)
 
-    models = relationship("Model", back_populates="provider", passive_deletes=True)
+    models = relationship("Model", back_populates="provider")

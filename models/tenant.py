@@ -31,7 +31,6 @@ class Tenant(BaseModel):
     tenant_user_joins = relationship(
         "TenantUserJoin",
         back_populates="tenant",
-        passive_deletes=True,
         overlaps="users",
     )
 
@@ -54,9 +53,9 @@ class TenantUserJoin(BaseModel):
     )
 
     tenant_id = Column(
-        UUID, ForeignKey("tenant.id", ondelete="SET NULL"), nullable=False
+        UUID, ForeignKey("tenant.id", ondelete="SET NULL"), nullable=True
     )
-    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=False)
+    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=True)
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户
@@ -64,8 +63,12 @@ class TenantUserJoin(BaseModel):
     invited_by = Column(UUID, nullable=True)
 
     tenant = relationship(
-        "Tenant", back_populates="tenant_user_joins", overlaps="users, tenants"
+        "Tenant",
+        back_populates="tenant_user_joins",
+        overlaps="users, tenants",
     )
     user = relationship(
-        "User", back_populates="tenant_user_joins", overlaps="users,tenants"
+        "User",
+        back_populates="tenant_user_joins",
+        overlaps="users,tenants",
     )
