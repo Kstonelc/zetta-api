@@ -1,7 +1,10 @@
-from sqlalchemy import Column, String, Text
+from sqlalchemy import (
+    Column,
+    String,
+    Text,
+)
 from .base import BaseModel
 from sqlalchemy.orm import relationship
-from .model import Model
 
 
 class ModelProvider(BaseModel):
@@ -12,3 +15,16 @@ class ModelProvider(BaseModel):
     desc = Column(Text, nullable=True)
 
     models = relationship("Model", back_populates="provider")
+
+    tenants = relationship(
+        "Tenant",
+        secondary="model_provider_tenant_join",
+        back_populates="model_providers",
+        overlaps="tenant_model_provider_joins",
+    )
+    tenant_model_provider_joins = relationship(
+        "ModelProviderTenantJoin",
+        back_populates="model_provider",
+        cascade="all, delete-orphan",
+        overlaps="tenants,model_providers",
+    )

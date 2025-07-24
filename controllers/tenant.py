@@ -3,9 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi import Request
 from models.db import get_db
 from enums import TenantUserRole
-from models.tenant import TenantUserJoin
-from models.user import User
-from utils.jwt import verify_token
+from models import TenantUserJoin
 from utils.logger import logger
 
 router = APIRouter(prefix="/api/tenant", tags=["Tenant"])

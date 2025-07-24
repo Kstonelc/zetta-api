@@ -4743,3 +4743,507 @@ WHERE tenant_user_join.role = %(role_1)s
 2025-07-23 23:10:21 | INFO | ✅Zetta Server Start
 2025-07-23 23:10:23 | INFO | [DB]: ✅DB Connection Success
 2025-07-23 23:10:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 09:38:10 | INFO | ✅Zetta Server Start
+2025-07-24 09:38:15 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 09:38:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 09:38:36 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 09:38:36 | ERROR | For many-to-many relationship User.tenants, delete-orphan cascade is normally configured only on the "one" side of a one-to-many relationship, and not on the "many" side of a many-to-one or many-to-many relationship.  To force this relationship to allow a particular "Tenant" object to be referenced by only a single "User" object at a time via the User.tenants relationship, which would allow delete-orphan cascade to take place in this direction, set the single_parent=True flag. (Background on this error at: https://sqlalche.me/e/20/bbf0)
+2025-07-24 09:38:36 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 09:41:03 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 09:41:03 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 09:43:17 | INFO | ✅Zetta Server Start
+2025-07-24 09:43:24 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 09:43:24 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 09:43:25 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 09:43:26 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 09:59:48 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 09:59:48 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 09:59:50 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 09:59:50 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 09:59:52 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 09:59:52 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 10:09:04 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 10:09:04 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 10:09:05 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 10:09:05 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 10:09:08 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 10:09:09 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 10:11:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 10:11:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 10:11:39 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 10:11:39 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 10:25:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:25:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:25:43 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:25:43 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:26:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:26:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:26:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:26:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:26:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:26:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:26:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:26:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:27:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:27:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:30:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:30:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:30:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:30:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:37:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:37:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:37:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:37:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:37:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:37:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:42:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:42:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:42:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:42:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:42:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:42:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:45:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:45:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:51:49 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:51:49 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:51:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:51:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:52:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:52:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:52:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:52:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:54:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:54:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 10:54:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 10:54:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 11:02:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 11:02:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 11:02:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 11:02:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 12:57:17 | INFO | ✅Zetta Server Start
+2025-07-24 12:57:44 | INFO | ✅Zetta Server Start
+2025-07-24 12:57:51 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 12:57:51 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 12:57:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 12:57:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 12:57:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 12:57:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:00:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:00:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:01:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:01:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:01:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:01:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:01:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:01:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:01:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:01:49 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:02:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 13:02:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 13:02:03 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 13:02:03 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 13:02:17 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-24 13:02:17 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-24 13:02:18 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-24 13:02:18 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 13:02:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:02:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:02:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:02:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:02:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:02:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:02:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:02:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:03:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:03:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:03:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:03:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:03:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:03:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:03:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:03:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:10:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:10:19 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:10:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:10:19 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:10:44 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 13:10:44 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 13:10:44 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 13:10:44 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 13:11:10 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-24 13:11:10 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-24 13:11:10 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-24 13:11:11 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 13:11:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:11:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 13:11:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 13:11:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:13:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:13:46 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 14:13:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:13:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 14:13:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 14:13:47 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 14:13:47 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 14:16:58 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-24 14:16:58 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-24 14:16:58 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-24 14:16:58 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 14:16:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:16:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:16:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:16:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:18:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:18:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:18:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:18:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:18:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:18:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:18:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:18:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:18:55 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 14:18:55 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 14:18:55 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 14:18:55 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 14:19:04 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-24 14:19:05 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-24 14:19:05 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-24 14:19:05 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 14:19:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:19:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:19:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:19:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:22:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:22:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:28:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:28:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:28:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:28:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:28:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:28:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:28:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:28:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:29:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:29:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:29:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:29:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:29:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:29:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:29:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:29:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:44:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:44:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:44:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:44:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:49:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:49:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:50:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:50:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:51:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:51:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:51:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:51:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:52:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:52:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:52:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:52:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:53:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:53:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:58:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:58:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:58:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:58:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:58:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:58:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 14:59:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 14:59:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:02:52 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:02:52 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:02:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:02:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:03:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:03:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:03:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:03:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:04:43 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:04:43 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:04:44 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:04:44 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:05:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:05:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:05:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:05:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:05:44 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:05:44 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:05:44 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:05:44 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:07:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:07:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:07:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:07:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:09:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:09:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:09:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:09:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:09:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:09:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:09:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:09:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:12:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:12:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:12:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:12:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:16:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:16:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:16:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:16:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:18:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:18:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:18:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:18:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:19:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:19:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:19:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:19:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:26:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:26:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:26:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:26:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:26:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:26:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:26:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:26:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:31:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:31:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:31:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:31:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:33:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:33:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:33:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:33:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:37:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:37:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:37:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:37:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:41:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:41:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:45:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:45:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:45:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:45:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:46:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:46:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:46:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:46:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:46:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:46:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:47:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:47:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:53:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:53:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 15:54:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 15:54:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:09:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:09:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:10:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:10:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:10:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:10:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:28:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:28:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:28:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:28:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:35:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:35:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:35:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:35:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:48:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:48:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:48:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:48:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:50:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:50:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:58:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:58:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:58:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:58:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:59:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:59:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 16:59:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 16:59:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:35 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-24 17:37:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:35 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 17:37:35 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 17:37:35 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 17:37:35 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 17:37:54 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-24 17:37:54 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-24 17:37:54 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-24 17:37:54 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 17:37:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:37:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:37:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:38:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:38:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:45:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:45:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:45:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:45:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:45:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:45:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:45:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:45:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-24 17:45:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 17:45:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-24 18:08:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:08:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:09:13 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:09:13 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:43:30 | INFO | ✅Zetta Server Start
+2025-07-24 18:43:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:43:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:43:39 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 18:43:39 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 18:43:39 | ERROR | When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:43:39 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Tenant(tenant)]'. Original exception was: When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:43:39 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 18:43:39 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 18:43:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 18:43:47 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Tenant(tenant)]'. Original exception was: When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:43:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-24 18:43:47 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Tenant(tenant)]'. Original exception was: When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:43:47 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 18:43:47 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-24 18:47:00 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:47:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:47:22 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 18:47:22 | ERROR | When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:47:22 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 18:47:40 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:47:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:49:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:49:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:52:10 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:52:10 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:52:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 18:52:16 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 18:52:22 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 18:52:22 | ERROR | When initializing mapper Mapper[Tenant(tenant)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.tenant.Tenant'> class after both dependent classes have been defined.
+2025-07-24 18:52:22 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:01:00 | INFO | ✅Zetta Server Start
+2025-07-24 19:01:05 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:01:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:01:09 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:01:09 | ERROR | reverse_property 'model_providers' on relationship ModelProviderTenantJoin.tenant references relationship Tenant.model_providers, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-24 19:01:09 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:05:02 | INFO | ✅Zetta Server Start
+2025-07-24 19:05:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:05:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:05:10 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:05:10 | ERROR | reverse_property 'model_providers' on relationship ModelProviderTenantJoin.tenant references relationship Tenant.model_providers, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-24 19:05:10 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:09:37 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:09:37 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:10:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:10:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:10:38 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:10:38 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:11:17 | INFO | ✅Zetta Server Start
+2025-07-24 19:11:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:11:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:11:26 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:11:26 | ERROR | reverse_property 'model_providers' on relationship ModelProviderTenantJoin.tenant references relationship Tenant.model_providers, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-24 19:11:26 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:15:49 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:15:49 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:16:50 | INFO | ✅Zetta Server Start
+2025-07-24 19:16:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:16:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:17:00 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:17:00 | ERROR | Mapper 'Mapper[ModelProvider(model_provider)]' has no property 'models'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-24 19:17:00 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:18:53 | INFO | ✅Zetta Server Start
+2025-07-24 19:18:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:18:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:19:01 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:19:01 | ERROR | When initializing mapper Mapper[ModelProvider(model_provider)], expression 'tenant_model_provider' failed to locate a name ("name 'tenant_model_provider' is not defined"). If this is a class name, consider adding this relationship() to the <class 'models.model_provider.ModelProvider'> class after both dependent classes have been defined.
+2025-07-24 19:19:01 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:24:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:24:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:24:48 | INFO | ✅Zetta Server Start
+2025-07-24 19:24:52 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:24:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:24:56 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-07-24 19:24:56 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-24 19:26:21 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:26:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:27:14 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:27:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-24 19:30:29 | INFO | ✅Zetta Server Start
+2025-07-24 19:30:33 | INFO | [DB]: ✅DB Connection Success
+2025-07-24 19:30:33 | INFO | [Qdrant]: ✅Qdrant Connection Success

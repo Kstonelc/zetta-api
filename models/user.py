@@ -1,7 +1,6 @@
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 from .base import BaseModel
-from .tenant import Tenant, TenantUserJoin
 
 
 class User(BaseModel):
@@ -17,6 +16,7 @@ class User(BaseModel):
     tenant_user_joins = relationship(
         "TenantUserJoin",
         back_populates="user",
+        cascade="all, delete-orphan",
         overlaps="tenants",
     )
 
@@ -25,7 +25,6 @@ class User(BaseModel):
         secondary="tenant_user_join",
         back_populates="users",
         overlaps="tenant_user_joins",
-        cascade="all, delete-orphan",
     )
 
     # 虚拟属性

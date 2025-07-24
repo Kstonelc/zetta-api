@@ -29,9 +29,9 @@ async def find_user(body: UserQueryRequest, db: Session = Depends(get_db)):
         if not user:
             response = {"ok": False, "message": "用户不存在"}
             return
-        user_dict = jsonable_encoder(user)
-        user_dict["current_tenant"] = jsonable_encoder(user.current_tenant)
-        response = {"ok": True, "data": user_dict}
+        user_data = jsonable_encoder(user)
+        user_data["current_tenant"] = jsonable_encoder(user.current_tenant)
+        response = {"ok": True, "data": user_data}
     except Exception as e:
         response = {"ok": False, "message": "获取用户信息失败"}
         logger.error(e)
