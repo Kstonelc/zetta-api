@@ -5,6 +5,7 @@ from sqlalchemy import (
     text,
 )
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.orm import relationship
 from .base import BaseModel
 
@@ -35,13 +36,7 @@ class Tenant(BaseModel):
         overlaps="tenant_user_joins",
     )
 
-    tenant_model_provider_joins = relationship(
-        "ModelProviderTenantJoin", back_populates="tenant", cascade="all, delete-orphan"
+    model_provider_links = relationship(
+        "ModelProviderTenantJoin", back_populates="tenant"
     )
-
-    model_providers = relationship(
-        "ModelProvider",
-        secondary="model_provider_tenant_join",
-        back_populates="tenants",
-        overlaps="tenant_model_provider_joins",
-    )
+    model_providers = association_proxy("model_provider_links", "model_provider")

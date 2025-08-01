@@ -4,6 +4,7 @@ from sqlalchemy import (
     Text,
 )
 from .base import BaseModel
+from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.orm import relationship
 
 
@@ -16,15 +17,7 @@ class ModelProvider(BaseModel):
 
     models = relationship("Model", back_populates="provider")
 
-    tenants = relationship(
-        "Tenant",
-        secondary="model_provider_tenant_join",
-        back_populates="model_providers",
-        overlaps="tenant_model_provider_joins",
+    tenant_links = relationship(
+        "ModelProviderTenantJoin", back_populates="model_provider"
     )
-    tenant_model_provider_joins = relationship(
-        "ModelProviderTenantJoin",
-        back_populates="model_provider",
-        cascade="all, delete-orphan",
-        overlaps="tenants,model_providers",
-    )
+    tenants = association_proxy("tenant_links", "tenant")

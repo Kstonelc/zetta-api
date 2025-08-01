@@ -13,7 +13,3 @@ class Wiki(BaseModel):
     sim_thresh = Column(Float, nullable=False)  # 相似度阈值
     user_id = Column(Integer, ForeignKey("users.id"))  # 创建者ID
     desc = Column(String, nullable=True)
-
-    # embedding = relationship("Embedding")
-    # rerank = relationship("Rerank")
-    # user = relationship("User")

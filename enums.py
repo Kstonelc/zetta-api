@@ -31,3 +31,13 @@ class TenantUserRole(str, Enum):
     Editor = "editor"
     Normal = "normal"
     DatasetOperator = "datasetOperator"
+
+
+class WikiType(Enum):
+    # 前端多语言Key
+    Structured = (1 << 0, "结构化")
+    Unstructured = (1 << 1, "非结构化")
+
+    def __init__(self, value, text):
+        self._value_ = value
+        self.text = text

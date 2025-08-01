@@ -5247,3 +5247,618 @@ WHERE model_provider.active IS true]
 2025-07-24 19:30:29 | INFO | ✅Zetta Server Start
 2025-07-24 19:30:33 | INFO | [DB]: ✅DB Connection Success
 2025-07-24 19:30:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-25 09:38:51 | INFO | ✅Zetta Server Start
+2025-07-25 09:38:56 | INFO | [DB]: ✅DB Connection Success
+2025-07-25 09:38:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-25 09:38:56 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 09:38:56 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 09:38:56 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 09:38:56 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 09:38:59 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 09:38:59 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 09:38:59 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 09:38:59 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 09:40:55 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-25 09:40:55 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 09:40:55 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-25 09:40:55 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-25 09:40:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:40:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:40:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:40:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:40:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:40:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:42:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:42:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:42:49 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:42:49 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:46:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:46:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:46:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:46:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:52:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:52:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:52:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:52:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:52:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:52:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:54:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:54:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:55:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:55:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:55:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:55:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:56:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:56:29 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:56:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:56:29 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:56:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:56:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:37 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:58:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:58:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 09:59:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 09:59:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:02:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 10:02:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:02:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 10:02:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:04:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 10:04:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:04:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 10:04:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:04:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 10:04:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 10:17:18 | INFO | ➡️POST /knee/app/check-app-version Request Body:{"appVersion":"1.0.0.4","appLanguage":"zh-CN","accessToken":"ee1ef16d-d8d7-4269-95a0-74441333a138"}
+2025-07-25 10:17:18 | INFO | ⬅️POST /knee/app/check-app-version -> 404
+2025-07-25 11:25:47 | INFO | ✅Zetta Server Start
+2025-07-25 11:26:05 | INFO | ✅Zetta Server Start
+2025-07-25 11:26:09 | INFO | [DB]: ✅DB Connection Success
+2025-07-25 11:26:09 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-25 11:26:44 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 11:26:44 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 11:26:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 11:26:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 11:27:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 11:27:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 13:59:30 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 13:59:30 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-25 13:59:30 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 13:59:30 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 13:59:30 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 13:59:31 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 13:59:31 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 13:59:45 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-25 13:59:45 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 13:59:45 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-25 13:59:46 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-25 13:59:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 13:59:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 13:59:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 13:59:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 13:59:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 13:59:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 14:02:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 14:02:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:45:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:45:06 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-25 15:45:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:45:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 15:45:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 15:45:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 15:45:07 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 15:45:33 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-25 15:45:33 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 15:45:33 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-25 15:45:33 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-25 15:45:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:45:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:45:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:45:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:45:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:45:35 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:54:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:54:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:54:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:54:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 15:55:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 15:55:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:01:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:01:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:01:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:01:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:03:42 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:03:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:03:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:03:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:49:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:49:03 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-25 16:49:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:49:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 16:49:03 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 16:49:04 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 16:49:04 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 16:49:37 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-25 16:49:37 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 16:49:37 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-25 16:49:37 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-25 16:49:37 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:49:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:49:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:49:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:49:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:49:40 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:56:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:56:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 16:56:30 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 16:56:30 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:09:43 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:09:43 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-25 18:09:43 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:09:43 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 18:09:43 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 18:09:44 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 18:09:44 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 18:09:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 18:09:47 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-25 18:09:48 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 18:09:48 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-25 18:10:12 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Liuchang15050"}
+2025-07-25 18:10:12 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 18:10:17 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-07-25 18:10:17 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-07-25 18:10:17 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-07-25 18:10:17 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-07-25 18:10:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:10:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:10:21 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:21 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:10:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:10:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:10:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:10:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:12:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:12:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:12:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:12:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:12:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:12:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:12:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:12:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:16:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:16:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:16:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:16:45 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:16:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:16:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:17:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:17:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:17:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:17:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:18:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:18:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:22:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:22:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:22:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:22:40 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:23:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:23:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:23:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:23:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:23:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:23:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-25 18:23:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-25 18:23:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 09:50:03 | INFO | ✅Zetta Server Start
+2025-07-28 09:50:07 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 09:50:07 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 09:50:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 09:50:07 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 09:50:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 09:50:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 09:50:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 09:50:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 09:50:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 09:50:13 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 09:51:58 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 09:51:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 09:52:01 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 09:52:01 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 09:52:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 09:52:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 10:02:56 | INFO | ✅Zetta Server Start
+2025-07-28 10:02:59 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:02:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:03:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 10:03:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-07-28 10:03:08 | ERROR | reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:08 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 10:03:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-07-28 10:03:08 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:03:08 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:03:08 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:08 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:03:08 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:03:57 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:03:57 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:57 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:03:57 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:03:57 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:03:57 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:04:01 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:04:01 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:04:01 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:04:01 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:04:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:04:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:04:06 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:04:06 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:04:06 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:04:06 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:04:06 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:04:06 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:05:01 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:05:01 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:05:01 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:05:01 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: reverse_property 'tenants' on relationship ModelProviderTenantJoin.model_provider references relationship ModelProvider.tenants, which does not reference mapper Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]
+2025-07-28 10:05:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:05:01 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:06:26 | INFO | ✅Zetta Server Start
+2025-07-28 10:06:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:06:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:06:33 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:06:33 | ERROR | Mapper 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]' has no property 'tenant'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-28 10:06:33 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:06:33 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Tenant(tenant)]'. Original exception was: Mapper 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]' has no property 'tenant'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-28 10:06:33 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:06:33 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:07:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:07:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:07:50 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:07:50 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:08:16 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:08:16 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:08:29 | INFO | ✅Zetta Server Start
+2025-07-28 10:08:32 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 10:08:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 10:08:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:08:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 10:08:38 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 10:08:38 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:40:29 | INFO | ✅Zetta Server Start
+2025-07-28 13:40:34 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 13:40:34 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 13:40:58 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:40:58 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:40:58 | ERROR | Mapper 'Mapper[Tenant(tenant)]' has no property 'model_provider_links'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-28 13:40:58 | ERROR | One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ModelProviderTenantJoin(model_provider_tenant_join)]'. Original exception was: Mapper 'Mapper[Tenant(tenant)]' has no property 'model_provider_links'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-07-28 13:40:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:40:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:42:12 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 13:42:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 13:42:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:42:17 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:42:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:42:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:42:25 | INFO | ✅Zetta Server Start
+2025-07-28 13:42:29 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 13:42:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-07-28 13:42:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:42:38 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-07-28 13:42:38 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:42:38 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-07-28 13:43:01 | INFO | [DB]: ✅DB Connection Success
+2025-07-28 13:43:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 11:41:14 | INFO | ✅Zetta Server Start
+2025-08-01 11:41:21 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 11:41:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 11:41:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:41:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:41:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 11:41:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 11:42:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:42:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 11:42:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:42:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 11:44:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:44:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 11:50:27 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 11:50:27 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:05:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:05:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:05:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 401
+2025-08-01 13:05:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 401
+2025-08-01 13:05:18 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 13:05:18 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 13:05:18 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT tenant_user_join.tenant_id AS tenant_user_join_tenant_id, tenant_user_join.user_id AS tenant_user_join_user_id, tenant_user_join.current AS tenant_user_join_current, tenant_user_join.role AS tenant_user_join_role, tenant_user_join.invited_by AS tenant_user_join_invited_by, tenant_user_join.id AS tenant_user_join_id, tenant_user_join.active AS tenant_user_join_active, tenant_user_join.created_at AS tenant_user_join_created_at, tenant_user_join.updated_at AS tenant_user_join_updated_at 
+FROM tenant_user_join 
+WHERE tenant_user_join.role = %(role_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'role_1': 'admin', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 13:05:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 13:05:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 13:05:24 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 13:05:24 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 13:05:24 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 13:05:24 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 13:05:47 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-01 13:05:47 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-01 13:05:47 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-08-01 13:05:47 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-08-01 13:05:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:05:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:05:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:05:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:05:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:05:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:07:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:07:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:07:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:07:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:07:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:07:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:07:20 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:07:20 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:29:25 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:29:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:29:46 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:29:46 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:31:17 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:31:17 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:31:23 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:31:23 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:32:33 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:32:33 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:32:54 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:32:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:33:02 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:33:02 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:33:19 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:33:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:34:10 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:34:10 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:34:40 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:34:40 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:35:48 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 13:35:48 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 13:35:59 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:35:59 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:48 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:48 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:41:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:41:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:44:51 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:44:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:49:01 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:49:01 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 13:49:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 13:49:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 14:33:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 14:33:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 14:33:23 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 14:33:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 14:33:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 14:33:23 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 14:33:23 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 14:33:23 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 14:33:23 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 14:36:50 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 14:36:50 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 14:36:50 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 14:36:50 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 14:36:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 14:36:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 14:36:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 14:36:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:49:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:49:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:49:57 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 15:49:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:49:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:49:57 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 15:49:57 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 15:49:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 15:49:58 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 15:50:14 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 15:50:14 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 15:50:14 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 15:50:14 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 15:50:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:50:17 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:50:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:50:17 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:50:21 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:50:21 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:51:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:51:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:51:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:51:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:51:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:51:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:52:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:52:28 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:52:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:52:28 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:52:31 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:52:31 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 15:55:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 15:55:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:01:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:01:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:06:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:06:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:10:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:10:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:57:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:57:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:57:18 | ERROR | (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT model_provider.name AS model_provider_name, model_provider.api_key AS model_provider_api_key, model_provider."desc" AS model_provider_desc, model_provider.id AS model_provider_id, model_provider.active AS model_provider_active, model_provider.created_at AS model_provider_created_at, model_provider.updated_at AS model_provider_updated_at, model_1.name AS model_1_name, model_1.display_name AS model_1_display_name, model_1.types AS model_1_types, model_1.model_provider_id AS model_1_model_provider_id, model_1.max_context_tokens AS model_1_max_context_tokens, model_1.token_limit AS model_1_token_limit, model_1.id AS model_1_id, model_1.active AS model_1_active, model_1.created_at AS model_1_created_at, model_1.updated_at AS model_1_updated_at 
+FROM model_provider LEFT OUTER JOIN model AS model_1 ON model_provider.id = model_1.model_provider_id 
+WHERE model_provider.active IS true]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 16:57:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:57:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:57:18 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 16:57:18 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 16:57:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 16:57:18 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 16:57:29 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-01 16:57:30 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-01 16:57:30 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-08-01 16:57:30 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-08-01 16:57:30 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:57:30 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:57:30 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:57:30 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 16:57:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 16:57:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:01:56 | INFO | ✅Zetta Server Start
+2025-08-01 17:02:00 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 17:02:00 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 17:17:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:17:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:17:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:17:32 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:17:33 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:17:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:29:46 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:29:47 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:29:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:29:47 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:29:49 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 17:29:49 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 17:30:35 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 17:30:35 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 17:30:53 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 17:30:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 17:49:12 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 17:49:12 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:11:29 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:11:29 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:11:53 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:11:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:12:21 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:12:21 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:13:57 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:13:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:17:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 18:17:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-01 18:17:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-01 18:17:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 401
+2025-08-01 18:17:11 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 18:17:11 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-01 18:17:11 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 18:17:11 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-01 18:22:14 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:22:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:22:32 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:22:32 | ERROR | 'Request' object has no attribute 'tenantId'
+2025-08-01 18:22:32 | INFO | ⬅️POST /api/tenant/find-users -> 200
+2025-08-01 18:23:11 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:23:11 | ERROR | 'Request' object has no attribute 'tenantId'
+2025-08-01 18:23:11 | INFO | ⬅️POST /api/tenant/find-users -> 200
+2025-08-01 18:23:41 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:23:41 | ERROR | 'Request' object has no attribute 'tenantId'
+2025-08-01 18:23:41 | INFO | ⬅️POST /api/tenant/find-users -> 200
+2025-08-01 18:23:47 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:23:47 | ERROR | 'Request' object has no attribute 'tenantId'
+2025-08-01 18:23:47 | INFO | ⬅️POST /api/tenant/find-users -> 200
+2025-08-01 18:24:59 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:24:59 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:25:47 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:25:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:25:47 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:25:47 | INFO | ⬅️POST /api/tenant/find-users -> 422
+2025-08-01 18:26:09 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:26:09 | INFO | ⬅️POST /api/tenant/find-users -> 422
+2025-08-01 18:28:36 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:28:36 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:31:53 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:31:53 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:35:32 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:35:32 | INFO | ⬅️POST /api/tenant/find-users -> 200
+2025-08-01 18:36:19 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:36:19 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:37:01 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:37:01 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:37:08 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:37:08 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:37:14 | INFO | [DB]: ✅DB Connection Success
+2025-08-01 18:37:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-01 18:37:18 | INFO | ➡️POST /api/tenant/find-users Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-01 18:37:18 | INFO | ⬅️POST /api/tenant/find-users -> 200

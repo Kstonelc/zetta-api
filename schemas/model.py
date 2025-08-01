@@ -1,10 +1,11 @@
+from uuid import UUID
 from pydantic import BaseModel
 from typing import Optional, List
 from enums import ModelProviderUpdateType
 
 
 class ModelProviderQueryRequest(BaseModel):
-    modelProviderId: Optional[int] = None
+    modelProviderId: Optional[UUID] = None
 
 
 class ModelProviderAddRequest(BaseModel):
@@ -15,21 +16,21 @@ class ModelProviderAddRequest(BaseModel):
 class ModelProviderUpdateRequest(BaseModel):
     modelProviderUpdateType: ModelProviderUpdateType
     modelProviderApiKey: Optional[str] = None
-    modelProviderId: int
+    modelProviderId: UUID
 
 
 class ModelAddRequest(BaseModel):
     modelName: str
     modelDisplayName: Optional[str] = None
-    modelProviderId: int
+    modelProviderId: UUID
     modelMaxContextTokens: Optional[int] = None
     modelTokenLimit: Optional[int] = None
 
 
 class ModelQueryRequest(BaseModel):
-    modelProviderId: Optional[int] = None
+    modelProviderId: Optional[UUID] = None
 
 
 class ModelUpdateRequest(BaseModel):
-    modelId: int
+    modelId: UUID
     active: Optional[bool] = None

@@ -9,14 +9,16 @@ from fastapi.encoders import jsonable_encoder
 from models.db import get_db
 from models.user import User
 from utils.common import hash_password, verify_password
-from utils.jwt import create_access_token
+from utils.jwt import create_access_token, verify_token
 from utils.logger import logger
 
 router = APIRouter(prefix="/api/user", tags=["User"])
 
 
 @router.post("/find-user")
-async def find_user(body: UserQueryRequest, db: Session = Depends(get_db)):
+async def find_user(
+    body: UserQueryRequest, db: Session = Depends(get_db), token=Depends(verify_token)
+):
     response = {}
     try:
         user_email = body.userEmail if body.userEmail else None

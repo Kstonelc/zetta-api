@@ -34,16 +34,8 @@ class ModelProviderTenantJoin(BaseModel):
         nullable=True,
     )
 
-    tenant = relationship(
-        "Tenant",
-        back_populates="tenant_model_provider_joins",
-        overlaps="model_providers",
-    )
-    model_provider = relationship(
-        "ModelProvider",
-        back_populates="tenant_model_provider_joins",
-        overlaps="tenants",
-    )
+    tenant = relationship("Tenant", back_populates="model_provider_links")
+    model_provider = relationship("ModelProvider", back_populates="tenant_links")
 
 
 class TenantUserJoin(BaseModel):
