@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 from enums import QWModelType
-from llm.qwen import ChatQW
+from llm.qwen import QWProvider
 from utils.vector_db import vector_client
 
 router = APIRouter(prefix="/ai", tags=["AI"])
@@ -33,7 +33,7 @@ async def demo1():
 
 @router.post("/demo2")
 async def demo2():
-    llm = ChatQW(model_name=QWModelType.qw_turbo)
+    llm = QWProvider(model_name=QWModelType.qw_turbo)
     for chunk in llm.stream("中国的首都是啥? 请用中文回答"):
         print(chunk, end="", flush=True)
     return {"ok": True}

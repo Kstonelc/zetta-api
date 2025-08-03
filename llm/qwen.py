@@ -1,16 +1,20 @@
 from typing import Any, Optional, List, Iterator, Tuple
 
+from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain_core.language_models.llms import LLM
 from langchain_community.llms.tongyi import Tongyi
 from langchain_core.outputs import GenerationChunk
+from langchain_community.embeddings.dashscope import DashScopeEmbeddings
 from marshmallow.fields import Boolean
+import dashscope
+from qdrant_client.http import model
 
 from config import settings
 from enums import QWModelType
 
 
-class ChatQW(LLM):
+class QWProvider(LLM):
     client: Tongyi = None
     model_name: str = ""
 
@@ -63,3 +67,12 @@ class ChatQW(LLM):
             return True
         except Exception as e:
             return False
+
+    # 向量化
+    def get_embedding(
+        self, model_name: str = "text-embedding-v3"
+    ) -> DashScopeEmbeddings:
+        return DashScopeEmbeddings(
+            model=model_name,
+            dashscope_api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
+        )

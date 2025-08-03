@@ -7,9 +7,9 @@ class QWModelType(str, Enum):
 
 
 class ModelType(str, Enum):
-    TextEmbedding = "TextEmbedding"
-    TextGeneration = "TextGeneration"
-    ReRank = "ReRank"
+    TextEmbedding = "textEmbedding"
+    TextGeneration = "textGeneration"
+    ReRank = "reRank"
 
 
 class ModelProviderUpdateType(str, Enum):
@@ -19,10 +19,8 @@ class ModelProviderUpdateType(str, Enum):
 
 class UserStatus(str, Enum):
     Pending = "pending"
-    Unintialized = "unintialized"
     Active = "active"
     Banned = "banned"
-    Closed = "closed"
 
 
 class TenantUserRole(str, Enum):
@@ -37,6 +35,16 @@ class WikiType(Enum):
     # 前端多语言Key
     Structured = (1 << 0, "结构化")
     Unstructured = (1 << 1, "非结构化")
+
+    def __init__(self, value, text):
+        self._value_ = value
+        self.text = text
+
+
+class DocType(Enum):
+    Md = (1 << 0, "md")
+    Doc = (1 << 1, "doc")
+    Docx = (1 << 2, "docx")
 
     def __init__(self, value, text):
         self._value_ = value

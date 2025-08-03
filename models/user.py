@@ -34,3 +34,9 @@ class User(BaseModel):
             if join.current and join.active:
                 return join.tenant
         return None
+
+    def get_role(self, tenant_id):
+        for join in self.tenant_user_joins:
+            if join.tenant_id == tenant_id:
+                return join.role
+        return None

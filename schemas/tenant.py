@@ -4,4 +4,9 @@ from typing import Optional
 
 
 class TenantQueryRequest(BaseModel):
-    tenantId: Optional[UUID] = None
+    tenantId: UUID
+
+
+class TenantUpdateRequest(BaseModel):
+    tenantId: UUID
+    tenantName: Optional[str] = None
