@@ -23,12 +23,10 @@ class UserStatus(str, Enum):
     Banned = "banned"
 
 
-class TenantUserRole(str, Enum):
-    Owner = "owner"
+class UserRole(str, Enum):
     Admin = "admin"
     Editor = "editor"
     Normal = "normal"
-    DatasetOperator = "datasetOperator"
 
 
 class WikiType(Enum):

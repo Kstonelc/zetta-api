@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, selectinload, with_loader_criteria
 from fastapi import Request
-from enums import TenantUserRole
+from enums import UserRole
 from models import TenantUserJoin, Tenant, User, get_db
 from schemas.tenant import TenantQueryRequest, TenantUpdateRequest
 from utils.jwt import verify_token
@@ -17,7 +17,7 @@ async def find_admin(body: Request, db: Session = Depends(get_db)):
     try:
         res = (
             db.query(TenantUserJoin)
-            .filter(TenantUserJoin.role == TenantUserRole.Admin.value)
+            .filter(TenantUserJoin.role == UserRole.Admin.value)
             .first()
         )
         if not res:
