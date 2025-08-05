@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY, HTTP_401_UNAUTHORIZED
 from contextlib import asynccontextmanager
 import uvicorn
-from controllers import test, user, model, model_provider, tenant
+from controllers import test, user, model, model_provider, tenant, wiki
 from middlewares import RequestLoggingMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from utils.vector_db import vector_client
@@ -25,18 +25,18 @@ async def lifespan(app: FastAPI):
 def check_db_connection():
     try:
         engine.connect()
-        logger.info("[DB]: ✅DB Connection Success")
+        logger.info("[DB]: ✅ DB Connection Success")
     except Exception as e:
-        logger.error(f"[DB]: ❌DB Connection Failed: {e}")
+        logger.error(f"[DB]: ❌ DB Connection Failed: {e}")
         raise RuntimeError("DB Connect Failed") from e
 
 
 def check_vectordb_connection():
     try:
         vector_client.ping()
-        logger.info("[Qdrant]: ✅Qdrant Connection Success")
+        logger.info("[Qdrant]: ✅ Qdrant Connection Success")
     except Exception as e:
-        logger.error(f"[Qdrant]: ❌Qdrant Connection Failed: {e}")
+        logger.error(f"[Qdrant]: ❌ Qdrant Connection Failed: {e}")
         raise RuntimeError("Qdrant Connect Failed") from e
 
 
@@ -59,6 +59,7 @@ app.include_router(test.router)
 app.include_router(model.router)
 app.include_router(model_provider.router)
 app.include_router(tenant.router)
+app.include_router(wiki.router)
 
 
 # 参数校验处理
@@ -81,7 +82,7 @@ async def auth_token_exception_handler(request: Request, exc: AuthTokenException
 
 
 if __name__ == "__main__":
-    logger.info("✅Zetta Server Start")
+    logger.info("✅ Zetta Server Start")
     uvicorn.run(
         "main:app",
         host="0.0.0.0",

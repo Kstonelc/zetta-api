@@ -6957,3 +6957,487 @@ WHERE model_provider.active IS true]
 2025-08-04 18:46:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
 2025-08-04 18:46:23 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
 2025-08-04 18:46:23 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-04 18:48:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-04 18:48:57 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-04 18:48:58 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-04 18:48:59 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-04 18:48:59 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-04 18:48:59 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-04 18:49:00 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-04 18:49:00 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-04 18:49:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-04 18:49:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-04 18:49:03 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-04 18:49:03 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-05 12:45:28 | INFO | ✅Zetta Server Start
+2025-08-05 12:45:44 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:45:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:50:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 12:50:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 12:50:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 12:50:51 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 12:50:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 12:50:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 12:50:54 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-05 12:50:54 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-05 12:50:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 12:50:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 12:52:32 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:52:32 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:53:57 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:53:57 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:54:14 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:54:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:54:14 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:54:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:54:25 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:54:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:54:26 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:54:26 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:54:52 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:54:52 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:55:13 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:55:13 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:55:14 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:55:14 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:55:45 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:55:45 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:55:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:55:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:56:11 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:56:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:56:11 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:56:11 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:57:20 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:57:20 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:57:20 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:57:20 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:57:28 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:57:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 12:57:28 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 12:57:28 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:14:19 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-05 15:14:20 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-05 15:14:28 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-05 15:14:28 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-05 15:22:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 15:22:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 15:22:54 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 15:22:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 15:23:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 15:23:55 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 15:23:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 15:23:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 15:30:56 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:30:56 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:32:22 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": 5
+}
+2025-08-05 15:32:22 | INFO | ⬅️POST /api/model-provider/find-models -> 422
+2025-08-05 15:32:46 | INFO | ✅Zetta Server Start
+2025-08-05 15:32:54 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:32:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:33:01 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": 5
+}
+2025-08-05 15:33:01 | INFO | ⬅️POST /api/model-provider/find-models -> 422
+2025-08-05 15:34:32 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": "291e3443-cde8-48e7-acc9-6666c5ab5a4f"
+}
+2025-08-05 15:34:32 | INFO | ⬅️POST /api/model-provider/find-models -> 200
+2025-08-05 15:34:38 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": "291e3443-cde8-48e7-acc9-6666c5ab5a4f"
+}
+2025-08-05 15:34:39 | INFO | ⬅️POST /api/model-provider/find-models -> 200
+2025-08-05 15:34:41 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": "291e3443-cde8-48e7-acc9-6666c5ab5a4f"
+}
+2025-08-05 15:34:41 | INFO | ⬅️POST /api/model-provider/find-models -> 200
+2025-08-05 15:34:43 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": "291e3443-cde8-48e7-acc9-6666c5ab5a4f"
+}
+2025-08-05 15:34:43 | INFO | ⬅️POST /api/model-provider/find-models -> 200
+2025-08-05 15:34:44 | INFO | ➡️POST /api/model-provider/find-models Request Body:{
+    "modelProviderId": "291e3443-cde8-48e7-acc9-6666c5ab5a4f"
+}
+2025-08-05 15:34:44 | INFO | ⬅️POST /api/model-provider/find-models -> 200
+2025-08-05 15:36:25 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:36:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:36:25 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:36:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:36:54 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:36:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:37:44 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:37:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:37:45 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:37:45 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:39:54 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:39:54 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:45:44 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:45:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:45:44 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:45:44 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:46:05 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:46:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:46:05 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:46:05 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:46:48 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": 1
+}
+2025-08-05 15:46:48 | INFO | ⬅️POST /api/model/find-models -> 422
+2025-08-05 15:47:25 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:47:25 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:47:42 | INFO | ✅Zetta Server Start
+2025-08-05 15:47:47 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:47:47 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:48:08 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:48:08 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:48:08 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:48:19 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:48:19 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:48:19 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:49:15 | INFO | [DB]: ✅DB Connection Success
+2025-08-05 15:49:15 | INFO | [Qdrant]: ✅Qdrant Connection Success
+2025-08-05 15:51:45 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 15:51:45 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 15:51:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 15:51:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 15:51:45 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:51:45 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:51:45 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:51:45 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:51:45 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:51:45 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:54:24 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:54:24 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:54:24 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:54:26 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:54:26 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:54:26 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:54:54 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 15:54:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 15:54:55 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 15:54:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 15:55:02 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:55:02 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:55:02 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:55:37 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 15:55:37 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 15:55:37 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 15:59:28 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 15:59:28 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:00:31 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:00:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:00:31 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:00:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:00:31 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:00:31 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:00:31 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 16:00:31 | ERROR | type object 'Model' has no attribute 'type'
+2025-08-05 16:00:31 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:00:31 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:00:48 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:00:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:00:49 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:00:49 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:02:18 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:02:18 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:02:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:02:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:02:31 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:02:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:02:31 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:02:31 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:02:31 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:02:33 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:02:34 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:02:34 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:02:46 | INFO | ✅ Zetta Server Start
+2025-08-05 16:02:52 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:02:52 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:02:55 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:02:55 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:02:55 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:03:32 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:03:32 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:03:33 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:03:33 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:03:35 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:03:35 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:09:20 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:09:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:09:20 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:09:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:09:31 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:09:31 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:09:31 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:09:55 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:09:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:09:55 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:09:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:12:36 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:12:36 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:12:36 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:13:27 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:13:27 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:13:27 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:14:33 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:14:33 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:14:52 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:17:56 | INFO | ✅ Zetta Server Start
+2025-08-05 16:18:02 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:18:02 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:18:07 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:18:07 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:18:07 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:25:17 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:25:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:25:26 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:25:26 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:25:26 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:25:26 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:25:29 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:25:29 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:25:29 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:26:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:26:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:26:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:26:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:26:02 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:26:02 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:26:02 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:26:17 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:26:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:27:07 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:27:07 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:27:07 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:27:28 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:27:28 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:27:28 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:27:28 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:33:59 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:33:59 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:33:59 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:33:59 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:36:46 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:36:46 | ERROR | (builtins.TypeError) Not a boolean value: <ModelType.TextEmbedding: 'textEmbedding'>
+[SQL: SELECT model.name AS model_name, model.display_name AS model_display_name, model.types AS model_types, model.model_provider_id AS model_model_provider_id, model.max_context_tokens AS model_max_context_tokens, model.token_limit AS model_token_limit, model.id AS model_id, model.active AS model_active, model.created_at AS model_created_at, model.updated_at AS model_updated_at 
+FROM model 
+WHERE model.active IS true AND %(param_1)s = ANY (model.types)]
+[parameters: [{}]]
+2025-08-05 16:36:46 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:38:08 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:38:08 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:38:08 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:38:08 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:38:15 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:38:15 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:38:17 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 16:38:17 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 16:38:31 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:38:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 16:38:40 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 16:38:40 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 17:35:06 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 17:35:06 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:36:45 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 17:36:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 17:36:45 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 17:36:45 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 17:36:45 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:36:45 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 17:36:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 17:36:46 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:36:46 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 17:36:46 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 17:36:46 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:36:46 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:37:34 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 17:37:34 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 17:39:48 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 17:39:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 17:39:51 | INFO | ➡️POST /api/model/find-models Request Body:{
+   "modelType": "textEmbedding"
+}
+2025-08-05 17:39:51 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:04:11 | INFO | ✅ Zetta Server Start
+2025-08-05 18:04:17 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 18:04:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 18:04:23 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-05 18:04:23 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-05 18:04:23 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-05 18:04:23 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-05 18:04:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:04:25 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:04:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:04:25 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:04:27 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:04:27 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:04:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:04:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:04:27 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:04:27 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:04:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:04:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:04:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:04:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:05:01 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-05 18:05:01 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-05 18:10:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:10:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:10:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:10:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:10:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:10:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:10:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:10:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:10:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:10:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:14:51 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"soupbun","wikiDesc":"hahahhaha","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiDataType":1,"wikiSimThresh":0.6}
+2025-08-05 18:14:51 | INFO | ⬅️POST /api/wiki/create-wiki -> 422
+2025-08-05 18:15:50 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 18:15:50 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 18:16:21 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 18:16:21 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 18:17:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:17:11 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:17:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:17:11 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:17:11 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:17:11 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:19:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:19:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:19:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:19:41 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:21:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:21:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:21:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:21:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:21:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:21:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:21:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:21:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:21:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:21:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:21:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:21:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:22:13 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"test","wikiDesc":"test","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiType":1,"wikiSimThresh":0.85}
+2025-08-05 18:22:13 | INFO | ⬅️POST /api/wiki/create-wiki -> 422
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-05 18:35:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:35:26 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:35:26 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-05 18:35:26 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:35:26 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-05 18:35:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:35:27 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-05 18:35:55 | INFO | [DB]: ✅ DB Connection Success
+2025-08-05 18:35:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-05 18:35:55 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"test","wikiDesc":"test","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiType":1,"wikiSimThresh":0.85}
+2025-08-05 18:35:56 | ERROR | (psycopg2.errors.UndefinedTable) relation "wiki" does not exist
+LINE 2: FROM wiki 
+             ^
+
+[SQL: SELECT wiki.name AS wiki_name, wiki.type AS wiki_type, wiki.embedding_id AS wiki_embedding_id, wiki.rerank_id AS wiki_rerank_id, wiki.sim_thresh AS wiki_sim_thresh, wiki.user_id AS wiki_user_id, wiki."desc" AS wiki_desc, wiki.id AS wiki_id, wiki.active AS wiki_active, wiki.created_at AS wiki_created_at, wiki.updated_at AS wiki_updated_at 
+FROM wiki 
+WHERE wiki.active IS true AND wiki.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'test', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-05 18:35:56 | INFO | ⬅️POST /api/wiki/create-wiki -> 200

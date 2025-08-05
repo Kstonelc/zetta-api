@@ -7,8 +7,9 @@ from schemas.model import (
     ModelProviderQueryRequest,
     ModelProviderUpdateRequest,
 )
+from utils.common import encrypt_api_key
 from utils.jwt import verify_token
-from models import ModelProvider, get_db
+from models import ModelProvider, Model, get_db
 from enums import ModelProviderUpdateType
 from utils.logger import logger
 
@@ -105,7 +106,7 @@ async def update_model_provider(
             if not llm.test_api_key():
                 response = {"ok": False, "message": "API KEY 无效"}
                 return
-        provider.api_key = model_provider_api_key
+        provider.api_key = encrypt_api_key(model_provider_api_key)
         db.commit()
         db.refresh(provider)
 
@@ -120,6 +121,32 @@ async def update_model_provider(
     except Exception as e:
         db.rollback()
         response = {"ok": False, "message": "更新模型提供商失败"}
+        logger.error(e)
+    finally:
+        return response
+
+
+@router.post("/find-models")
+async def find_models(
+    body: ModelProviderQueryRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        model_provider_id = body.modelProviderId
+
+        models = (
+            db.query(Model).filter(Model.model_provider_id == model_provider_id).all()
+        )
+        response = {
+            "ok": True,
+            "data": models,
+            "message": "获取模型成功",
+        }
+    except Exception as e:
+        print(e)
+        response = {"ok": False, "message": "获取模型失败"}
         logger.error(e)
     finally:
         return response

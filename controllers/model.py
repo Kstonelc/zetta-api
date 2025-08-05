@@ -1,9 +1,10 @@
 from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
+from sqlalchemy import any_
+from sqlalchemy.orm import Session, joinedload
 from schemas.model import (
     ModelAddRequest,
-    ModelQueryRequest,
     ModelUpdateRequest,
+    ModelQueryRequest,
 )
 from models import Model, get_db
 from utils.jwt import verify_token
@@ -55,30 +56,6 @@ async def create_model(
         return response
 
 
-@router.post("/find-models")
-async def find_models(
-    body: ModelQueryRequest, db: Session = Depends(get_db), token=Depends(verify_token)
-):
-    response = {}
-    try:
-        model_provider_id = body.modelProviderId
-
-        models = (
-            db.query(Model).filter(Model.model_provider_id == model_provider_id).all()
-        )
-        response = {
-            "ok": True,
-            "data": models,
-            "message": "获取模型成功",
-        }
-    except Exception as e:
-        db.rollback()
-        response = {"ok": False, "message": "获取模型失败"}
-        logger.error(e)
-    finally:
-        return response
-
-
 @router.post("/update-model")
 async def update_model(
     body: ModelUpdateRequest,
@@ -106,6 +83,33 @@ async def update_model(
     except Exception as e:
         db.rollback()
         response = {"ok": False, "message": "更新模型失败"}
+        logger.error(e)
+    finally:
+        return response
+
+
+@router.post("/find-models")
+async def find_models(
+    body: ModelQueryRequest, db: Session = Depends(get_db), token=Depends(verify_token)
+):
+    response = {}
+    try:
+        model_type = body.modelType
+
+        models = (
+            db.query(Model)
+            .options(joinedload(Model.provider))
+            .filter(Model.active.is_(True), model_type.value == any_(Model.types))
+            .all()
+        )
+        response = {
+            "ok": True,
+            "data": models,
+            "message": "获取模型成功",
+        }
+    except Exception as e:
+        print(e)
+        response = {"ok": False, "message": "获取模型失败"}
         logger.error(e)
     finally:
         return response
