@@ -1,10 +1,9 @@
 from sqlalchemy import Column, Boolean, DateTime, func, text
 from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import Mapped, mapped_column
-from .db import Base
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
-class BaseModel(Base):
+class BaseModel(DeclarativeBase):
     __abstract__ = True  # 不会创建表，只作为继承用
 
     id: Mapped[str] = mapped_column(

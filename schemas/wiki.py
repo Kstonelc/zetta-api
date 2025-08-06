@@ -7,6 +7,13 @@ class WikiCreateRequest(BaseModel):
     wikiName: str
     wikiDesc: Optional[str] = None
     wikiType: int
+    tenantId: UUID
+    userId: UUID
     wikiEmbeddingId: UUID
     wikiRerankId: UUID
     wikiSimThresh: float
+
+
+class WikiQueryRequest(BaseModel):
+    tenantId: UUID
+    userId: UUID

@@ -7441,3 +7441,414 @@ WHERE wiki.active IS true AND wiki.name = %(name_1)s
 [parameters: {'name_1': 'test', 'param_1': 1}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-08-05 18:35:56 | INFO | ⬅️POST /api/wiki/create-wiki -> 200
+2025-08-06 09:33:27 | INFO | ✅ Zetta Server Start
+2025-08-06 09:33:34 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 09:33:34 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 09:35:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 09:35:03 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 09:35:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 09:35:03 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 09:35:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 09:35:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 09:35:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 09:35:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 09:35:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 09:35:04 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 09:35:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 09:35:04 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 09:41:32 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 09:41:33 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 09:41:34 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 09:41:34 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 10:15:54 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 10:15:54 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 10:15:55 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 10:15:55 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 10:15:55 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 10:15:55 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 10:15:55 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 10:15:55 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 10:15:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 10:15:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 10:15:57 | INFO | ➡️POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 10:15:57 | INFO | ⬅️POST /api/tenant/find-tenant -> 200
+2025-08-06 10:16:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 10:16:03 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 12:38:54 | INFO | ✅ Zetta Server Start
+2025-08-06 12:39:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 12:39:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 12:39:14 | INFO | ✅ Zetta Server Start
+2025-08-06 12:39:22 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 12:39:22 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 16:28:57 | INFO | ✅ Zetta Server Start
+2025-08-06 16:29:07 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 16:29:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 16:29:36 | INFO | ✅ Zetta Server Start
+2025-08-06 16:29:53 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 16:29:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:29:09 | INFO | ✅ Zetta Server Start
+2025-08-06 17:29:17 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:29:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:32:06 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:32:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:33:31 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-06 17:33:31 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-06 17:33:31 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-06 17:33:31 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-06 17:33:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:33:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:33:35 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-06 17:33:35 | INFO | ➡️POST /api/tenant/find-admin Request Body:{}
+2025-08-06 17:33:35 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-06 17:33:35 | INFO | ⬅️POST /api/tenant/find-admin -> 200
+2025-08-06 17:33:46 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-06 17:33:46 | ERROR | bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-08-06 17:33:46 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-06 17:33:51 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-06 17:33:51 | ERROR | bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-08-06 17:33:51 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-06 17:34:50 | INFO | ✅ Zetta Server Start
+2025-08-06 17:34:57 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:34:57 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:35:47 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-06 17:35:47 | ERROR | module 'jwt' has no attribute 'encode'
+2025-08-06 17:35:47 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-06 17:37:22 | INFO | ✅ Zetta Server Start
+2025-08-06 17:37:29 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:37:29 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:37:30 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-06 17:37:31 | ERROR | module 'jwt' has no attribute 'encode'
+2025-08-06 17:37:31 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-06 17:38:28 | INFO | ✅ Zetta Server Start
+2025-08-06 17:38:38 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:38:38 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:38:42 | INFO | ➡️POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-08-06 17:38:43 | INFO | ⬅️POST /api/user/email-login -> 200
+2025-08-06 17:38:43 | INFO | ➡️POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-08-06 17:38:43 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-08-06 17:38:43 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:38:43 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 17:38:43 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:38:43 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 17:41:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:41:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 17:41:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 17:41:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 17:41:08 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 17:41:08 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 17:41:08 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 17:41:08 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 17:41:08 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 17:41:08 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 17:41:09 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 17:41:09 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 17:41:21 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"soupbun","wikiDesc":"test","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiType":1,"wikiSimThresh":0.4}
+2025-08-06 17:41:22 | INFO | ⬅️POST /api/wiki/create-wiki -> 200
+2025-08-06 17:47:37 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:47:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:48:05 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:48:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:48:20 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:48:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:49:48 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:49:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:49:58 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:49:58 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:56:20 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:56:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:58:54 | INFO | ✅ Zetta Server Start
+2025-08-06 17:59:04 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:59:04 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 17:59:17 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 17:59:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:00:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:00:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:00:42 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:00:42 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:01:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:01:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:02:11 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:02:11 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:02:41 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:02:41 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:03:48 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:03:48 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:03:48 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:03:48 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:03:48 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:03:48 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:03:49 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:03:49 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:04:04 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"dada","wikiDesc":"adadada","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiType":1,"wikiSimThresh":0.85}
+2025-08-06 18:04:04 | INFO | ⬅️POST /api/wiki/create-wiki -> 422
+2025-08-06 18:05:10 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{"wikiName":"dada","wikiDesc":"adadada","wikiEmbeddingId":"eb6051d6-fc51-44d1-980d-9b1cca7bf9c5","wikiRerankId":"ba1ffaea-ef83-4267-bbb1-c2620cccf3f0","wikiType":1,"wikiSimThresh":0.85,"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:05:10 | INFO | ⬅️POST /api/wiki/create-wiki -> 200
+2025-08-06 18:07:01 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:07:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:07:24 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:07:24 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:07:24 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{
+    "wikiName": "soupbun"
+}
+2025-08-06 18:07:24 | INFO | ⬅️POST /api/wiki/create-wiki -> 422
+2025-08-06 18:07:25 | INFO | ➡️POST /api/wiki/create-wiki Request Body:{
+    "wikiName": "soupbun"
+}
+2025-08-06 18:07:25 | INFO | ⬅️POST /api/wiki/create-wiki -> 422
+2025-08-06 18:08:46 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{
+    "userId": "f5e1ee12-d8f7-4ed7-abee-ab47fde69c97",
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-06 18:08:46 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:08:59 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{
+    "userId": "f5e1ee12-d8f7-4ed7-abee-ab47fde69c97",
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-06 18:08:59 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:09:30 | INFO | [DB]: ✅ DB Connection Success
+2025-08-06 18:09:30 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-06 18:09:47 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{
+    "userId": "f5e1ee12-d8f7-4ed7-abee-ab47fde69c97",
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-06 18:09:47 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:16:36 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:16:36 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:16:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:16:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:17:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:17:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:17:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:17:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:41 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:41 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:41 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:42 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:42 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:42 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:50 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:50 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:50 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:50 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:50 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:50 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:52 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:52 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:52 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:23:52 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:23:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:52 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:23:52 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:23:52 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:04 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:04 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:04 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:04 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:08 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:08 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:08 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:08 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:09 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:09 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:09 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:09 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:11 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:11 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:13 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:13 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:13 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:14 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:14 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:15 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:15 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:15 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:15 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:15 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:15 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:16 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:16 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:16 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:16 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:16 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:16 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:18 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:18 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:18 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:18 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:18 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:18 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:54 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:54 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:27:54 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:27:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:55 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:27:55 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:27:55 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:03 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:03 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:03 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:04 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:04 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:04 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:04 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:04 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:04 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:05 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:05 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:05 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:05 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:06 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:06 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:06 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:06 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:06 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:06 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:07 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:07 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:07 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:07 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:08 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:08 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:08 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:08 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:08 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:08 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:09 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:09 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:09 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:09 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:09 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:09 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:10 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:10 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:10 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:10 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:11 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:11 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:11 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:11 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:12 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:12 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:12 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:12 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:35 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:35 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:35 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:36 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:38 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:38 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:38 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:38 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:38 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:38 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:40 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:40 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-06 18:28:40 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:28:40 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:40 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-06 18:28:40 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:28:40 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:38:15 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:38:15 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:38:16 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:16 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:38:16 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:38:16 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-06 18:38:21 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:38:21 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-08-06 18:38:21 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:21 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:21 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:38:21 | INFO | ➡️POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-08-06 18:38:21 | INFO | ⬅️POST /api/model/find-models -> 200
+2025-08-06 18:38:21 | INFO | ⬅️POST /api/model/find-models -> 200
