@@ -11,7 +11,7 @@ class Model(BaseModel):
     display_name = Column(String(255), nullable=True, default="")
     types = Column(ARRAY(String(255)), nullable=True)  # 模型类型
     model_provider_id = Column(
-        UUID, ForeignKey("model_provider.id", ondelete="SET NULL"), nullable=True
+        UUID, ForeignKey("model_provider.id"), nullable=True
     )  # 模型提供商ID
     max_context_tokens = Column(String(255), nullable=True)
     token_limit = Column(Integer, nullable=True)  # 令牌限制

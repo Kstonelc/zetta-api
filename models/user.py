@@ -1,4 +1,5 @@
 from sqlalchemy import Column, String
+from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.orm import relationship
 from .base import BaseModel
 
@@ -16,16 +17,9 @@ class User(BaseModel):
     tenant_user_joins = relationship(
         "TenantUserJoin",
         back_populates="user",
-        cascade="all, delete-orphan",
-        overlaps="tenants",
     )
-
-    tenants = relationship(
-        "Tenant",
-        secondary="tenant_user_join",
-        back_populates="users",
-        overlaps="tenant_user_joins",
-    )
+    # 源关系 目标字段
+    tenants = association_proxy("tenant_user_joins", "tenant")
 
     # 虚拟属性
     @property

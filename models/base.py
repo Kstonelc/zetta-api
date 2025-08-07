@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Boolean, DateTime, func, text
+from sqlalchemy import Column, Boolean, DateTime, func, text, inspect
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
@@ -14,3 +14,9 @@ class BaseModel(DeclarativeBase):
     updated_at = Column(
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
+
+    def to_dict(self):
+        return {
+            column.key: getattr(self, column.key)
+            for column in inspect(self).mapper.columns
+        }

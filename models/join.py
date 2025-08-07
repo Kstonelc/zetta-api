@@ -5,6 +5,7 @@ from sqlalchemy import (
     Column,
     ForeignKey,
     Index,
+    ForeignKeyConstraint,
     PrimaryKeyConstraint,
     UniqueConstraint,
     Boolean,
@@ -25,12 +26,12 @@ class ModelProviderTenantJoin(BaseModel):
 
     tenant_id = Column(
         UUID,
-        ForeignKey("tenant.id", ondelete="SET NULL"),
+        ForeignKey("tenant.id"),
         nullable=True,
     )
     model_provider_id = Column(
         UUID,
-        ForeignKey("model_provider.id", ondelete="SET NULL"),
+        ForeignKey("model_provider.id"),
         nullable=True,
     )
 
@@ -41,29 +42,29 @@ class ModelProviderTenantJoin(BaseModel):
 class TenantUserJoin(BaseModel):
     __tablename__ = "tenant_user_join"
     __table_args__ = (
+        # 主键
         PrimaryKeyConstraint("id", name="tenant_user_join_pkey"),
-        Index("tenant_user_join_account_id_idx", "user_id"),
+        # 索引
+        Index("tenant_user_join_user_id_idx", "user_id"),
         Index("tenant_user_join_tenant_id_idx", "tenant_id"),
+        # 组合唯一键
         UniqueConstraint("tenant_id", "user_id", name="unique_tenant_user_join"),
+        # 指定外键名
+        ForeignKeyConstraint(
+            ["tenant_id"], ["tenant.id"], name="fk_tenant_user_join_tenant_id"
+        ),
+        ForeignKeyConstraint(
+            ["user_id"], ["user.id"], name="fk_tenant_user_join_user_id"
+        ),
     )
 
-    tenant_id = Column(
-        UUID, ForeignKey("tenant.id", ondelete="SET NULL"), nullable=True
-    )
-    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=True)
+    tenant_id = Column(UUID, ForeignKey("tenant.id"), nullable=False)
+    user_id = Column(UUID, ForeignKey("user.id"), nullable=False)
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户
     role = Column(String(16), nullable=False, server_default="normal")
     invited_by = Column(UUID, nullable=True)
 
-    tenant = relationship(
-        "Tenant",
-        back_populates="tenant_user_joins",
-        overlaps="users, tenants",
-    )
-    user = relationship(
-        "User",
-        back_populates="tenant_user_joins",
-        overlaps="users,tenants",
-    )
+    tenant = relationship("Tenant", back_populates="tenant_user_joins")
+    user = relationship("User", back_populates="tenant_user_joins")
