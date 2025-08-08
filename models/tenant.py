@@ -36,7 +36,13 @@ class Tenant(BaseModel):
         overlaps="tenant_user_joins",
     )
 
-    model_provider_links = relationship(
-        "ModelProviderTenantJoin", back_populates="tenant"
+    model_provider_tenant_joins = relationship(
+        "ModelProviderTenantJoin", back_populates="tenant", overlaps="tenant"
     )
-    model_providers = association_proxy("model_provider_links", "model_provider")
+
+    model_providers = relationship(
+        "ModelProvider",
+        secondary="model_provider_tenant_join",
+        back_populates="tenants",
+        overlaps="model_provider_tenant_joins",
+    )
