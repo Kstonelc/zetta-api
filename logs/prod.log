@@ -7870,3 +7870,54 @@ WHERE wiki.active IS true AND wiki.name = %(name_1)s
     "userEmail": "2609753201@qq.com"
 }
 2025-08-08 14:21:01 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-08-08 14:29:32 | INFO | ✅ Zetta Server Start
+2025-08-08 14:29:37 | INFO | [DB]: ✅ DB Connection Success
+2025-08-08 14:29:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-08 14:29:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 14:29:56 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 14:29:56 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 14:29:56 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 14:29:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 14:29:56 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 14:29:56 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 14:29:56 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 15:26:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:26:57 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:26:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 15:26:58 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 15:31:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:31:07 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:31:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 15:31:07 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 15:31:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:31:39 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 15:31:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 15:31:39 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 17:39:33 | INFO | ➡️POST /api/user/find-user Request Body:{
+    "userEmail": "2609753201@qq.com"
+}
+2025-08-08 17:39:33 | INFO | ⬅️POST /api/user/find-user -> 200
+2025-08-08 17:44:35 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 17:44:35 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 17:44:35 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 17:44:35 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 17:44:36 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 17:44:36 | INFO | ➡️POST /api/wiki/find-wikis Request Body:{"userId":"f5e1ee12-d8f7-4ed7-abee-ab47fde69c97","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-08 17:44:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 17:44:36 | INFO | ⬅️POST /api/wiki/find-wikis -> 200
+2025-08-08 18:05:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:05:53 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:05:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:05:53 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:06:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:06:22 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:06:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:06:22 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:07:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:07:14 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:07:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:07:14 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:08:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:08:24 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-08 18:08:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
+2025-08-08 18:08:24 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
