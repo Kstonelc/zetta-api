@@ -8388,3 +8388,6 @@ WHERE wiki.active IS true AND wiki.name = %(name_1)s
 2025-08-07 18:24:02 | INFO | ➡️POST /api/model-provider/find-model-provider Request Body:{}
 2025-08-07 18:24:02 | INFO | ⬅️POST /api/model-provider/find-model-provider -> 200
 2025-08-09 10:46:47 | INFO | ✅ Zetta Server Start
+2025-08-09 11:03:34 | INFO | ✅ Zetta Server Start
+2025-08-09 11:03:39 | INFO | [DB]: ✅ DB Connection Success
+2025-08-09 11:03:40 | INFO | [Qdrant]: ✅ Qdrant Connection Success
