@@ -13,8 +13,8 @@ class Wiki(BaseModel):
     embedding_id = Column(UUID, ForeignKey("model.id"))  # 嵌入模型ID
     rerank_id = Column(UUID, ForeignKey("model.id"))
     sim_thresh = Column(Float, nullable=False)  # 相似度阈值
-    tenant_id = Column(UUID, nullable=False)  # 创建者ID
-    user_id = Column(UUID, nullable=False)  # 创建者ID
+    tenant_id = Column(UUID, nullable=False)
+    # user_id = Column(UUID, nullable=False)
     desc = Column(String, nullable=True)
 
     # 不建立相互的外键管理 单方面的

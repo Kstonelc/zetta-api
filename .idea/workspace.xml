@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13e7ee15-372e-4f97-8bcc-28f4047cad11" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/9219c2768015_cancel_cascade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/e401dde372e8_update_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/model_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/model_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tenant.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tenant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/join.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tenant.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tenant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +73,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/projetcs/zetta-api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/projetcs/zetta-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="zetta-api" is-module-sdk="true" working-directory="$PROJECT_DIR$">
@@ -170,8 +193,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
-        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
       </set>
     </attachedChunks>
   </component>
@@ -188,10 +211,14 @@
       <workItem from="1754460705950" duration="978000" />
       <workItem from="1754463624072" duration="1211000" />
       <workItem from="1754464877342" duration="54000" />
+      <workItem from="1754708676809" duration="40536000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>

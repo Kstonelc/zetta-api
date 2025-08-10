@@ -5,7 +5,6 @@ from sqlalchemy import (
     Column,
     ForeignKey,
     Index,
-    ForeignKeyConstraint,
     PrimaryKeyConstraint,
     UniqueConstraint,
     Boolean,
@@ -26,24 +25,24 @@ class ModelProviderTenantJoin(BaseModel):
 
     tenant_id = Column(
         UUID,
-        ForeignKey("tenant.id"),
+        ForeignKey("tenant.id", ondelete="SET NULL"),
         nullable=True,
     )
     model_provider_id = Column(
         UUID,
-        ForeignKey("model_provider.id"),
+        ForeignKey("model_provider.id", ondelete="SET NULL"),
         nullable=True,
     )
 
     tenant = relationship(
         "Tenant",
         back_populates="model_provider_tenant_joins",
-        overlaps="model_providers, tenants",
+        passive_deletes=True
     )
     model_provider = relationship(
         "ModelProvider",
         back_populates="model_provider_tenant_joins",
-        overlaps="model_providers, tenants",
+        passive_deletes=True
     )
 
 
@@ -57,22 +56,15 @@ class TenantUserJoin(BaseModel):
         Index("tenant_user_join_tenant_id_idx", "tenant_id"),
         # 组合唯一键
         UniqueConstraint("tenant_id", "user_id", name="unique_tenant_user_join"),
-        # 指定外键名
-        ForeignKeyConstraint(
-            ["tenant_id"], ["tenant.id"], name="fk_tenant_user_join_tenant_id"
-        ),
-        ForeignKeyConstraint(
-            ["user_id"], ["user.id"], name="fk_tenant_user_join_user_id"
-        ),
     )
 
-    tenant_id = Column(UUID, ForeignKey("tenant.id"), nullable=False)
-    user_id = Column(UUID, ForeignKey("user.id"), nullable=False)
+    tenant_id = Column(UUID, ForeignKey("tenant.id",  ondelete="SET NULL"), nullable=True)
+    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=True)
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户
     role = Column(String(16), nullable=False, server_default="normal")
     invited_by = Column(UUID, nullable=True)
 
-    tenant = relationship("Tenant", back_populates="tenant_user_joins")
-    user = relationship("User", back_populates="tenant_user_joins")
+    tenant = relationship("Tenant", back_populates="tenant_user_joins", passive_deletes=True)
+    user = relationship("User", back_populates="tenant_user_joins", passive_deletes=True)

@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, selectinload, with_loader_criteria
 from fastapi import Request
 from enums import UserRole
-from models import TenantUserJoin, Tenant, User, get_db
+from models import Tenant, User, TenantUserJoin, get_db
 from schemas.tenant import TenantQueryRequest, TenantUpdateRequest
 from utils.jwt import verify_token
 from utils.logger import logger
@@ -17,13 +17,14 @@ async def find_admin(body: Request, db: Session = Depends(get_db)):
     try:
         res = (
             db.query(TenantUserJoin)
-            .filter(TenantUserJoin.role == UserRole.Admin.value)
+            .filter(TenantUserJoin.role == UserRole.Owner.value)
             .first()
         )
         if not res:
             response = {"ok": False, "message": "管理员不存在"}
         else:
             response = {"ok": True, "data": "管理员存在"}
+        pass
     except Exception as e:
         logger.error(e)
     finally:
@@ -89,7 +90,6 @@ async def update_tenant(
 
         tenant.name = tenantName
         db.commit()
-        db.refresh(tenant)
 
         tenant = (
             db.query(Tenant)

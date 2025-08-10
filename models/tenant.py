@@ -22,20 +22,32 @@ class Tenant(BaseModel):
     )
     custom_config = Column(JSONB, nullable=True)
 
+    """
+    back_populates: 这个关系在对方模型的反向属性名
+    passive_deletes: 在数据库层面会自己删除 不会触发 ORM 操作
+    """
     tenant_user_joins = relationship(
         "TenantUserJoin",
         back_populates="tenant",
+        passive_deletes=True,
     )
 
-    users = association_proxy("tenant_user_joins", "user")
+    users = relationship(
+        "User",
+        secondary="tenant_user_join",
+        viewonly=True,
+        back_populates="tenants",
+        overlaps="tenant_user_joins,tenants",
+    )
 
     model_provider_tenant_joins = relationship(
-        "ModelProviderTenantJoin", back_populates="tenant", overlaps="tenant"
+        "ModelProviderTenantJoin", back_populates="tenant", passive_deletes=True,
     )
 
     model_providers = relationship(
         "ModelProvider",
         secondary="model_provider_tenant_join",
+        viewonly=True,
         back_populates="tenants",
-        overlaps="model_provider_tenant_joins",
+        overlaps="model_provider_tenant_joins, tenants",
     )

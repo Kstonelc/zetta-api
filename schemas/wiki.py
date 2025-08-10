@@ -16,4 +16,3 @@ class WikiCreateRequest(BaseModel):
 
 class WikiQueryRequest(BaseModel):
     tenantId: UUID
-    userId: UUID

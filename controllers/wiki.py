@@ -40,7 +40,6 @@ async def create_wiki(
         )
         db.add(new_wiki)
         db.commit()
-        db.refresh(new_wiki)
 
         response = {"ok": True, "data": new_wiki.id, "message": "创建成功"}
     except Exception as e:
@@ -57,14 +56,12 @@ async def find_wikis(
 ):
     response = {}
     try:
-        user_id = body.userId
         tenant_id = body.tenantId
 
         wikis = (
             db.query(Wiki)
             .filter(
                 Wiki.active.is_(True),
-                Wiki.user_id == user_id,
                 Wiki.tenant_id == tenant_id,
             )
             .all()

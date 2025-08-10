@@ -11,7 +11,6 @@ uvicorn main:app --reload
 ```
 
 ## Export Third Party Package
-
 ```
 pip freeze > requirements.txt
 ```

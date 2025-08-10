@@ -24,9 +24,10 @@ class UserStatus(str, Enum):
 
 
 class UserRole(str, Enum):
-    Admin = "admin"
-    Editor = "editor"
-    Normal = "normal"
+    Admin = "admin" # 超级管理员
+    Editor = "editor" # 可以编辑
+    Normal = "normal" # 可以使用
+    Owner = "owner" # 所有者
 
 
 class WikiType(Enum):

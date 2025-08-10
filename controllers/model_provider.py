@@ -108,7 +108,6 @@ async def update_model_provider(
                 return
         provider.api_key = encrypt_api_key(model_provider_api_key)
         db.commit()
-        db.refresh(provider)
 
         response = {
             "ok": True,

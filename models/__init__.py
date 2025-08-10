@@ -11,8 +11,8 @@ __all__ = [
     "ModelProvider",
     "Model",
     "Tenant",
-    "TenantUserJoin",
     "ModelProviderTenantJoin",
+    "TenantUserJoin",
     "Wiki",
     "get_db",
 ]

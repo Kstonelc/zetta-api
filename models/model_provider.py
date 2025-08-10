@@ -20,12 +20,13 @@ class ModelProvider(BaseModel):
     model_provider_tenant_joins = relationship(
         "ModelProviderTenantJoin",
         back_populates="model_provider",
-        overlaps="model_provider",
+        passive_deletes=True,
     )
 
     tenants = relationship(
         "Tenant",
         secondary="model_provider_tenant_join",
+        viewonly=True,
         back_populates="model_providers",
-        overlaps="model_provider_tenant_joins",
+        overlaps="model_provider_tenant_joins, model_providers",
     )

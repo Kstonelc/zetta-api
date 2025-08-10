@@ -4,7 +4,7 @@
 @Author      : Kstone
 @Date        : 2025/07/11
 """
-
+import random
 from passlib.context import CryptContext
 from cryptography.fernet import Fernet
 
@@ -34,5 +34,12 @@ def encrypt_api_key(plaintext: str) -> str:
 def decrypt_api_key(ciphertext: str) -> str:
     return fernet.decrypt(ciphertext.encode()).decode()
 
+
+# endregion
+
+# region 通用
+def generate_random_code(length: int = 6) -> str:
+    x = random.randint(0, 999999)
+    return f"{x:06d}"
 
 # endregion

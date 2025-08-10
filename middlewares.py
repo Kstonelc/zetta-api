@@ -5,7 +5,7 @@ from utils.logger import logger
 
 class RequestLoggingMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
-        log_info = f"➡️{request.method} {request.url.path}"
+        log_info = f"➡️ {request.method} {request.url.path}"
         # 请求日志
         if request.query_params:
             log_info += f" Query Params:{request.query_params} |"
@@ -23,7 +23,7 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
         response = await call_next(request)
 
         # 响应日志
-        logger.info(f"⬅️{request.method} {request.url.path} -> {response.status_code}")
+        logger.info(f"⬅️ {request.method} {request.url.path} -> {response.status_code}")
         return response
 
 
