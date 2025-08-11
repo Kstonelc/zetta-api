@@ -37,7 +37,7 @@ async def find_user(
         user = (
             db.query(User)
             .options(joinedload(User.tenants))
-            .filter(User.active.is_(True), User.email == user_email)
+            .filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Active.value)
             .first()
         )
         if not user:
@@ -113,7 +113,6 @@ async def email_login(body: UserEmailLoginRequest, db: Session = Depends(get_db)
             return
 
         # TODO 目前只设计一个租户的情况
-        print(111, user.current_tenant)
         current_tenant_id = user.current_tenant.id
 
         # 生成jwt
@@ -156,6 +155,9 @@ async def send_verification_code(
         if not user:
             response = {"ok": False, "message": "用户不存在"}
             return
+        if user.status != UserStatus.Active.value:
+            response = {"ok": False, "message": "用户未激活"}
+            return
         user.secret = verification_code
         db.commit()
         send_verify_code(background_tasks, user_email, verification_code)
@@ -184,7 +186,9 @@ async def verify_code(body: UserVerifyCodeRequest, db: Session = Depends(get_db)
         if not user:
             response = {"ok": False, "message": "用户不存在"}
             return
-
+        if user.status != UserStatus.Active.value:
+            response = {"ok": False, "message": "用户未激活"}
+            return
         if user.secret != user_verification_code:
             response = {"ok": False, "message": "验证码错误"}
             return
@@ -215,7 +219,7 @@ async def update_user_password(
 
         user = (
             db.query(User)
-            .filter(User.active.is_(True), User.email == user_email)
+            .filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Active.value)
             .first()
         )
         if not user:

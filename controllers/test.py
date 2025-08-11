@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from enums import QWModelType
 from llm.qwen import QWProvider
-from utils.vector_db import vector_client
+# from utils.vector_db import vector_client
 
 router = APIRouter(prefix="/ai", tags=["AI"])
 
@@ -41,17 +41,18 @@ async def demo2():
 
 @router.post("/demo3")
 async def demo3():
+    pass
 
     # 插入向量
-    vector_client.insert(
-        [
-            {
-                "id": str(uuid4()),
-                "vector": [0.01] * 768,
-                "payload": {"text": "说明文档", "source": "API"},
-            }
-        ]
-    )
+    # vector_client.insert(
+    #     [
+    #         {
+    #             "id": str(uuid4()),
+    #             "vector": [0.01] * 768,
+    #             "payload": {"text": "说明文档", "source": "API"},
+    #         }
+    #     ]
+    # )
 
     # 搜索
     # results = store.search(

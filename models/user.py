@@ -23,6 +23,9 @@ class User(BaseModel):
     tenants = relationship(
         "Tenant",
         secondary="tenant_user_join",
+        # 查询 join 表是 active的
+        primaryjoin="and_(User.id==TenantUserJoin.user_id, TenantUserJoin.active==True)",
+        secondaryjoin="and_(Tenant.id==TenantUserJoin.tenant_id, Tenant.active==True)",
         viewonly=True,
         back_populates="users",
         overlaps="tenant_user_joins,users",
