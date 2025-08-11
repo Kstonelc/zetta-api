@@ -9,7 +9,10 @@ from schemas.user import (
     UserEmailLoginRequest,
     UserQueryRequest,
     UserForgotPasswordRequest,
-    UserVerifyCodeRequest, UserUpdatePasswordRequest, UserInviteRequest, UserActivateRequest
+    UserVerifyCodeRequest,
+    UserUpdatePasswordRequest,
+    UserInviteRequest,
+    UserActivateRequest,
 )
 from fastapi.encoders import jsonable_encoder
 from models.db import get_db
@@ -94,7 +97,11 @@ async def email_login(body: UserEmailLoginRequest, db: Session = Depends(get_db)
 
         user = (
             db.query(User)
-            .filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Active.value)
+            .filter(
+                User.active.is_(True),
+                User.email == user_email,
+                User.status == UserStatus.Active.value,
+            )
             .first()
         )
         if not user:
@@ -106,10 +113,13 @@ async def email_login(body: UserEmailLoginRequest, db: Session = Depends(get_db)
             return
 
         # TODO 目前只设计一个租户的情况
+        print(111, user.current_tenant)
         current_tenant_id = user.current_tenant.id
 
         # 生成jwt
-        access_token = create_access_token(data={"email": user_email, "tenant_id": str(current_tenant_id)})
+        access_token = create_access_token(
+            data={"email": user_email, "tenant_id": str(current_tenant_id)}
+        )
         response = {
             "ok": True,
             "data": {
@@ -127,14 +137,22 @@ async def email_login(body: UserEmailLoginRequest, db: Session = Depends(get_db)
 
 
 @router.post("/send-verification-code")
-async def send_verification_code(background_tasks: BackgroundTasks, body: UserForgotPasswordRequest, db: Session = Depends(get_db)):
+async def send_verification_code(
+    background_tasks: BackgroundTasks,
+    body: UserForgotPasswordRequest,
+    db: Session = Depends(get_db),
+):
     response = {}
     try:
         # 验证码10分钟过期 后期使用redis实现
         user_email = body.userEmail
 
         verification_code = generate_random_code()
-        user = db.query(User).filter(User.active.is_(True), User.email == user_email).first()
+        user = (
+            db.query(User)
+            .filter(User.active.is_(True), User.email == user_email)
+            .first()
+        )
         if not user:
             response = {"ok": False, "message": "用户不存在"}
             return
@@ -171,10 +189,7 @@ async def verify_code(body: UserVerifyCodeRequest, db: Session = Depends(get_db)
             response = {"ok": False, "message": "验证码错误"}
             return
 
-        response = {
-            "ok": True,
-            "data": "验证成功"
-        }
+        response = {"ok": True, "data": "验证成功"}
 
     except Exception as e:
         logger.error(e)
@@ -198,7 +213,11 @@ async def update_user_password(
             response = {"ok": False, "message": "密码不一致"}
             return
 
-        user = db.query(User).filter(User.active.is_(True), User.email == user_email).first()
+        user = (
+            db.query(User)
+            .filter(User.active.is_(True), User.email == user_email)
+            .first()
+        )
         if not user:
             response = {"ok": False, "message": "用户不存在"}
             return
@@ -215,7 +234,9 @@ async def update_user_password(
 
 @router.post("/invite-user")
 async def invite_user(
-        background_tasks: BackgroundTasks, body: UserInviteRequest, db: Session = Depends(get_db)
+    background_tasks: BackgroundTasks,
+    body: UserInviteRequest,
+    db: Session = Depends(get_db),
 ):
     response = {}
     try:
@@ -232,11 +253,13 @@ async def invite_user(
             user = db.query(User).filter(User.email == email).first()
             if user:
                 # 重新发送邀请邮件
-                token = create_access_token(data={"email": email, "tenant_id": str(tenant_id)})
+                token = create_access_token(
+                    data={"email": email, "tenant_id": str(tenant_id)}
+                )
                 send_invite_url(
                     background_tasks,
                     email,
-                    f"{settings.BASE_URL}/user/activate?email={email}&token={token}"
+                    f"{settings.BASE_URL}/user/activate?email={email}&token={token}",
                 )
                 user_email_list.remove(email)
 
@@ -252,10 +275,10 @@ async def invite_user(
                         tenant_id=tenant_id,
                         role=user_role,
                         invited_by=from_user_id,
-                        current=False,
-                        active=True
+                        current=True,
+                        active=True,
                     )
-                ]
+                ],
             )
             for email in user_email_list
         ]
@@ -265,11 +288,13 @@ async def invite_user(
         db.commit()
         # 发送邀请邮件
         for email in user_email_list:
-            token = create_access_token(data={"email": email, "tenant_id": str(tenant_id)})
+            token = create_access_token(
+                data={"email": email, "tenant_id": str(tenant_id)}
+            )
             send_invite_url(
                 background_tasks,
                 email,
-                f"{settings.BASE_URL}/user/activate?email={email}&token={token}"
+                f"{settings.BASE_URL}/user/activate?email={email}&token={token}",
             )
         response = {"ok": True, "data": "邀请成功", "message": "邀请成功"}
     except Exception as e:
@@ -281,9 +306,7 @@ async def invite_user(
 
 
 @router.post("/activate")
-async def activate(
-        body: UserActivateRequest, db: Session = Depends(get_db)
-):
+async def activate(body: UserActivateRequest, db: Session = Depends(get_db)):
     response = {}
     try:
         user_email = body.userEmail
@@ -300,7 +323,15 @@ async def activate(
         if not tenant_id:
             response = {"ok": False, "message": "无效的激活链接"}
             return
-        user = db.query(User).filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Pending).first()
+        user = (
+            db.query(User)
+            .filter(
+                User.active.is_(True),
+                User.email == user_email,
+                User.status == UserStatus.Pending,
+            )
+            .first()
+        )
         if not user:
             response = {"ok": False, "message": "激活用户不存在"}
             return

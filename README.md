@@ -1,18 +1,19 @@
+## Create Python Virtual Environment(Python 3.11.9: recommended)
+
+```bash
+conda create -n zetta-api python=3.11.9
+```
+
 ## Install Package
 
-```python
+```bash
 pip install -r requirements
 ```
 
 ## Run server
 
-```python
+```bash
 uvicorn main:app --reload
-```
-
-## Export Third Party Package
-```
-pip freeze > requirements.txt
 ```
 
 ## DB Auto Generate

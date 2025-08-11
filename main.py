@@ -42,6 +42,7 @@ def check_vectordb_connection():
 
 app = FastAPI(lifespan=lifespan)
 
+
 # 注册中间件
 app.add_middleware(RequestLoggingMiddleware)
 # 允许跨域
@@ -88,6 +89,4 @@ if __name__ == "__main__":
         host="0.0.0.0",
         port=8001,
         reload=True,
-        log_config=None,
-        log_level="debug",
     )
