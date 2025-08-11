@@ -7,7 +7,7 @@ from schemas.model import (
     ModelProviderQueryRequest,
     ModelProviderUpdateRequest,
 )
-from utils.common import encrypt_api_key
+from utils.common import encrypt
 from utils.jwt import verify_token
 from models import ModelProvider, Model, get_db
 from enums import ModelProviderUpdateType
@@ -106,7 +106,7 @@ async def update_model_provider(
             if not llm.test_api_key():
                 response = {"ok": False, "message": "API KEY 无效"}
                 return
-        provider.api_key = encrypt_api_key(model_provider_api_key)
+        provider.api_key = encrypt(model_provider_api_key)
         db.commit()
 
         response = {

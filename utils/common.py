@@ -4,12 +4,15 @@
 @Author      : Kstone
 @Date        : 2025/07/11
 """
-import random
+
 from passlib.context import CryptContext
 from cryptography.fernet import Fernet
+import random
+
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 fixed_key = b"wL5Zlll5xxkU_PbgG0l8kxvFR3QtBy9J3RysFGqgF8E="
+fernet = Fernet(fixed_key)
 
 
 # region 密码加密解密
@@ -23,23 +26,19 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 
 # endregion
 
-# region 对称加密
-fernet = Fernet(fixed_key)
-
-
-def encrypt_api_key(plaintext: str) -> str:
-    return fernet.encrypt(plaintext.encode()).decode()
-
-
-def decrypt_api_key(ciphertext: str) -> str:
-    return fernet.decrypt(ciphertext.encode()).decode()
-
-
-# endregion
 
 # region 通用
 def generate_random_code(length: int = 6) -> str:
     x = random.randint(0, 999999)
     return f"{x:06d}"
+
+
+def encrypt(plaintext: str) -> str:
+    return fernet.encrypt(plaintext.encode()).decode()
+
+
+def decrypt(ciphertext: str) -> str:
+    return fernet.decrypt(ciphertext.encode()).decode()
+
 
 # endregion
