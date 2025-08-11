@@ -10494,3 +10494,33 @@ b''
 2025-08-10 18:46:11 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
 2025-08-10 19:55:53 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
 2025-08-10 19:56:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:03 | INFO | ✅ Zetta Server Start
+2025-08-11 10:31:19 | INFO | ✅ Zetta Server Start
+2025-08-11 10:31:25 | INFO | [DB]: ✅ DB Connection Success
+2025-08-11 10:31:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-11 10:31:30 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:31:30 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:31:30 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:30 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:30 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:30 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:31 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-11 10:31:31 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-11 10:31:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:31:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:33 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:34 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-11 10:31:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:31:38 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:41 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:41 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:41 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-11 10:31:41 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-11 10:31:46 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:31:46 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-11 10:31:47 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:47 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-11 10:31:59 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-11 10:31:59 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-11 10:32:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-11 10:32:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
