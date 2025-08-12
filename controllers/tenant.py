@@ -52,6 +52,8 @@ async def find_users(
         )
         users_with_roles = []
         for join in tenant.tenant_user_joins:
+            if not join.user:
+                continue
             if join.user.active:
                 user_data = join.user.to_dict()
                 user_data["role"] = join.role

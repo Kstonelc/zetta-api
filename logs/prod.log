@@ -257,3 +257,333 @@
 2025-08-12 00:19:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
 2025-08-12 00:19:35 | INFO | [DB]: ✅ DB Connection Success
 2025-08-12 00:19:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 09:37:27 | INFO | ✅ Zetta Server Start
+2025-08-12 09:37:35 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 09:37:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 09:37:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 09:37:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 09:37:50 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 09:37:50 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 09:37:50 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 09:37:50 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 09:37:50 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 09:37:50 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 09:44:55 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 09:44:55 | ERROR | 'NoneType' object has no attribute 'active'
+2025-08-12 09:44:55 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 09:46:00 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 09:46:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 09:46:08 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 09:46:08 | ERROR | 'NoneType' object has no attribute 'active'
+2025-08-12 09:46:08 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 09:47:01 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 09:47:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 09:47:15 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 09:47:15 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 09:49:24 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 09:49:24 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 09:49:29 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 09:49:30 | ERROR | 'NoneType' object has no attribute 'active'
+2025-08-12 09:49:30 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:24:54 | INFO | ✅ Zetta Server Start
+2025-08-12 10:25:03 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 10:25:03 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 10:25:06 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 10:25:06 | ERROR | 'NoneType' object has no attribute 'active'
+2025-08-12 10:25:06 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:26:08 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 10:26:08 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:28:59 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 10:28:59 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 10:29:10 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 10:29:10 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 10:29:15 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 10:29:15 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:29:29 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{
+    "tenantId": "16434718-6806-455a-a7b5-948c4fe11ee3"
+}
+2025-08-12 10:29:29 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:34:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 10:34:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 10:34:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 10:34:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 10:34:30 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 10:34:30 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 10:34:31 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 10:34:31 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:34:32 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 10:34:33 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:34:48 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 10:34:48 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:34:53 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 10:34:53 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 10:39:24 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 10:39:25 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 10:39:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 10:39:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 10:39:27 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 10:39:27 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:34:07 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:34:08 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:34:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:34:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:34:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:34:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:34:16 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:34:16 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:34:16 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 12:34:16 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 12:34:22 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:34:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:34:23 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:34:24 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:35:19 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:35:19 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:35:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:35:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:35:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:35:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:35:22 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:35:22 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:36:04 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:36:04 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:36:12 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:36:12 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:36:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:36:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:36:17 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:36:17 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:36:17 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:36:17 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:36:19 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:36:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:36:20 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:36:20 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:42:52 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:42:52 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:46:10 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:46:10 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:46:30 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:46:30 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-08-12 12:46:31 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 12:46:31 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 12:46:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:46:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 12:46:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 12:46:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 12:58:38 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 12:58:38 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:00:53 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:00:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:01:10 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:01:10 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:01:25 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:01:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:03:32 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 13:03:32 | INFO | ⬅️ POST /api/conversation/send-message -> 404
+2025-08-12 13:04:05 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:04:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:04:32 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:04:32 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:05:07 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:05:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:05:23 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 13:05:23 | ERROR | 'Request' object has no attribute 'prompt'
+2025-08-12 13:05:23 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 13:05:53 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:05:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:05:54 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 13:05:54 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 13:06:26 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:06:26 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:06:33 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 13:06:33 | ERROR | 'coroutine' object is not subscriptable
+2025-08-12 13:06:33 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 13:13:02 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:13:02 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:13:05 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 13:13:05 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 13:15:04 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:15:04 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 13:15:22 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 13:15:22 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 14:20:30 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 14:20:30 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 14:23:06 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 14:23:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 14:23:16 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 14:23:16 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 14:24:07 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 14:24:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 14:24:09 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 14:24:09 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 14:24:35 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 14:24:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 14:24:37 | INFO | ➡️ POST /api/conversation/send-message Request Body:{
+    "prompt": "你好"
+}
+2025-08-12 14:24:37 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:02:11 | INFO | [DB]: ✅ DB Connection Success
+2025-08-12 16:02:11 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-08-12 16:05:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:05:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:05:59 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:05:59 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:06:31 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-08-12 16:06:31 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-08-12 16:06:31 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-08-12 16:06:31 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-08-12 16:06:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:06:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:06:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:06:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:06:36 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 16:06:36 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-08-12 16:06:36 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 16:06:36 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-08-12 16:07:25 | INFO | ➡️ POST /conversation/send-message Request Body:{"prompt":"你好"}
+2025-08-12 16:07:25 | INFO | ⬅️ POST /conversation/send-message -> 404
+2025-08-12 16:08:20 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-08-12 16:08:20 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:16:25 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-08-12 16:16:25 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:16:37 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈"}
+2025-08-12 16:16:37 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:20:12 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"帮我写一个Python的 二分查找"}
+2025-08-12 16:20:12 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:20:36 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"需要的"}
+2025-08-12 16:20:36 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:21:14 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈哈你是谁"}
+2025-08-12 16:21:14 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:24:19 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:24:19 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:24:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:24:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:24:36 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"帮我写一个Python的 冒泡排序"}
+2025-08-12 16:24:36 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:34:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:34:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:34:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:34:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:35:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:35:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:35:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:35:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:35:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:35:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:35:48 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:35:48 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:38:23 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!"}
+2025-08-12 16:38:23 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:41:36 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:41:36 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:41:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:41:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:44:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:44:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 16:44:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:44:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 16:45:34 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你是谁 简单介绍一下"}
+2025-08-12 16:45:34 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:46:06 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下"}
+2025-08-12 16:46:06 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:46:16 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下"}
+2025-08-12 16:46:16 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 16:51:11 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下你是谁 简单介绍一下"}
+2025-08-12 16:51:12 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:01:36 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:01:36 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:01:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:01:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:01:48 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!"}
+2025-08-12 17:01:48 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:04:09 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:04:09 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:04:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:04:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:04:15 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好"}
+2025-08-12 17:04:15 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:07:33 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"嘿嘿嘿"}
+2025-08-12 17:07:33 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:10:37 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好"}
+2025-08-12 17:10:37 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:33:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:33:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:33:55 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:33:55 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:34:01 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!"}
+2025-08-12 17:34:01 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:34:06 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!你好!"}
+2025-08-12 17:34:06 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:45:31 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:45:31 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:45:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:45:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:46:08 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好"}
+2025-08-12 17:46:08 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:47:41 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好"}
+2025-08-12 17:47:41 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:55:54 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你可以的"}
+2025-08-12 17:55:54 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:16 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈"}
+2025-08-12 17:58:16 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:22 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈"}
+2025-08-12 17:58:22 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:26 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈"}
+2025-08-12 17:58:26 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:30 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈哈哈哈哈哈哈"}
+2025-08-12 17:58:30 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:34 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈哈哈哈哈哈哈哈哈"}
+2025-08-12 17:58:34 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:58:39 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"哈哈哈哈哈哈"}
+2025-08-12 17:58:39 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 17:59:45 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:59:46 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:59:46 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:59:46 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:59:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:59:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 17:59:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 17:59:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 18:00:02 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 18:00:02 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-08-12 18:00:02 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 18:00:02 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-08-12 18:00:06 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!"}
+2025-08-12 18:00:06 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 18:00:09 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!"}
+2025-08-12 18:00:09 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 18:00:11 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!"}
+2025-08-12 18:00:11 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 18:00:13 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!"}
+2025-08-12 18:00:13 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-08-12 18:00:18 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好!你好!你好!"}
+2025-08-12 18:00:18 | INFO | ⬅️ POST /api/conversation/send-message -> 200
