@@ -24,10 +24,10 @@ class UserStatus(str, Enum):
 
 
 class UserRole(str, Enum):
-    Admin = "admin" # 超级管理员
-    Editor = "editor" # 可以编辑
-    Normal = "normal" # 可以使用
-    Owner = "owner" # 所有者
+    Admin = "admin"  # 超级管理员
+    Editor = "editor"  # 可以编辑
+    Normal = "normal"  # 可以使用
+    Owner = "owner"  # 所有者
 
 
 class WikiType(Enum):
@@ -48,3 +48,8 @@ class DocType(Enum):
     def __init__(self, value, text):
         self._value_ = value
         self.text = text
+
+
+class SenderType(str, Enum):
+    user = "user"
+    assistant = "assistant"
