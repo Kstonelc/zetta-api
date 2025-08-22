@@ -31,25 +31,30 @@ class UserRole(str, Enum):
 
 
 class WikiType(Enum):
-    # 前端多语言Key
     Structured = (1 << 0, "结构化")
     Unstructured = (1 << 1, "非结构化")
 
     def __init__(self, value, text):
-        self._value_ = value
         self.text = text
 
 
-class DocType(Enum):
-    Md = (1 << 0, "md")
-    Doc = (1 << 1, "doc")
-    Docx = (1 << 2, "docx")
+class FileType(Enum):
+    Md = (1 << 0, [".md", ".markdown"], "md")
+    Doc = (1 << 1, [".doc", ".docx"], "doc")
+    Pdf = (1 << 2, [".pdf"], "pdf")
 
-    def __init__(self, value, text):
-        self._value_ = value
+    def __init__(self, value, suffix, text):
+        self.suffix = suffix
         self.text = text
+
+    @staticmethod
+    def get_suffixs():
+        all_suffixes = []
+        for file_type in FileType:
+            all_suffixes.extend(file_type.suffix)
+        return all_suffixes
 
 
 class SenderType(str, Enum):
-    user = "user"
-    assistant = "assistant"
+    User = "user"
+    Assistant = "assistant"

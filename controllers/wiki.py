@@ -1,7 +1,11 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, UploadFile, File, Form
 from sqlalchemy.orm import Session
+from pathlib import Path
+import shutil
 from schemas.wiki import WikiCreateRequest, WikiQueryRequest
 from models import Wiki, get_db
+from enums import FileType
+from uuid import uuid4
 from utils.jwt import verify_token
 from utils.logger import logger
 
@@ -73,5 +77,42 @@ async def find_wikis(
     except Exception as e:
         logger.error(e)
         response = {"ok": False, "message": "查询失败"}
+    finally:
+        return response
+
+
+# 嵌入文档
+@router.post("/insert-file")
+async def insert_file(
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        file_id = str(uuid4())
+        file_name = file.filename
+        ext = Path(file.filename).suffix
+
+        allowed_ext = FileType.get_suffixs()
+        if ext not in allowed_ext:
+            response = {
+                "ok": False,
+                "message": f"不支持的文件类型: {ext}, 仅支持: {', '.join(allowed_ext)}",
+            }
+            return
+        saved_path = Path("./data") / f"{file_id}{ext}"
+
+        # 保存文件到本地
+        with saved_path.open("wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+        response = {
+            "ok": True,
+            "data": "文件上传成功",
+        }
+    except Exception as e:
+        print(e)
+        logger.error(e)
+        response = {"ok": False, "message": "嵌入失败, 请稍候重试"}
     finally:
         return response
