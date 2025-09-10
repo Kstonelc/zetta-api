@@ -82,8 +82,8 @@ async def find_wikis(
 
 
 # 嵌入文档
-@router.post("/insert-file")
-async def insert_file(
+@router.post("/upload-file")
+async def upload_file(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
     token=Depends(verify_token),

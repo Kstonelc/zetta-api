@@ -96,14 +96,30 @@ async def update_tenant(
         tenant = (
             db.query(Tenant)
             .options(
-                selectinload(Tenant.users),
-                with_loader_criteria(User, User.active.is_(True)),
+                selectinload(Tenant.tenant_user_joins).joinedload(TenantUserJoin.user),
+                with_loader_criteria(
+                    User, lambda u: u.active.is_(True), include_aliases=True
+                ),
             )
             .filter(Tenant.id == tenantId)
             .first()
         )
+        users_with_roles = []
+        for join in tenant.tenant_user_joins:
+            if not join.user:
+                continue
+            if join.user.active:
+                user_data = join.user.to_dict()
+                user_data["role"] = join.role
+                users_with_roles.append(user_data)
 
-        response = {"ok": True, "data": tenant}
+        response = {
+            "ok": True,
+            "data": {
+                **tenant.to_dict(),
+                "users": users_with_roles,
+            },
+        }
     except Exception as e:
         db.rollback()
         response = {"ok": False, "message": "更新用户信息失败"}
