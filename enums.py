@@ -39,7 +39,7 @@ class WikiType(Enum):
 
 
 class FileType(Enum):
-    Md = (1 << 0, [".md", ".markdown"], "md")
+    Md = (1 << 0, [".md"], "md")
     Doc = (1 << 1, [".doc", ".docx"], "doc")
     Pdf = (1 << 2, [".pdf"], "pdf")
 

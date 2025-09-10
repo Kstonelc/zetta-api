@@ -2430,3 +2430,2663 @@
 2025-09-10 16:06:40 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
 2025-09-10 16:07:31 | INFO | ➡️ POST /api/wiki/upload-file
 2025-09-10 16:07:31 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 19:48:17 | INFO | ✅ Zetta Server Start
+2025-09-10 19:48:20 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 19:48:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 19:48:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 19:48:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 19:48:54 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 19:48:54 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 19:48:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 19:48:55 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 19:48:55 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 19:48:55 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 19:48:56 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 19:48:56 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 19:48:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 19:48:56 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 19:48:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 19:48:56 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 19:48:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 19:48:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:25 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:25 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:25 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:25 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:29 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:29 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:29 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:29 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:31 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:31 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:32 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:32 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:33 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:03:33 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:03:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:33 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:03:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:33 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:03:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:36 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:36 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:36 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:36 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:03:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:03:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:03:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:03:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:03:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:03:39 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:03:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:03:40 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:41 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-10 20:03:46 | INFO | ➡️ POST /api/tenant/update-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3","tenantName":"Zetta1"}
+2025-09-10 20:03:46 | INFO | ⬅️ POST /api/tenant/update-tenant -> 200
+2025-09-10 20:03:50 | INFO | ➡️ POST /api/tenant/update-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3","tenantName":"Zetta"}
+2025-09-10 20:03:50 | INFO | ⬅️ POST /api/tenant/update-tenant -> 200
+2025-09-10 20:03:51 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:03:51 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-10 20:04:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:04:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:04:32 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:04:32 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:04:32 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:04:32 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:04:34 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:04:34 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-10 20:04:34 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:04:34 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-10 20:04:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:04:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:04:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:04:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:04:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:04:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:04:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:04:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:05:33 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"files":[{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}]}
+2025-09-10 20:05:33 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:06:53 | INFO | ➡️ POST /api/wiki/upload-file
+2025-09-10 20:06:53 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:07:40 | INFO | ➡️ POST /api/wiki/upload-file
+2025-09-10 20:07:40 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:09:06 | INFO | ✅ Zetta Server Start
+2025-09-10 20:09:07 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:09:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:09:19 | INFO | ➡️ POST /api/wiki/upload-file
+2025-09-10 20:09:19 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:09:51 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:09:51 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:09:58 | INFO | ➡️ POST /api/wiki/upload-file
+2025-09-10 20:09:58 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:10:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:10:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:10:17 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:10:17 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:13:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:13:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:13:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:13:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:13:31 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:13:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:13:36 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:13:36 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:20:29 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"file":{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}}
+2025-09-10 20:20:29 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:20:43 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"file":{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}}
+2025-09-10 20:20:43 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:25:47 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"file":{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}}
+2025-09-10 20:25:47 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:26:11 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"file":{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}}
+2025-09-10 20:26:11 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:26:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:26:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:26:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:26:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:26:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:26:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:26:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:26:33 | INFO | ➡️ POST /api/wiki/upload-file Request Body:{"file":{"type":"text/markdown","path":"./react-native-smooth-wheel-readme.md","relativePath":"./react-native-smooth-wheel-readme.md"}}
+2025-09-10 20:26:33 | INFO | ⬅️ POST /api/wiki/upload-file -> 422
+2025-09-10 20:27:07 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryhsklt7TzpYaaRG9B
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryhsklt7TzpYaaRG9B--
+
+2025-09-10 20:27:07 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:28:34 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:28:34 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:28:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:28:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:28:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:28:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:28:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:28:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:28:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:28:47 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryXfcyTwB0RNyb39Ke
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryXfcyTwB0RNyb39Ke--
+
+2025-09-10 20:28:47 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:29:21 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:29:21 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:29:25 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:29:25 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:29:25 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:29:25 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:29:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:29:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:29:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:29:30 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundarysPMUNJCUjuAlYk1o
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundarysPMUNJCUjuAlYk1o--
+
+2025-09-10 20:29:30 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:30:03 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:30:03 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:30:29 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:30:29 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:30:32 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:30:32 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:30:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:30:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:30:38 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryTcFYZ5bguPASkBSJ
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryTcFYZ5bguPASkBSJ--
+
+2025-09-10 20:30:38 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:32:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:32:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:32:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 20:32:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:32:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:32:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:32:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 20:32:32 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryjV3aBFCAAqMyh36x
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryjV3aBFCAAqMyh36x--
+
+2025-09-10 20:32:32 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 20:45:10 | INFO | [DB]: ✅ DB Connection Success
+2025-09-10 20:45:10 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-10 21:43:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:43:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:43:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:43:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:43:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:43:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:43:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:43:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:43:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:43:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:43:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:43:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:43:58 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundarymBRECFzlkrXwkD4w
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundarymBRECFzlkrXwkD4w--
+
+2025-09-10 21:43:58 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:45:52 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundary6oOiDm2WotTJnrku
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundary6oOiDm2WotTJnrku--
+
+2025-09-10 21:45:52 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:45:52 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryv09TG3BgYft7Vzwu
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryv09TG3BgYft7Vzwu--
+
+2025-09-10 21:45:52 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:47:27 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundary3aRRBJFe7kGGGV87
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundary3aRRBJFe7kGGGV87--
+
+2025-09-10 21:47:27 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:47:59 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryENIpGn9wj5Cg31jE
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryENIpGn9wj5Cg31jE--
+
+2025-09-10 21:47:59 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:48:03 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryAR1y9ntVM8mx8vYT
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryAR1y9ntVM8mx8vYT--
+
+2025-09-10 21:48:03 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:48:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:48:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:48:11 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryLrtM7633w1yAjzhs
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryLrtM7633w1yAjzhs--
+
+2025-09-10 21:48:11 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:48:16 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryCLAoTmNh129GSHi0
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryCLAoTmNh129GSHi0--
+
+2025-09-10 21:48:16 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:48:31 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryjhihFbFty8acswXO
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryjhihFbFty8acswXO--
+
+2025-09-10 21:48:31 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:50:28 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:50:28 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:50:28 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 21:50:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:50:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 21:50:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:50:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 21:50:33 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryVAYRXtZ5zCPn2lnl
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryVAYRXtZ5zCPn2lnl--
+
+2025-09-10 21:50:33 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:50:36 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryjMJV3PqKDoSamBD3
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryjMJV3PqKDoSamBD3--
+
+2025-09-10 21:50:36 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 21:50:38 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryCl5t6wxvyTyRsgR7
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryCl5t6wxvyTyRsgR7--
+
+2025-09-10 21:50:38 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:05:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:05:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:05:43 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryAnxtHhrkQGaXYEty
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryAnxtHhrkQGaXYEty--
+
+2025-09-10 22:05:43 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:05:46 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundary89IS86rNmBsnsIxx
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundary89IS86rNmBsnsIxx--
+
+2025-09-10 22:05:46 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:06:35 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:06:35 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:06:39 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryMbEL7Zi9eVGfETR8
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryMbEL7Zi9eVGfETR8--
+
+2025-09-10 22:06:39 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:06:42 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryYaukfcwyuc0Bu7z9
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryYaukfcwyuc0Bu7z9--
+
+2025-09-10 22:06:42 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:14:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:14:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-10 22:14:09 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundary9eacM2GlwYWOqvyo
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundary9eacM2GlwYWOqvyo--
+
+2025-09-10 22:14:09 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:14:12 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryHAfSsz6sl4kpdKUy
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryHAfSsz6sl4kpdKUy--
+
+2025-09-10 22:14:12 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:14:15 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryvZzpT0EpAOTIQ2eG
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryvZzpT0EpAOTIQ2eG--
+
+2025-09-10 22:14:15 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-10 22:14:19 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryudpXH8fzvJrKUHRW
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme_副本.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryudpXH8fzvJrKUHRW--
+
+2025-09-10 22:14:19 | INFO | ⬅️ POST /api/wiki/upload-file -> 200

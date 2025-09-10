@@ -90,8 +90,8 @@ async def upload_file(
 ):
     response = {}
     try:
-        file_id = str(uuid4())
-        file_name = file.filename
+        # TODO 这样处理不安全
+        file_name = file.filename.split(".")[0]
         ext = Path(file.filename).suffix
 
         allowed_ext = FileType.get_suffixs()
@@ -101,14 +101,26 @@ async def upload_file(
                 "message": f"不支持的文件类型: {ext}, 仅支持: {', '.join(allowed_ext)}",
             }
             return
-        saved_path = Path("./data") / f"{file_id}{ext}"
+        saved_path = Path("./data") / f"{file_name}{ext}"
 
         # 保存文件到本地
         with saved_path.open("wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
+        print(111, {
+                "fileName": file_name,
+                "filePath": str(saved_path),
+                "fileExt": ext,
+                "fileSize": saved_path.stat().st_size,
+            })
         response = {
             "ok": True,
-            "data": "文件上传成功",
+            "data": {
+                "fileName": file_name,
+                "filePath": str(saved_path),
+                "fileExt": ext,
+                "fileSize": round(saved_path.stat().st_size / 1024, 1),
+            },
+            "message": "文件上传成功"
         }
     except Exception as e:
         print(e)
