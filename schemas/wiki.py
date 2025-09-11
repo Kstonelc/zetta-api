@@ -16,3 +16,7 @@ class WikiCreateRequest(BaseModel):
 
 class WikiQueryRequest(BaseModel):
     tenantId: UUID
+
+
+class WikiPreviewFileChunkRequest(BaseModel):
+    filePath: str

@@ -2,12 +2,16 @@ from fastapi import APIRouter, Depends, UploadFile, File, Form
 from sqlalchemy.orm import Session
 from pathlib import Path
 import shutil
-from schemas.wiki import WikiCreateRequest, WikiQueryRequest
+from schemas.wiki import (
+    WikiCreateRequest,
+    WikiQueryRequest,
+    WikiPreviewFileChunkRequest,
+)
 from models import Wiki, get_db
 from enums import FileType
-from uuid import uuid4
 from utils.jwt import verify_token
 from utils.logger import logger
+from utils.rag import load_doc, split_doc
 
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
@@ -106,25 +110,39 @@ async def upload_file(
         # 保存文件到本地
         with saved_path.open("wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
-        print(111, {
-                "fileName": file_name,
-                "filePath": str(saved_path),
-                "fileExt": ext,
-                "fileSize": saved_path.stat().st_size,
-            })
         response = {
             "ok": True,
             "data": {
                 "fileName": file_name,
                 "filePath": str(saved_path),
                 "fileExt": ext,
+                # 默认单位为 KB
                 "fileSize": round(saved_path.stat().st_size / 1024, 1),
             },
-            "message": "文件上传成功"
+            "message": "文件上传成功",
         }
     except Exception as e:
-        print(e)
         logger.error(e)
-        response = {"ok": False, "message": "嵌入失败, 请稍候重试"}
+        response = {"ok": False, "message": "上传失败, 请稍候重试"}
+    finally:
+        return response
+
+
+@router.post("/preview-file-chunks")
+async def preview_file_chunks(
+    body: WikiPreviewFileChunkRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        file_path = body.filePath
+
+        doc = load_doc(file_path)
+        split_docs = split_doc(doc)
+        response = {"ok": True, "data": split_docs[:10]}
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "预览块失败"}
     finally:
         return response
