@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="13e7ee15-372e-4f97-8bcc-28f4047cad11" name="更改" comment="更改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/wiki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/af0b6a42-3a2e-4306-a408-67d3b9b85499.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/rag.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rag.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +221,7 @@
       <workItem from="1754464877342" duration="54000" />
       <workItem from="1754708676809" duration="42749000" />
       <workItem from="1754832407199" duration="8514000" />
-      <workItem from="1757504868340" duration="3911000" />
+      <workItem from="1757504868340" duration="8618000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
