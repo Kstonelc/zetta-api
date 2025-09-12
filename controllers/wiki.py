@@ -137,10 +137,17 @@ async def preview_file_chunks(
     response = {}
     try:
         file_path = body.filePath
+        chunkSize = body.chunkSize
+        chunkOverlap = body.chunkOverlap
+
+        print(111, chunkSize, chunkOverlap)
 
         doc = load_doc(file_path)
-        split_docs = split_doc(doc)
-        response = {"ok": True, "data": split_docs[:10]}
+        split_docs = split_doc(doc, chunkSize, chunkOverlap)
+        response = {
+            "ok": True,
+            "data": split_docs,
+        }
     except Exception as e:
         logger.error(e)
         response = {"ok": False, "message": "预览块失败"}
