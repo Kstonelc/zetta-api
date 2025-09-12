@@ -17,8 +17,7 @@ def load_doc(file_path: str | Path) -> List[Document]:
         return TextLoader(str(file_path), encoding="utf-8").load()
     elif suffix in FileType.Md.suffix:
         docs = TextLoader(str(file_path), encoding="utf-8").load()
-        splitter = MarkdownTextSplitter(chunk_size=800, chunk_overlap=150)
-        return splitter.split_documents(docs)
+        return docs
     elif suffix in FileType.Pdf.suffix:
         return PyPDFLoader(str(file_path)).load()
     else:
@@ -26,8 +25,9 @@ def load_doc(file_path: str | Path) -> List[Document]:
 
 
 def split_doc(
-    doc: Document, chunk_size: int = 800, chunk_overlap: int = 150
+    doc: Document, chunk_size: int = 1204, chunk_overlap: int = 50
 ) -> List[Document]:
+    print(chunk_size, chunk_overlap)
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,

@@ -20,3 +20,5 @@ class WikiQueryRequest(BaseModel):
 
 class WikiPreviewFileChunkRequest(BaseModel):
     filePath: str
+    chunkSize: int
+    chunkOverlap: int
