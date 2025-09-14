@@ -1,14 +1,11 @@
-from typing import Any, Optional, List, Iterator, Tuple
+from typing import Any, Optional, List, Iterator
 
-from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain_core.language_models.llms import LLM
+from langchain_core.embeddings import Embeddings
 from langchain_community.llms.tongyi import Tongyi
 from langchain_core.outputs import GenerationChunk
 from langchain_community.embeddings.dashscope import DashScopeEmbeddings
-from marshmallow.fields import Boolean
-import dashscope
-from qdrant_client.http import model
 
 from config import settings
 from enums import QWModelType
@@ -68,11 +65,19 @@ class QWProvider(LLM):
         except Exception as e:
             return False
 
-    # 向量化
-    def get_embedding(
-        self, model_name: str = "text-embedding-v3"
-    ) -> DashScopeEmbeddings:
-        return DashScopeEmbeddings(
-            model=model_name,
-            dashscope_api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
+
+class QWEmbeddings(Embeddings):
+    def __init__(self, api_key: str | None = None, model: str = "text-embedding-v1"):
+        self.api_key = api_key
+        self.model = model
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        embedding_client = DashScopeEmbeddings(
+            model=self.model,
+            dashscope_api_key=self.api_key
         )
+        document_vectors = embedding_client.embed_documents(texts)
+        return document_vectors
+
+    def embed_query(self, text: str) -> list[float]:
+        return self.embed_documents([text])[0]

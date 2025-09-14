@@ -1,17 +1,26 @@
+from dashscope import api_key
 from fastapi import APIRouter, Depends, UploadFile, File, Form
 from sqlalchemy.orm import Session
 from pathlib import Path
 import shutil
+
 from schemas.wiki import (
     WikiCreateRequest,
     WikiQueryRequest,
     WikiPreviewFileChunkRequest,
+    WikiIndexFileRequest
 )
 from models import Wiki, get_db
 from enums import FileType
 from utils.jwt import verify_token
+from qdrant_client import QdrantClient
+from langchain_community.vectorstores import Qdrant
+from qdrant_client.http.models import Distance
+from config import settings
+from llm.qwen import QWEmbeddings
 from utils.logger import logger
 from utils.rag import load_doc, split_doc
+from utils.vector_db import vector_client
 
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
@@ -140,10 +149,18 @@ async def preview_file_chunks(
         chunkSize = body.chunkSize
         chunkOverlap = body.chunkOverlap
 
-        print(111, chunkSize, chunkOverlap)
-
         doc = load_doc(file_path)
         split_docs = split_doc(doc, chunkSize, chunkOverlap)
+        qw_embedding = QWEmbeddings(api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1")
+        vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
+        vs = Qdrant.from_documents(
+            documents=split_docs,
+            embedding=qw_embedding,
+            url=vector_db_url,
+            collection_name="zetta",
+            distance_func=Distance.COSINE,
+        )
+        vs.add_documents(split_docs)
         response = {
             "ok": True,
             "data": split_docs,
@@ -151,5 +168,35 @@ async def preview_file_chunks(
     except Exception as e:
         logger.error(e)
         response = {"ok": False, "message": "预览块失败"}
+    finally:
+        return response
+
+
+@router.post("/index-file")
+async def index_file(
+    body: WikiIndexFileRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        docs = body.docs
+
+        # 向量化处理
+        qw_embedding = QWEmbeddings(api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1")
+        vs = Qdrant.from_documents(
+            documents=docs,
+            embedding=qw_embedding,
+            client=QdrantClient,
+            collection_name="zetta",
+            distance=Distance.COSINE,
+        )
+        vs.add_documents(docs)
+        response = {
+            "ok": True,
+            "data": [],
+        }
+    except Exception as e:
+        response = {"ok": False, "message": "索引文件失败"}
     finally:
         return response

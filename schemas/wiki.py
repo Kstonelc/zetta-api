@@ -1,6 +1,6 @@
 from pydantic import BaseModel, EmailStr, constr
 from uuid import UUID
-from typing import Optional
+from typing import Optional, List, Dict
 
 
 class WikiCreateRequest(BaseModel):
@@ -22,3 +22,7 @@ class WikiPreviewFileChunkRequest(BaseModel):
     filePath: str
     chunkSize: int
     chunkOverlap: int
+
+
+class WikiIndexFileRequest(BaseModel):
+    chunks: List[Dict]

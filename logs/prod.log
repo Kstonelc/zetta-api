@@ -11254,3 +11254,1020 @@ s1.speak(100, 200);
 2025-09-11 23:52:22 | INFO | [Qdrant]: ✅ Qdrant Connection Success
 2025-09-11 23:56:57 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md"}
 2025-09-11 23:56:57 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-12 19:00:34 | INFO | ✅ Zetta Server Start
+2025-09-12 19:09:15 | INFO | ✅ Zetta Server Start
+2025-09-12 19:09:18 | INFO | [DB]: ✅ DB Connection Success
+2025-09-12 19:09:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-12 19:41:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-12 19:41:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-12 19:41:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-12 19:41:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-12 19:41:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-12 19:41:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-12 19:41:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-12 19:41:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-12 19:41:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-12 19:41:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-12 19:41:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-12 19:41:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:12:39 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 10:12:39 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 10:12:39 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:12:39 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:12:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 10:12:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 10:12:40 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:12:40 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:12:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:12:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:12:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:12:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:12:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:12:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:12:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:12:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:12:56 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":20,"chunkOverlap":50}
+2025-09-13 10:12:56 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 10:12:56 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 10:12:57 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":20,"chunkOverlap":50}
+2025-09-13 10:12:57 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 10:12:57 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 10:12:57 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":20,"chunkOverlap":50}
+2025-09-13 10:12:57 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 10:12:57 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 10:13:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:13:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:13:02 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:13:03 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:13:07 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 10:13:07 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:17 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"ok"}
+2025-09-13 10:13:17 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:17 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":" ok"}
+2025-09-13 10:13:17 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:21 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"ok"}
+2025-09-13 10:13:21 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:27 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"ok"}
+2025-09-13 10:13:27 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:32 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"Hello"}
+2025-09-13 10:13:32 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:13:39 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"what is your name"}
+2025-09-13 10:13:39 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 10:20:19 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:20:19 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:20:19 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:20:19 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:20:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:20:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:20:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:20:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:20:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:20:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:20:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:20:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:21:46 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 10:21:46 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 10:21:46 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 10:21:46 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:21:46 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:21:46 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 10:21:46 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:21:46 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:43:56 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:43:56 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:43:56 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:43:56 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:43:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:43:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 10:43:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:43:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 10:44:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:44:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 10:44:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:44:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:44:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:44:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 10:44:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 10:44:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:01:27 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 11:01:27 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 11:01:27 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 11:01:29 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:29 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:29 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 11:01:30 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 11:01:31 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 11:01:31 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 11:01:31 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:01:31 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:01:31 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 11:01:31 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 11:01:31 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:01:31 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:01:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 11:01:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 11:01:36 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 11:01:36 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 11:01:44 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:45 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-13 11:01:46 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:46 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-13 11:01:47 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 11:01:47 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 11:01:50 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 11:01:50 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 11:01:53 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:01:53 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-13 11:01:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 11:01:57 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 11:02:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 11:02:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 11:02:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:02:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 11:02:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:02:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 11:02:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:02:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 11:02:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:02:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 11:02:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 11:02:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 14:17:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:17:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:17:50 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:17:50 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:17:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:17:50 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:17:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:17:50 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:18:08 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:18:08 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:18:08 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:18:08 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:18:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:18:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:18:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:22:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:22:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:22:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:22:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:22:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:22:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:22:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:22:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:22:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:22:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:22:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:22:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:23:02 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:23:02 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:23:02 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:23:02 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:23:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:23:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:23:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:25:24 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:25:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 14:25:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:25:25 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:25:25 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 14:25:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 14:26:53 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:53 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:53 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:56 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:56 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:56 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:56 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:56 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:56 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:56 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:56 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:56 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:56 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:56 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:56 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:58 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:58 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:58 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:59 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:59 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:59 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:26:59 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:26:59 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:26:59 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:00 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:00 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:00 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:00 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:00 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:00 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:01 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:01 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:01 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:01 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:01 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:01 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:01 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:01 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:27:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 14:27:01 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 14:27:01 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 14:42:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:42:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 14:42:06 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 14:42:06 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 14:42:06 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:42:06 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 14:42:06 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 14:42:06 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 15:06:13 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:06:13 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 15:06:13 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:06:14 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:06:14 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 15:06:14 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:11:28 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundarydVx4xwoBiPJ5s5yt
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundarydVx4xwoBiPJ5s5yt--
+
+2025-09-13 15:11:28 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-13 15:11:35 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:11:35 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 15:11:35 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:12:41 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"C:\\projetcs\\zetta-api\\data\\禹神：Typescript速通教程.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:12:41 | ERROR | Error loading C:\projetcs\zetta-api\data\禹神：Typescript速通教程.md
+2025-09-13 15:12:41 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:13:13 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:13:13 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:13:28 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":20,"chunkOverlap":2}
+2025-09-13 15:13:28 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:13:35 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 15:13:35 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 15:55:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 15:55:48 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 15:55:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 15:55:49 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 15:55:49 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 15:55:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 15:55:49 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 15:55:49 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 16:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 16:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:40:48 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 18:40:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 18:43:03 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 18:43:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 18:43:09 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:12 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:43:15 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:15 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:43:17 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:17 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:43:30 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:30 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:43:31 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:31 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:43:32 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:43:32 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:46:14 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:46:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:46:14 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:46:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:46:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:46:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:46:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:46:37 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundary5Wg8LkYc924VYxmp
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundary5Wg8LkYc924VYxmp--
+
+2025-09-13 18:46:37 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-13 18:46:40 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:46:40 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:46:42 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:46:42 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:46:43 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:46:43 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:46:43 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-13 18:46:43 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 18:51:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:51:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:51:13 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 18:51:13 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-09-13 18:51:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:51:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:54:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:54:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:54:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:54:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:54:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:54:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:55:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:55:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:55:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:55:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 18:55:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:55:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:55:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:59:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 18:59:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 18:59:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 18:59:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:00:40 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:50 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:00:50 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:00:50 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 19:00:50 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 19:00:50 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:00:50 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:00:50 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 19:00:50 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 19:00:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:00:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:00:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:00:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:00:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:00:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:02:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:02:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:02:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 19:02:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:02:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:02:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:02:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:02:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:02:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 19:02:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:02:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:02:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:15:09 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:15:11 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:16:36 | INFO | ✅ Zetta Server Start
+2025-09-13 19:16:38 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:16:38 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:16:40 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md"
+}
+2025-09-13 19:16:40 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 422
+2025-09-13 19:16:53 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:16:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:16:55 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:16:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:17:21 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:17:24 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:17:28 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:17:29 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:17:42 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:17:43 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:18:16 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:18:16 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:18:23 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:18:26 | ERROR | The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-09-13 19:18:26 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:20:29 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:20:29 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:21:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:21:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:21:25 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:21:37 | ERROR | argument 'text': 'Document' object cannot be converted to 'PyString'
+2025-09-13 19:21:37 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:22:28 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:22:28 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:22:41 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/禹神：Typescript速通教程.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:24:26 | INFO | ✅ Zetta Server Start
+2025-09-13 19:24:27 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:24:28 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:24:32 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-reademe.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:24:34 | ERROR | [Errno 2] No such file or directory: '/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-reademe.md'
+2025-09-13 19:24:34 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:24:52 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:28:39 | ERROR | Request timed out.
+2025-09-13 19:28:39 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:29:05 | INFO | ✅ Zetta Server Start
+2025-09-13 19:29:07 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:29:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:29:12 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:33:00 | ERROR | Request timed out.
+2025-09-13 19:33:00 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:33:35 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:33:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:33:44 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:33:44 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:34:00 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:34:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:34:41 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:34:41 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:37:12 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:37:12 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:38:21 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:38:21 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:39:12 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:39:12 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:43:31 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:43:31 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:43:34 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:43:36 | ERROR | Unsupported atom data type: <class 'langchain_core.documents.base.Document'>
+2025-09-13 19:43:36 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:43:51 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:43:51 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:44:01 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:44:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:44:03 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-13 19:44:05 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-13 19:49:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 19:49:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-13 19:49:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:49:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:49:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:49:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:49:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 19:50:40 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:50:40 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:53:08 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:53:08 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:53:37 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:53:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:54:01 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:54:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:54:48 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:54:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:55:06 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:55:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:55:33 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:55:33 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 19:55:35 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 19:55:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 20:31:37 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 20:31:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 20:49:27 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 20:49:27 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:06:03 | INFO | ✅ Zetta Server Start
+2025-09-13 21:06:05 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:06:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:06:06 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:06:06 | ERROR | Can't instantiate abstract class QWProvider with abstract methods chat, embed
+2025-09-13 21:06:06 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:06:10 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:06:10 | ERROR | Can't instantiate abstract class QWProvider with abstract methods chat, embed
+2025-09-13 21:06:10 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:06:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:06:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:06:28 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:06:29 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:06:45 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:06:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:06:48 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:06:48 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:07:22 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你哈"}
+2025-09-13 21:07:22 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:07:37 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:07:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:08:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:08:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:08:35 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:08:35 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:09:08 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:09:08 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:10:47 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:10:47 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:10:49 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:10:49 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:10:57 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:10:57 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:11:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:11:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:11:30 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:11:30 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:11:37 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:11:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:13:45 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:13:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:13:55 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:13:55 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:13:59 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"你好"}
+2025-09-13 21:13:59 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:14:06 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:14:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:14:40 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:14:40 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:15:24 | INFO | ➡️ POST /api/conversation/send-message Request Body:{"prompt":"from typing import Any, Optional, List, Iterator\n\nfrom langchain_core.callbacks import CallbackManagerForLLMRun\nfrom langchain_core.language_models.llms import LLM\nfrom langchain_community.llms.tongyi import Tongyi\nfrom langchain_core.outputs import GenerationChunk\nfrom langchain_community.embeddings.dashscope import DashScopeEmbeddings\n\nfrom config import settings\nfrom enums import QWModelType\n\n\nclass QWProvider(LLM):\n    client: Tongyi = None\n    model_name: str = \"\"\n\n    def __init__(\n        self,\n        api_key: str = settings.QIANWEN_API_KEY,\n        model_name=QWModelType.qw_plus,\n        **kwargs\n    ):\n        super().__init__(**kwargs)\n        self.model_name = model_name\n        self.client = Tongyi(api_key=api_key, model=self.model_name)\n\n    @property\n    def _identifying_params(self):\n        return {\"model_name\": self.model_name}\n\n    @property\n    def _llm_type(self):\n        return \"qwen\"\n\n    def _call(\n        self, prompt: str, stop: Optional[list[str]] = None, **kwargs: Any\n    ) -> str:\n        resp = self.client.generate(prompts=[prompt], stop=stop, **kwargs)\n        gen = resp.generations[0][0]\n        return (\n            getattr(gen, \"message\", None).content\n            if hasattr(gen, \"message\")\n            else gen.text\n        )\n\n    def _stream(\n        self,\n        prompt: str,\n        stop: Optional[List[str]] = None,\n        run_manager: Optional[CallbackManagerForLLMRun] = None,\n        **kwargs: Any\n    ) -> Iterator[GenerationChunk]:\n        stop_signal = kwargs.pop(\"stop_signal\", False)\n        for chunk_str in self.client.stream(input=prompt, stop=stop, **kwargs):\n            if stop_signal:\n                break\n            chunk = GenerationChunk(text=chunk_str)\n            yield chunk\n\n    def test_api_key(self, test_prompt: str = \"你好\") -> bool:\n        try:\n            self.client.invoke(test_prompt)\n            return True\n        except Exception as e:\n            return False\n\n    # 向量化\n    def get_embedding(\n        self, model_name: str = \"text-embedding-v3\"\n    ) -> DashScopeEmbeddings:\n        return DashScopeEmbeddings(\n            model=model_name,\n            dashscope_api_key=\"sk-72b635b190514c8b90cfcbfe750fa61a\",\n        )\n 为啥这么写了 就可以直接调用stream"}
+2025-09-13 21:15:25 | INFO | ⬅️ POST /api/conversation/send-message -> 200
+2025-09-13 21:21:10 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:21:10 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:29:49 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:29:49 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:30:42 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:30:42 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:31:17 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:31:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:31:23 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:31:23 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:31:33 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:31:33 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:31:48 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:31:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:31:53 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:31:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:32:03 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:32:03 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:32:10 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:32:10 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:32:18 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:32:18 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 21:32:43 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 21:32:43 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 22:02:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:02:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:02:06 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:02:06 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:02:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:02:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:03:20 | INFO | [DB]: ✅ DB Connection Success
+2025-09-13 22:03:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 22:43:53 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-13 22:43:53 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:43:53 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:43:53 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:43:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-13 22:43:54 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:43:54 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:43:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 22:43:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-13 22:43:54 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-13 22:43:54 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:17:56 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-14 17:17:56 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-14 17:17:56 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-14 17:17:56 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-14 17:18:38 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:18:38 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{}
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-09-14 17:18:38 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:18:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:18:57 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-14 17:18:57 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-14 17:18:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-14 17:18:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-14 17:18:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-14 17:18:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding"}
+2025-09-14 17:18:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:18:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-14 17:18:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:18:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank"}
+2025-09-14 17:18:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:18:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-14 17:23:12 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:23:12 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:23:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:23:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:24:19 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:24:19 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:25:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:25:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:26:36 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:26:36 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:26:57 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:26:57 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:27:04 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:27:04 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:27:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:27:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:27:37 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 17:27:40 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 17:28:20 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:28:20 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:28:22 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 17:28:24 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 17:34:52 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:34:52 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 17:35:01 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 17:35:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:03:39 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:03:39 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:04:06 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:04:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:04:09 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:04:09 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:05:35 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:05:35 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:05:59 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:05:59 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:07:48 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:07:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:08:04 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:08:04 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:09:07 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:09:07 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:09:11 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:09:12 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:09:59 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:09:59 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:11:00 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:11:00 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:11:05 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:11:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:11:12 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:11:12 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:11:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:11:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:19:49 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:19:49 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:21:04 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:21:04 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:21:50 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:21:50 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:26:47 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:26:47 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:27:22 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:27:22 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:27:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:27:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:27:37 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:27:37 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:28:50 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:28:50 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:28:53 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:28:53 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:29:02 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:29:03 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:29:41 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:29:41 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:29:45 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:29:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:29:48 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:29:48 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:30:16 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:30:16 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:30:21 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:30:21 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:31:01 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:31:04 | ERROR | Client.__init__() got an unexpected keyword argument 'client'
+2025-09-14 18:31:04 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:32:45 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:32:45 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:32:51 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:32:53 | ERROR | Client.__init__() got an unexpected keyword argument 'client'
+2025-09-14 18:32:53 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:33:05 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:33:05 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:39:59 | INFO | ✅ Zetta Server Start
+2025-09-14 18:40:01 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:40:01 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:40:06 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:40:09 | ERROR | Client.__init__() got an unexpected keyword argument 'client'
+2025-09-14 18:40:09 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:44:39 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:44:39 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:44:55 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:44:58 | ERROR | Client.__init__() got an unexpected keyword argument 'client'
+2025-09-14 18:44:58 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:47:52 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:47:52 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:48:22 | INFO | ✅ Zetta Server Start
+2025-09-14 18:48:24 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:48:24 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:48:25 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:48:28 | ERROR | Client.__init__() got an unexpected keyword argument 'distance'
+2025-09-14 18:48:28 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:48:38 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:48:38 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-14 18:48:44 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{
+    "filePath": "/Users/kstone/Desktop/projects/zetta-api/data/react-native-smooth-wheel-readme.md",
+    "chunkSize": 1024,
+    "chunkOverlap": 50
+}
+2025-09-14 18:48:48 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-14 18:49:13 | INFO | [DB]: ✅ DB Connection Success
+2025-09-14 18:49:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
