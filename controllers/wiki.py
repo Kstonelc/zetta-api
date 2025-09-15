@@ -1,5 +1,4 @@
-from dashscope import api_key
-from fastapi import APIRouter, Depends, UploadFile, File, Form
+from fastapi import APIRouter, Depends, UploadFile, File
 from sqlalchemy.orm import Session
 from pathlib import Path
 import shutil
@@ -8,19 +7,19 @@ from schemas.wiki import (
     WikiCreateRequest,
     WikiQueryRequest,
     WikiPreviewFileChunkRequest,
-    WikiIndexFileRequest
+    WikiIndexFileRequest,
+    WikiRecallDocsRequest,
 )
+from celery_task.tasks import long_running_task
 from models import Wiki, get_db
 from enums import FileType
 from utils.jwt import verify_token
-from qdrant_client import QdrantClient
 from langchain_community.vectorstores import Qdrant
 from qdrant_client.http.models import Distance
 from config import settings
 from llm.qwen import QWEmbeddings
 from utils.logger import logger
 from utils.rag import load_doc, split_doc
-from utils.vector_db import vector_client
 
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
@@ -123,7 +122,7 @@ async def upload_file(
             "ok": True,
             "data": {
                 "fileName": file_name,
-                "filePath": str(saved_path),
+                "filePath": saved_path.as_posix(),
                 "fileExt": ext,
                 # 默认单位为 KB
                 "fileSize": round(saved_path.stat().st_size / 1024, 1),
@@ -151,16 +150,6 @@ async def preview_file_chunks(
 
         doc = load_doc(file_path)
         split_docs = split_doc(doc, chunkSize, chunkOverlap)
-        qw_embedding = QWEmbeddings(api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1")
-        vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
-        vs = Qdrant.from_documents(
-            documents=split_docs,
-            embedding=qw_embedding,
-            url=vector_db_url,
-            collection_name="zetta",
-            distance_func=Distance.COSINE,
-        )
-        vs.add_documents(split_docs)
         response = {
             "ok": True,
             "data": split_docs,
@@ -183,13 +172,16 @@ async def index_file(
         docs = body.docs
 
         # 向量化处理
-        qw_embedding = QWEmbeddings(api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1")
+        qw_embedding = QWEmbeddings(
+            api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
+        )
+        vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
         vs = Qdrant.from_documents(
             documents=docs,
             embedding=qw_embedding,
-            client=QdrantClient,
+            url=vector_db_url,
             collection_name="zetta",
-            distance=Distance.COSINE,
+            distance_func=Distance.COSINE,
         )
         vs.add_documents(docs)
         response = {
@@ -197,6 +189,43 @@ async def index_file(
             "data": [],
         }
     except Exception as e:
+        logger.error(e)
         response = {"ok": False, "message": "索引文件失败"}
+    finally:
+        return response
+
+
+@router.post("/recall-docs")
+def recall_docs(
+    body: WikiRecallDocsRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        wikiName = body.wikiName
+        queryContent = body.queryContent
+
+        query = "npm install @kstonelc/react-native-smooth-wheel"
+        qw_embedding = QWEmbeddings(
+            api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
+        )
+        vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
+        vs = Qdrant.from_existing_collection(
+            embedding=qw_embedding,
+            url=vector_db_url,
+            path=None,
+            collection_name=wikiName,
+        )
+
+        docs_scores = vs.similarity_search_with_score(query, k=5)
+        long_running_task({"data": "test"})
+        response = {
+            "ok": True,
+            "data": docs_scores,
+        }
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "查询失败"}
     finally:
         return response

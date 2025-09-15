@@ -18,7 +18,7 @@ class VectorWrapper:
 
     def __new__(
         cls,
-        host: str = "121.5.5.83",
+        host: str = "localhost",
         port: int = 6333,
         collection_name: str = "default",
         vector_dim: int = 768,  # 根据模型选择

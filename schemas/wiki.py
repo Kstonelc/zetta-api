@@ -26,3 +26,8 @@ class WikiPreviewFileChunkRequest(BaseModel):
 
 class WikiIndexFileRequest(BaseModel):
     chunks: List[Dict]
+
+
+class WikiRecallDocsRequest(BaseModel):
+    wikiName: str
+    queryContent: str
