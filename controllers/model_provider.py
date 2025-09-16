@@ -100,6 +100,7 @@ async def update_model_provider(
             response = {"ok": False, "message": "模型提供商不存在"}
             return
 
+        print("提供商", provider.to_dict())
         # 验证 api_key
         if not model_provider_update_type == ModelProviderUpdateType.Clear:
             llm = QWProvider(api_key=model_provider_api_key)

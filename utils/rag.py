@@ -20,9 +20,7 @@ def load_doc(file_path: str | Path) -> List[Document]:
             return TextLoader(str(file_path), encoding="utf-8").load()
         elif suffix in FileType.Md.suffix:
             return UnstructuredMarkdownLoader(
-                "./data/react-native-smooth-wheel-readme.md",
-                mode="single",
-                strategy="fast",
+                str(file_path),
             ).load()
         elif suffix in FileType.Pdf.suffix:
             return PyPDFLoader(str(file_path)).load()

@@ -37,7 +37,11 @@ async def find_user(
         user = (
             db.query(User)
             .options(joinedload(User.tenants))
-            .filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Active.value)
+            .filter(
+                User.active.is_(True),
+                User.email == user_email,
+                User.status == UserStatus.Active.value,
+            )
             .first()
         )
         if not user:
@@ -219,7 +223,11 @@ async def update_user_password(
 
         user = (
             db.query(User)
-            .filter(User.active.is_(True), User.email == user_email, User.status == UserStatus.Active.value)
+            .filter(
+                User.active.is_(True),
+                User.email == user_email,
+                User.status == UserStatus.Active.value,
+            )
             .first()
         )
         if not user:
