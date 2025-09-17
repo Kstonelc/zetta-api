@@ -10,7 +10,9 @@ from sqlalchemy.orm import relationship
 class ModelProvider(BaseModel):
     __tablename__ = "model_provider"
 
-    name = Column(String, nullable=False, unique=True)
+    name = Column(String, nullable=False, unique=True)  # 存放枚举
+    logo = Column(String, nullable=True)
+    display_name = Column(String, nullable=True)
     api_key = Column(String, nullable=True)  # API KEY
     desc = Column(Text, nullable=True)
 

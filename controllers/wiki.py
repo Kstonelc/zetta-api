@@ -170,8 +170,11 @@ async def index_file(
     response = {}
     try:
         docs = body.docs
+        api_key = body.apiKey
 
-        # 向量化处理
+        # 1 切割文档
+
+        # 2 向量化处理
         qw_embedding = QWEmbeddings(
             api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
         )
@@ -203,10 +206,9 @@ def recall_docs(
 ):
     response = {}
     try:
-        wikiName = body.wikiName
-        queryContent = body.queryContent
+        wiki_name = body.wikiName
+        query_content = body.queryContent
 
-        query = "npm install @kstonelc/react-native-smooth-wheel"
         qw_embedding = QWEmbeddings(
             api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
         )
@@ -215,11 +217,13 @@ def recall_docs(
             embedding=qw_embedding,
             url=vector_db_url,
             path=None,
-            collection_name=wikiName,
+            collection_name=wiki_name,
         )
 
-        docs_scores = vs.similarity_search_with_score(query, k=5)
-        long_running_task({"data": "test"})
+        docs_scores = vs.similarity_search_with_score(query_content, k=5)
+        res = long_running_task.delay({"data": "test"})
+        task_id = res.id
+        print("任务Id", task_id)
         response = {
             "ok": True,
             "data": docs_scores,

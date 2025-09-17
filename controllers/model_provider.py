@@ -7,7 +7,9 @@ from schemas.model import (
     ModelProviderQueryRequest,
     ModelProviderUpdateRequest,
 )
-from utils.common import encrypt
+from llm.llm_factory import LLMFactory
+from enums import LLMProvider
+from utils.common import encrypt, decrypt
 from utils.jwt import verify_token
 from models import ModelProvider, Model, get_db
 from enums import ModelProviderUpdateType
@@ -72,7 +74,6 @@ async def find_model_provider(
         )
         response = {"ok": True, "data": model_providers}
     except Exception as e:
-        db.rollback()
         response = {"ok": False, "message": "获取模型提供商失败"}
         logger.error(e)
     finally:
@@ -100,10 +101,13 @@ async def update_model_provider(
             response = {"ok": False, "message": "模型提供商不存在"}
             return
 
-        print("提供商", provider.to_dict())
         # 验证 api_key
         if not model_provider_update_type == ModelProviderUpdateType.Clear:
-            llm = QWProvider(api_key=model_provider_api_key)
+            model_provider_name = provider.name
+            llm = LLMFactory.create(
+                model_provider_name,
+                api_key=model_provider_api_key,
+            )
             if not llm.test_api_key():
                 response = {"ok": False, "message": "API KEY 无效"}
                 return

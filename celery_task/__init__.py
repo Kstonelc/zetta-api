@@ -2,8 +2,8 @@ from celery import Celery
 
 celery = Celery(
     "yapp",
-    broker="redis://localhost:6379/0",
-    backend="redis://localhost:6379/0",
+    broker="redis://121.5.5.83:6379/0",
+    backend="redis://121.5.5.83:6379/0",
 )
 
 

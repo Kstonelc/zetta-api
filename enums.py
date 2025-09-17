@@ -6,6 +6,20 @@ class QWModelType(str, Enum):
     qw_turbo = "qwen-turbo"
 
 
+class LLMProvider(str, Enum):
+    QW = "qwen"
+    Deepseek = "deepseek"
+
+    @property
+    def logo(self):
+        if self == LLMProvider.QW:
+            return "./assets/models/qw.svg"
+        elif self == LLMProvider.Deepseek:
+            return "./assets/models/deepseek.svg"
+        else:
+            return None
+
+
 class ModelType(str, Enum):
     TextEmbedding = "textEmbedding"
     TextGeneration = "textGeneration"
@@ -39,7 +53,7 @@ class WikiType(Enum):
 
 
 class FileType(Enum):
-    Md = (1 << 0, [".md"], "md")
+    Md = (1 << 0, [".md", ".txt"], "md")
     Doc = (1 << 1, [".doc", ".docx"], "doc")
     Pdf = (1 << 2, [".pdf"], "pdf")
 

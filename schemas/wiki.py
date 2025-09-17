@@ -26,6 +26,7 @@ class WikiPreviewFileChunkRequest(BaseModel):
 
 class WikiIndexFileRequest(BaseModel):
     chunks: List[Dict]
+    apiKey: str
 
 
 class WikiRecallDocsRequest(BaseModel):

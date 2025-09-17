@@ -1,66 +1,82 @@
-from typing import Any, Optional, List, Iterator
-
+from typing import Any, Dict, Iterator, List, Optional
+from pydantic import Field, PrivateAttr
 from langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain_core.language_models.llms import LLM
 from langchain_core.embeddings import Embeddings
-from langchain_community.llms.tongyi import Tongyi
+from langchain_openai import ChatOpenAI
 from langchain_core.outputs import GenerationChunk
+from langchain_core.messages import AIMessage, AIMessageChunk
 from langchain_community.embeddings.dashscope import DashScopeEmbeddings
-
-from config import settings
-from enums import QWModelType
 
 
 class QWProvider(LLM):
-    client: Tongyi = None
-    model_name: str = ""
+    model: str = Field(default="qwen-plus", description="模型名")
+    api_key: Optional[str] = Field(default=None, description="API Key")
+    base_url: Optional[str] = Field(
+        default="https://dashscope.aliyuncs.com/compatible-mode/v1",
+        description="Base URL",
+    )
+    temperature: float = Field(default=0.2)
+    max_tokens: Optional[int] = Field(default=None)
+    request_timeout: int = Field(default=60, description="请求超时时间")
 
-    def __init__(
-        self,
-        api_key: str = settings.QIANWEN_API_KEY,
-        model_name=QWModelType.qw_plus,
-        **kwargs
-    ):
-        super().__init__(**kwargs)
-        self.model_name = model_name
-        self.client = Tongyi(api_key=api_key, model=self.model_name)
+    _client: ChatOpenAI = PrivateAttr()
+
+    def model_post_init(self, __context: Any) -> None:
+        # ChatOpenAI 是 LangChain 模型封装器，不是 OpenAI SDK client
+        self._client = ChatOpenAI(
+            model=self.model,
+            api_key=self.api_key,
+            base_url=self.base_url,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            timeout=self.request_timeout,
+        )
 
     @property
-    def _identifying_params(self):
-        return {"model_name": self.model_name}
+    def _llm_type(self) -> str:
+        return "openai-compatible"
 
     @property
-    def _llm_type(self):
-        return "qwen"
+    def _identifying_params(self) -> Dict[str, Any]:
+        return {
+            "model": self.model,
+            "base_url": self.base_url,
+            "request_timeout": self.request_timeout,
+        }
 
     def _call(
-        self, prompt: str, stop: Optional[list[str]] = None, **kwargs: Any
+        self,
+        prompt: str,
+        stop: Optional[List[str]] = None,
+        run_manager: Optional[CallbackManagerForLLMRun] = None,
+        **kwargs: Any,
     ) -> str:
-        resp = self.client.generate(prompts=[prompt], stop=stop, **kwargs)
-        gen = resp.generations[0][0]
-        return (
-            getattr(gen, "message", None).content
-            if hasattr(gen, "message")
-            else gen.text
-        )
+        assert self._client is not None, "LangChain ChatOpenAI not initialized"
+
+        # ChatOpenAI 正确用法：invoke
+        msg: AIMessage = self._client.invoke(prompt, stop=stop, **kwargs)
+        return msg.content if isinstance(msg.content, str) else str(msg.content)
 
     def _stream(
         self,
         prompt: str,
         stop: Optional[List[str]] = None,
         run_manager: Optional[CallbackManagerForLLMRun] = None,
-        **kwargs: Any
+        **kwargs: Any,
     ) -> Iterator[GenerationChunk]:
-        stop_signal = kwargs.pop("stop_signal", False)
-        for chunk_str in self.client.stream(input=prompt, stop=stop, **kwargs):
-            if stop_signal:
-                break
-            chunk = GenerationChunk(text=chunk_str)
-            yield chunk
+        assert self._client is not None, "LangChain ChatOpenAI not initialized"
+
+        for chunk in self._client.stream(prompt, stop=stop, **kwargs):
+            if isinstance(chunk, AIMessageChunk) and chunk.content:
+                text = chunk.content
+                if run_manager and text:
+                    run_manager.on_llm_new_token(text)
+                yield GenerationChunk(text=text)
 
     def test_api_key(self, test_prompt: str = "你好") -> bool:
         try:
-            self.client.invoke(test_prompt)
+            self._client.invoke(test_prompt)
             return True
         except Exception as e:
             return False
@@ -73,8 +89,7 @@ class QWEmbeddings(Embeddings):
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
         embedding_client = DashScopeEmbeddings(
-            model=self.model,
-            dashscope_api_key=self.api_key
+            model=self.model, dashscope_api_key=self.api_key
         )
         document_vectors = embedding_client.embed_documents(texts)
         return document_vectors
