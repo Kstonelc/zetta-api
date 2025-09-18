@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends
-from sqlalchemy import any_
+from sqlalchemy import any_, and_
 from sqlalchemy.orm import Session, joinedload
 from schemas.model import (
     ModelAddRequest,
     ModelUpdateRequest,
     ModelQueryRequest,
 )
-from models import Model, get_db
+from models import Model, ModelProvider, Tenant, get_db
 from utils.jwt import verify_token
 from utils.logger import logger
 
@@ -95,11 +95,18 @@ async def find_models(
     response = {}
     try:
         model_type = body.modelType
+        tenant_id = body.tenantId
+
+        filters = [Model.active.is_(True), model_type.value == any_(Model.types)]
+        if tenant_id is not None:
+            filters.append(Tenant.id == tenant_id)
 
         models = (
             db.query(Model)
             .options(joinedload(Model.provider))
-            .filter(Model.active.is_(True), model_type.value == any_(Model.types))
+            .join(Model.provider)
+            .join(ModelProvider.tenants)
+            .filter(and_(*filters))
             .all()
         )
         response = {

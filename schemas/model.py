@@ -5,6 +5,7 @@ from enums import ModelProviderUpdateType, ModelType
 
 
 class ModelProviderQueryRequest(BaseModel):
+    tenantId: Optional[UUID] = None
     modelProviderId: Optional[UUID] = None
 
 
@@ -29,6 +30,7 @@ class ModelAddRequest(BaseModel):
 
 class ModelQueryRequest(BaseModel):
     modelType: ModelType
+    tenantId: Optional[UUID] = None
 
 
 class ModelUpdateRequest(BaseModel):

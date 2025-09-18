@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, joinedload
+from sqlalchemy import and_
 
 from llm.qwen import QWProvider
 from schemas.model import (
@@ -8,10 +9,9 @@ from schemas.model import (
     ModelProviderUpdateRequest,
 )
 from llm.llm_factory import LLMFactory
-from enums import LLMProvider
-from utils.common import encrypt, decrypt
+from utils.common import encrypt
 from utils.jwt import verify_token
-from models import ModelProvider, Model, get_db
+from models import ModelProvider, Model, Tenant, get_db
 from enums import ModelProviderUpdateType
 from utils.logger import logger
 
@@ -66,10 +66,16 @@ async def find_model_provider(
 ):
     response = {}
     try:
+        tenant_id = body.tenantId
+
+        filters = [ModelProvider.active.is_(True)]
+        if tenant_id is not None:
+            filters.append(Tenant.id == tenant_id)
         model_providers = (
             db.query(ModelProvider)
             .options(joinedload(ModelProvider.models))
-            .filter(ModelProvider.active.is_(True))
+            .join(ModelProvider.tenants)
+            .filter(and_(*filters))
             .all()
         )
         response = {"ok": True, "data": model_providers}
