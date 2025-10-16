@@ -58,8 +58,8 @@ class TenantUserJoin(BaseModel):
         UniqueConstraint("tenant_id", "user_id", name="unique_tenant_user_join"),
     )
 
-    tenant_id = Column(UUID, ForeignKey("tenant.id",  ondelete="SET NULL"), nullable=True)
-    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=True)
+    tenant_id = Column(UUID, ForeignKey("tenant.id",  ondelete="SET NULL"), nullable=False)
+    user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=False)
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户

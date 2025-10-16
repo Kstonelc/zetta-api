@@ -48293,3 +48293,1226 @@ s1.speak(100, 200);
 2025-09-18 17:32:25 | INFO | ⬅️ POST /api/model/find-models -> 200
 2025-09-18 17:32:25 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
 2025-09-18 17:32:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:18:39 | INFO | ✅ Zetta Server Start
+2025-09-18 22:22:04 | INFO | ✅ Zetta Server Start
+2025-09-18 22:22:10 | INFO | [DB]: ✅ DB Connection Success
+2025-09-18 22:22:11 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-18 22:22:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:28 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:22:28 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:22:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-18 22:22:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-18 22:22:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:30 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:30 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:47 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:47 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:47 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:22:47 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:22:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:22:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:22:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:22:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:23:08 | INFO | ➡️ POST /api/session/send-message Request Body:{"prompt":"你好","modelName":"qwen-turbo","modelProvider":"qwen"}
+2025-09-18 22:23:09 | INFO | ⬅️ POST /api/session/send-message -> 200
+2025-09-18 22:24:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:24:49 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:24:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:24:49 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:24:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:24:49 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:24:49 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:24:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:33:41 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:33:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:33:41 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:33:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 22:33:41 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:33:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 22:33:41 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 22:33:41 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 23:41:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 23:41:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 23:41:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 23:41:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-18 23:41:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 23:41:10 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-18 23:41:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-18 23:41:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 19:51:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 19:51:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 19:51:10 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 19:51:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 19:51:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 19:51:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 19:51:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 19:51:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 20:01:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 20:01:32 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 20:01:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 20:01:32 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 20:01:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 20:01:32 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 20:01:32 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 20:01:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 20:01:51 | INFO | ➡️ POST /api/session/send-message Request Body:{"prompt":"你好 你是谁","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-09-19 20:01:51 | INFO | ⬅️ POST /api/session/send-message -> 200
+2025-09-19 22:29:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:29:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:29:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:43 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:43 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:29:44 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:44 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:44 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:29:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:29:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:30:00 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:00 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:00 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:30:00 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:30:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:30:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:30:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:30:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:30:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:05 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:05 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:05 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:44:05 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:44:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:06 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:06 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:06 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:06 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:44:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:44:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:44:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:44:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:50:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:50:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:57:34 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryPNAgfhTRdV86B9uo
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryPNAgfhTRdV86B9uo--
+
+2025-09-19 22:57:34 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-19 22:57:36 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-19 22:57:38 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-19 22:57:40 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-19 22:57:40 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-19 22:57:41 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-19 22:57:41 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 22:59:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:59:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 22:59:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 22:59:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:00:12 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:12 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:12 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:00:12 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:00:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:00:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:00:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:00:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:00:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 23:01:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:34 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:34 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:34 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:34 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:37 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:37 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:38 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:40 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:40 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:40 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:40 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:42 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:42 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:42 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:42 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-19 23:01:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:01:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:01:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:02:28 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryHHUjgepQ60H3UOGV
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryHHUjgepQ60H3UOGV--
+
+2025-09-19 23:02:28 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-19 23:02:33 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-19 23:02:33 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-19 23:23:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:57:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:57:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:57:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:57:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:57:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:57:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:57:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:00 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:00 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:00 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:00 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:20 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:20 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:20 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:20 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:35 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:35 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:36 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:36 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:48 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:48 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:48 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:48 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:48 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:48 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:48 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:48 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:49 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:49 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:49 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:49 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:58:52 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:52 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:58:52 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:58:52 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:01 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:01 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:01 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:02 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:02 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:02 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:02 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:03 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:03 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:03 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:04 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:04 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:04 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:04 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:05 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:10 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:10 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:10 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:10 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:21 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:21 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:45 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:45 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:51 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:51 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:51 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:51 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 10:59:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 10:59:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 10:59:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:03:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:03:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:03:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:03:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:03:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:03:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:03:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:03:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:28 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:28 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:08:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:08:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:08:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:08:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:09:04 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:04 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:04 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:09:04 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:09:06 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:06 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:06 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:09:06 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:09:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:09:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:09:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:09:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:09:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:10:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:10:47 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:07 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:09 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:09 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:33 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:11:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 11:11:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:11:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:11:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:13:24 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:13:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:13:24 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:13:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:13:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:13:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:15:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:15:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:21:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:21:39 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:39 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 11:21:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 17:52:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 17:52:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 17:52:32 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 17:52:32 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 17:52:32 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 17:52:33 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 17:52:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 17:52:33 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:06:56 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:56 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:57 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:57 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:57 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:06:57 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:06:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:06:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:06:59 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:59 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:59 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:06:59 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:06:59 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:06:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:06:59 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:07:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:17 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:17 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:17 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:07:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:40 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:07:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-20 23:07:40 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:40 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:07:41 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:07:41 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:08:29 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundarysyzvyEAhteydhMBW
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundarysyzvyEAhteydhMBW--
+
+2025-09-20 23:08:29 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-20 23:08:41 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-20 23:08:41 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-20 23:08:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:08:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:08:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:08:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-20 23:09:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:09:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:09:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:09:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:09:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:09:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-20 23:09:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:09:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-20 23:13:23 | INFO | [DB]: ✅ DB Connection Success
+2025-09-20 23:13:24 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-20 23:18:15 | INFO | [DB]: ✅ DB Connection Success
+2025-09-20 23:18:16 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-20 23:19:30 | INFO | [DB]: ✅ DB Connection Success
+2025-09-20 23:19:30 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-20 23:21:25 | INFO | [DB]: ✅ DB Connection Success
+2025-09-20 23:21:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-20 23:21:46 | INFO | [DB]: ✅ DB Connection Success
+2025-09-20 23:21:46 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-21 01:17:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:17:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:17:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:17:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:17:57 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-21 01:17:57 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-21 01:17:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:18:27 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-21 01:18:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-21 01:18:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-21 01:18:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-21 01:18:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:16:50 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:50 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:50 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:16:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:16:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:11 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:12 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:12 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:12 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:12 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:13 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:13 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:13 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:13 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:13 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:13 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:14 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-09-24 20:27:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 20:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-09-24 20:27:29 | INFO | ➡️ POST /api/wiki/upload-file Request Body:------WebKitFormBoundaryb9MhzgY86IAaaXis
+Content-Disposition: form-data; name="file"; filename="react-native-smooth-wheel-readme.md"
+Content-Type: application/octet-stream
+
+# @kstonelc/react-native-smooth-wheel
+
+🎡 A smooth, all TypeScript wheel picker for React Native — **No Native Code Required**.
+
+[![null](https://img.shields.io/npm/v/@kstonelc/react-native-smooth-wheel.svg)](https://www.npmjs.com/package/@kstonelc/react-native-smooth-wheel)
+
+------
+
+## 🔎  Demo
+
+
+
+## ✨ Features
+
+- Pure TypeScript/JavaScript, no native code, support Android and IOS
+- Smooth wheel animation
+- Customizable text style & highlight
+- Supports tap-to-select
+- Works with React Native >= 0.73
+
+------
+
+## 📦 Installation
+
+```bash
+npm install @kstonelc/react-native-smooth-wheel
+# or
+yarn add @kstonelc/react-native-smooth-wheel
+```
+
+
+
+## 🚀 Usage
+
+```jsx
+const data = [
+    {
+      text: 'React Native',
+      value: 'React Native',
+    },
+    {
+      text: 'Flutter',
+      value: 'Flutter',
+    },
+    {
+      text: 'Uniapp',
+      value: 'Uniapp',
+    },
+    {
+      text: 'Taro',
+      value: 'Taro',
+    },
+    {
+      text: 'Ionic',
+      value: 'Ionic',
+    },
+  ];
+const [value, setValue] = useState(null);
+<WheelPicker
+  key={1}
+  data={data}
+  value={value}
+  defaultValue={'React native'}
+  centerOverlayStyle={{
+    backgroundColor: '#D4E639',
+  }}
+  onChange={(item, index) => {
+    console.log('item', item);
+    console.log('index', index);
+    setValue(item.value);
+  }}
+/>
+```
+
+> **Note:** When setting `renderItem`, make sure its height is consistent with the `itemHeight` parameter, otherwise scrolling may be misaligned. This issue will be fixed in a future release
+
+| Prop                 | Type                             | Default                                   | Description                   |
+| -------------------- | -------------------------------- | ----------------------------------------- | ----------------------------- |
+| `data`               | `{ text: string; value: any }[]` | -                                         | List items                    |
+| `value`              | `any`                            | -                                         | Controlled value              |
+| `defaultIndex`       | `number`                         | 0                                         | Initial index if uncontrolled |
+| `onChange`           | `(item, index) => void`          | -                                         | Called when selection changes |
+| `itemHeight`         | `number`                         | 40                                        | Row height                    |
+| `visibleCount`       | `number`                         | 5                                         | Visible rows                  |
+| `activeTextColor`    | `string`                         | "black"                                   | Active text color             |
+| `inactiveTextColor`  | `string`                         | "#B5B5B5"                                 | Inactive text color           |
+| `enableTapSelect`    | `boolean`                        | true                                      | Tap row to select             |
+| `renderItem`         | `(info) => ReactElement`         | -                                         | Custom row renderer           |
+| `centerOverlayStyle` | `ViewStyle`                      | `{ backgroundColor: "rgba(0,0,0,0.07)" }` | Highlight layer               |
+------WebKitFormBoundaryb9MhzgY86IAaaXis--
+
+2025-09-24 20:27:29 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-09-24 20:27:32 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/react-native-smooth-wheel-readme.md","chunkSize":1024,"chunkOverlap":50}
+2025-09-24 20:27:34 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-09-24 20:45:14 | INFO | [DB]: ✅ DB Connection Success
+2025-09-24 20:45:14 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-24 21:09:13 | INFO | [DB]: ✅ DB Connection Success
+2025-09-24 21:09:13 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-24 21:14:03 | INFO | [DB]: ✅ DB Connection Success
+2025-09-24 21:14:03 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 401
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model/find-models -> 401
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 401
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model/find-models -> 401
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model/find-models -> 401
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/model/find-models -> 401
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-09-24 22:17:54 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-09-24 22:17:54 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-10-14 10:05:00 | INFO | ✅ Zetta Server Start
+2025-10-14 10:05:02 | INFO | [DB]: ✅ DB Connection Success
+2025-10-14 10:05:02 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-10-14 10:05:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 401
+2025-10-14 10:05:11 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 401
+2025-10-14 10:05:11 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-10-14 10:05:11 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-10-14 10:05:11 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-10-14 10:05:11 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-10-14 10:05:21 | INFO | ⬅️ POST /api/user/email-login -> 200
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-10-14 10:05:21 | INFO | ⬅️ POST /api/user/find-user -> 200
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:21 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:22 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:05:22 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:05:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:05:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:05:29 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:29 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:30 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:31 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-10-14 10:05:31 | INFO | ➡️ POST /api/tenant/find-tenant Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:32 | INFO | ⬅️ POST /api/tenant/find-tenant -> 200
+2025-10-14 10:05:33 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:33 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:52 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:05:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:05:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:05:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:06:15 | INFO | ➡️ POST /api/session/send-message Request Body:{"prompt":"你好 你是谁","modelName":"qwen-turbo","modelProvider":"qwen"}
+2025-10-14 10:06:15 | INFO | ⬅️ POST /api/session/send-message -> 200
+2025-10-14 10:06:39 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:06:39 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:06:39 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:06:39 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:06:56 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:06:56 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:06:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:06:57 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:13:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:49 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:49 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:49 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:49 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:13:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:13:49 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:13:49 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:13:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:13:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:13:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:13:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:13:51 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:14:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:20 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:14:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:14:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:14:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:14:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:15:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:02 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:02 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:15:02 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:15:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:15:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:15:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:15:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:15:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:14 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:15 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:27:15 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:27:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:27:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:27:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:27:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:27:23 | INFO | ➡️ POST /api/wiki/upload-file
+2025-10-14 10:27:23 | INFO | ⬅️ POST /api/wiki/upload-file -> 200
+2025-10-14 10:27:29 | INFO | ➡️ POST /api/wiki/preview-file-chunks Request Body:{"filePath":"data/刘畅-前端开发工程师.pdf","chunkSize":1024,"chunkOverlap":50}
+2025-10-14 10:27:29 | INFO | ⬅️ POST /api/wiki/preview-file-chunks -> 200
+2025-10-14 10:30:05 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:30:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:31:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:31:07 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:07 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:07 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:31:07 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:31:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:10 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:31:10 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:31:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:27 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:31:27 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-14 10:31:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:31:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:31:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:31:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:31:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:40:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:51 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:51 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:40:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:52 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-14 10:40:52 | INFO | ⬅️ POST /api/model/find-models -> 200

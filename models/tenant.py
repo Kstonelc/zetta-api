@@ -17,7 +17,7 @@ class Tenant(BaseModel):
     encrypt_public_key = Column(Text, nullable=True)  # 用于大模型api_key加密
     plan = Column(
         String(255),
-        nullable=False,
+        nullable=True,
         server_default=text("'basic'::character varying"),
     )
     custom_config = Column(JSONB, nullable=True)
