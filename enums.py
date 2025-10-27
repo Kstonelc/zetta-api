@@ -72,3 +72,4 @@ class FileType(Enum):
 class SenderType(str, Enum):
     User = "user"
     Assistant = "assistant"
+    System = "system"

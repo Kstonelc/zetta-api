@@ -13,8 +13,9 @@ from utils.logger import logger
 router = APIRouter(prefix="/api/session", tags=["session"])
 
 
-@router.post("/send-message")
+@router.post("/chat")
 async def send_message(request: Request, db: Session = Depends(get_db)):
+    response = {}
     try:
         body = await request.json()
         prompt_text = body.get("prompt")
@@ -25,7 +26,6 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
             modelProvider,
             model=model_name,
             api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
-            stop=["\n", "\n\n"],
         )
 
         prompt = PromptTemplate.from_template("{prompt_text}")
@@ -33,19 +33,28 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
 
         async def stream_generator():
             try:
+                if await request.is_disconnected():
+                    logger.error("Client disconnected")
+                    return
+
                 async for chunk in chain.astream({"prompt_text": prompt_text}):
                     if await request.is_disconnected():
+                        logger.error("Client disconnected")
                         break
-                    yield chunk
-                    await asyncio.sleep(0)
-            except (ClientDisconnect, asyncio.CancelledError):
-                pass
+                    yield str(chunk)
+                    await asyncio.sleep(0.001)
+
+            except (asyncio.CancelledError, GeneratorExit):
+                logger.warning("Stream_generator cancelled due to client disconnect")
+                raise
             except Exception as e:
-                logger.exception("stream error")
-                yield f"\n[Error] {e}\n"
+                if not await request.is_disconnected():
+                    yield f"\n[Stream Error] {str(e)}\n"
 
         return StreamingResponse(
             stream_generator(), media_type="text/plain; charset=utf-8"
         )
     except Exception as e:
         logger.error(e)
+        response = {"ok": False, "message": "send message failed"}
+        return response
