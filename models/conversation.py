@@ -33,10 +33,9 @@ class Conversation(BaseModel):
 class Message(BaseModel):
     __tablename__ = "message"
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    conversation_id = Column(Integer, ForeignKey("conversation.id"), nullable=False)
+    conversation_id = Column(UUID, ForeignKey("conversation.id"), nullable=False)
     sequence = Column(BigInteger, nullable=False)  # 序列
-    role = Column(SenderType, nullable=False)  # 发送者类型
+    role = Column(Enum(SenderType), nullable=False)  # 发送者类型
     tokens = Column(Integer, nullable=False)
     content = Column(Text, nullable=False)
 
