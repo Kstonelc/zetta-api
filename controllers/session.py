@@ -41,8 +41,21 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
                     if await request.is_disconnected():
                         logger.error("Client disconnected")
                         break
-                    yield str(chunk)
-                    await asyncio.sleep(0.001)
+                    text = None
+                    # LangChain 常见分支
+                    if hasattr(chunk, "content"):  # AIMessageChunk / BaseMessageChunk
+                        text = chunk.content
+                    elif hasattr(chunk, "delta"):  # 一些模型的 token 增量字段
+                        text = chunk.delta
+                    elif isinstance(chunk, str):
+                        text = chunk
+                    else:
+                        # 兜底：不要把对象 repr 输出到前端
+                        text = ""
+
+                    if text:
+                        # 统一成 bytes，避免编码问题
+                        yield text.encode("utf-8")
 
             except (asyncio.CancelledError, GeneratorExit):
                 logger.warning("Stream_generator cancelled due to client disconnect")

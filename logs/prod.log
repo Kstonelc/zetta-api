@@ -50891,3 +50891,307 @@ connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.co
 2025-10-29 17:51:09 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
 2025-10-29 17:51:10 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
 2025-10-29 17:51:10 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 19:50:44 | INFO | ✅ Bichon Server Start
+2025-10-29 19:50:46 | ERROR | [DB]: ❌ DB Connection Failed: (psycopg2.OperationalError) connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", SSL encryption
+connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", no encryption
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-29 19:50:51 | INFO | ✅ Bichon Server Start
+2025-10-29 19:50:53 | ERROR | [DB]: ❌ DB Connection Failed: (psycopg2.OperationalError) connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", SSL encryption
+connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", no encryption
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-29 19:51:29 | INFO | ✅ Bichon Server Start
+2025-10-29 19:51:31 | ERROR | [DB]: ❌ DB Connection Failed: (psycopg2.OperationalError) connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", SSL encryption
+connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", no encryption
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-29 19:56:23 | INFO | ✅ Bichon Server Start
+2025-10-29 19:56:25 | INFO | [DB]: ✅ DB Connection Success
+2025-10-29 19:56:25 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-10-29 19:56:44 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-10-29 19:56:44 | INFO | ➡️ POST /api/tenant/find-admin Request Body:{}
+2025-10-29 19:56:44 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-10-29 19:56:44 | INFO | ⬅️ POST /api/tenant/find-admin -> 200
+2025-10-29 19:56:53 | INFO | ➡️ POST /api/user/email-login Request Body:{"userEmail":"2609753201@qq.com","userPassword":"Beyond#11"}
+2025-10-29 19:56:53 | INFO | ⬅️ POST /api/user/email-login -> 200
+2025-10-29 19:56:53 | INFO | ➡️ POST /api/user/find-user Request Body:{"userEmail":"2609753201@qq.com"}
+2025-10-29 19:56:54 | INFO | ⬅️ POST /api/user/find-user -> 200
+2025-10-29 19:56:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:54 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:54 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 19:56:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 19:56:54 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 19:56:54 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 19:56:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textEmbedding","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:56:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:56:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"reRank","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:56:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:56:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:58 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 19:56:58 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 19:56:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:58 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 19:56:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:56:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 19:57:07 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 你是谁","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 19:57:07 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 19:57:24 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用j's","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 19:57:24 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 19:57:32 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用j's","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 19:57:32 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 19:57:36 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":" 使用j's","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 19:57:36 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 19:57:59 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 写一段 排序算法","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 19:57:59 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:03:18 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:03:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:03:18 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:03:18 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:03:26 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 你说","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:03:26 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:03:37 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:03:37 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:10:15 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:10:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:10:15 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:10:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:10:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:10:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:10:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:10:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:10:31 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 帮我写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:10:31 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:10:59 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个冒泡排序 js","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:10:59 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:13:44 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:13:44 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:13:53 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":" 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:13:53 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:15:06 | INFO | [DB]: ✅ DB Connection Success
+2025-10-29 20:15:06 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-10-29 20:15:16 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:15:16 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:17:31 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:17:31 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:19:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:19:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:19:38 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:19:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:19:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:19:39 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:19:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:19:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:19:42 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:19:42 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:26:56 | INFO | [DB]: ✅ DB Connection Success
+2025-10-29 20:26:56 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-10-29 20:27:12 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:27:13 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:27:50 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:27:50 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:33:07 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:33:07 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:36:42 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:36:42 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:36:43 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:36:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:36:43 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:36:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:36:43 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:36:43 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:37:03 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:37:03 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:43:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:43:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:43:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:43:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:43:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:43:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:43:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:43:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:43:31 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:43:31 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:46:25 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:46:25 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:47:22 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:47:22 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:47:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:47:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:47:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:47:23 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:47:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:47:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:47:36 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 帮我一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:47:36 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:47:44 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:47:44 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:47:48 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:47:48 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:55:04 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:55:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:55:04 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:55:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:55:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:55:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:55:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:55:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:55:21 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:55:21 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 20:56:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:56:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:56:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:56:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 20:56:58 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:56:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:56:58 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 20:56:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 20:57:08 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 20:57:08 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:02:14 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:02:14 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:11:18 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:11:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:11:18 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:11:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:11:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:11:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:11:19 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:11:19 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:11:30 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用js 写一段代码","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:11:30 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:14:03 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用j's","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:14:03 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:14:12 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:14:12 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:14:49 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 写一段冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:14:49 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:19:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:19:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:19:20 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:19:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:19:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:19:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:19:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:19:21 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:19:37 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用 js 写一段脚本 冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:19:37 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:29:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:29:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:29:21 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:29:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:29:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:29:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:29:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:29:22 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:29:30 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 你是谁","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:29:30 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:29:57 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:29:57 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:32:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:32:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:32:54 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:32:54 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:32:55 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:32:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:32:55 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:32:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:33:04 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:33:04 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:52:30 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:52:30 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:52:30 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:52:30 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 21:52:30 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:52:30 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 21:52:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:52:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 21:52:38 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 你是谁","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:52:38 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 21:54:49 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 21:54:49 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:10:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:10:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:10:11 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:10:11 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:10:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:10:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:10:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:10:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:10:42 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 使用js 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:10:42 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:18:33 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"font-size: inherit 是啥意思","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:18:33 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:21:32 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:21:32 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:21:32 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":" html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:21:32 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:22:00 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:22:00 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:22:00 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":" html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:22:00 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:22:10 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:22:10 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:25:55 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:25:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:25:55 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:25:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:25:56 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:25:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:25:56 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:25:56 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:26:01 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个 html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:26:01 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:26:14 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:26:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:26:14 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:26:14 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:26:14 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:26:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:26:14 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:26:14 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:26:21 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个html","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:26:21 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:57:01 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:57:01 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:57:12 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:57:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:57:12 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:57:12 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:57:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:57:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:57:12 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 22:57:12 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 22:57:24 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 js 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 22:57:24 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 22:59:59 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:59:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:59:59 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 22:59:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 23:00:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 23:00:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 23:00:00 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 23:00:00 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 23:00:11 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 23:00:11 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 23:28:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 23:28:32 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 23:28:32 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 23:28:32 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-29 23:28:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 23:28:33 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-29 23:28:33 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 23:28:33 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-29 23:28:42 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"你好 帮我写一段 js 冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 23:28:42 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 23:29:01 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 帮我写一个脚本 冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 23:29:01 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-29 23:29:22 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用js 帮我写一个脚本 冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-29 23:29:22 | INFO | ⬅️ POST /api/session/chat -> 200
