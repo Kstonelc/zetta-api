@@ -1,7 +1,7 @@
 ## Create Python Virtual Environment(Python 3.11.9: recommended)
 
 ```bash
-conda create -n zetta-api python=3.11.9
+conda create -n bichon-api python=3.11.9
 ```
 
 ## Install Package

@@ -50781,3 +50781,16 @@ AttributeError: 'dict' object has no attribute 'is_disconnected'
 2025-10-28 18:21:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
 2025-10-28 18:21:54 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
 2025-10-28 18:21:54 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-29 17:22:44 | INFO | ✅ Zetta Server Start
+2025-10-29 17:22:51 | ERROR | [DB]: ❌ DB Connection Failed: (psycopg2.OperationalError) connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", SSL encryption
+connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", no encryption
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-29 17:40:14 | INFO | ✅ Zetta Server Start
+2025-10-29 17:40:22 | ERROR | [DB]: ❌ DB Connection Failed: (psycopg2.OperationalError) connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", SSL encryption
+connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.conf entry for host "127.0.0.1", user "admin", database "bichon", no encryption
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-29 17:47:13 | INFO | ✅ Zetta Server Start
+2025-10-29 17:47:21 | INFO | [DB]: ✅ DB Connection Success
+2025-10-29 17:47:21 | INFO | [Qdrant]: ✅ Qdrant Connection Success

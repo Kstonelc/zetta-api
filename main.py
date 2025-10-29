@@ -84,7 +84,7 @@ async def auth_token_exception_handler(request: Request, exc: AuthTokenException
 
 
 if __name__ == "__main__":
-    logger.info("✅ Zetta Server Start")
+    logger.info("✅ Bichon Server Start")
     uvicorn.run(
         "main:app",
         host="0.0.0.0",

@@ -183,7 +183,7 @@ async def index_file(
             documents=docs,
             embedding=qw_embedding,
             url=vector_db_url,
-            collection_name="zetta",
+            collection_name="bichon",
             distance_func=Distance.COSINE,
         )
         vs.add_documents(docs)

@@ -11,7 +11,7 @@ from exceptions import AuthTokenException
 from datetime import datetime, timedelta, UTC
 from typing import Optional
 
-SECRET_KEY = "zetta"
+SECRET_KEY = "bichon"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 10080  # 一周
 
@@ -47,7 +47,6 @@ def verify_token(request: Request):
     token = auth[7:]
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
-        print(payload)
         return payload
     except jwt.ExpiredSignatureError:
         raise AuthTokenException(message="Token已过期")

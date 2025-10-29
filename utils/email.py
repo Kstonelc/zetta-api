@@ -36,7 +36,7 @@ def send_verify_code(
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zetta 验证码</title>
+    <title>Bichon 验证码</title>
   </head>
   <body style="margin:0;padding:0;background:#f6f7fb;">
     <!-- 外层 100% 容器 -->
@@ -50,7 +50,7 @@ def send_verify_code(
               <td align="left" style="padding:20px 24px;border-bottom:1px solid #eef0f4;">
                 <div style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
                             font-size:24px;font-weight:700;color:#111827;letter-spacing:.3px;">
-                  Zetta
+                  Bichon
                 </div>
               </td>
             </tr>
@@ -96,7 +96,7 @@ def send_verify_code(
         subject="Your Verification Code",
         recipients=[recipient],
         body=html_content,
-        subtype="html"
+        subtype="html",
     )
     background_tasks.add_task(fm.send_message, message)
 
@@ -114,7 +114,7 @@ def send_invite_url(
         <meta name="color-scheme" content="light dark">
         <meta name="supported-color-schemes" content="light dark">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Zetta 邀请</title>
+        <title>Bichon 邀请</title>
       </head>
       <body style="margin:0;padding:0;background:#f6f7fb;">
         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background:#f6f7fb;">
@@ -169,6 +169,6 @@ def send_invite_url(
         subject="Your Verification Code",
         recipients=[recipient],
         body=html_content,
-        subtype="html"
+        subtype="html",
     )
     background_tasks.add_task(fm.send_message, message)
