@@ -71,3 +71,14 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
         logger.error(e)
         response = {"ok": False, "message": "send message failed"}
         return response
+
+
+@router.post("/create-conversation")
+async def create_conversation(body: Request, db: Session = Depends(get_db)):
+    response = {}
+    try:
+        response = {"ok": True, "data": []}
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "create conversation failed"}
+    return response

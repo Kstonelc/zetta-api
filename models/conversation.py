@@ -22,6 +22,11 @@ class Conversation(BaseModel):
     tenant_id = Column(UUID, nullable=False)
     user_id = Column(UUID, nullable=False)
     name = Column(String, nullable=True)  # 当前回话总结标题(AI生成)
+    status = Column(
+        Enum("active", "temporary"),
+        default="active",
+        nullable=False,
+    )
     model_id = Column(UUID, nullable=False)
 
     # 删除session 级联删除message

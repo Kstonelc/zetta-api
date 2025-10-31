@@ -69,7 +69,17 @@ class FileType(Enum):
         return all_suffixes
 
 
-class SenderType(str, Enum):
-    User = "user"
-    Assistant = "assistant"
-    System = "system"
+class SenderType(Enum):
+    User = (1 << 0, "user")
+    Assistant = (1 << 1, "assistant")
+    System = (1 << 2, "system")
+
+
+class ConversationStatus(Enum):
+    Active = (1 << 0, "active")
+    Archived = (1 << 1, "archived")
+    Temporary = (1 << 2, "temporary")
+
+    def __init__(self, value, text):
+        self.value = value
+        self.text = text
