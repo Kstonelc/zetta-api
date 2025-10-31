@@ -52137,3 +52137,322 @@ connection to server at "101.132.64.231", port 5432 failed: FATAL:  no pg_hba.co
 2025-10-30 19:08:26 | INFO | ⬅️ POST /api/session/chat -> 200
 2025-10-30 19:12:06 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs是啥","modelName":"qwen-plus","modelProvider":"qwen"}
 2025-10-30 19:12:06 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 19:42:01 | INFO | ✅ Bichon Server Start
+2025-10-30 19:42:08 | INFO | [DB]: ✅ DB Connection Success
+2025-10-30 19:42:09 | INFO | [Qdrant]: ✅ Qdrant Connection Success
+2025-10-30 19:42:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:27 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:28 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:28 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:28 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 19:42:28 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 19:42:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-30 19:42:28 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-30 19:42:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 19:42:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 19:42:29 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 19:42:33 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 19:42:33 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 19:42:57 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 19:42:57 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 19:43:45 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 19:43:45 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 19:43:54 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 19:43:54 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:03:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:03:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:03:00 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:03:00 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:03:01 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:03:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:03:01 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:03:01 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:03:04 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:03:04 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:03:37 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-30 20:03:40 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:03:40 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:13:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:13:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:13:34 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:13:34 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:13:58 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:13:58 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:16:27 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:16:27 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:16:35 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:16:35 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:16:59 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:16:59 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:19:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:19:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:20:06 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:20:06 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:20:28 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:20:28 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:21:20 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:21:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:22:41 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:22:42 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:22:50 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:22:50 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:23:17 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:23:17 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:23:32 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"java 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:23:32 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:24:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:24:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:24:14 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 20:24:14 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:27:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:27:23 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:27:29 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:27:29 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:28:09 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"pythons 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:28:09 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:31:44 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:31:45 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:32:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:32:25 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:32:27 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:32:27 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:32:49 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-30 20:32:52 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:32:52 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:33:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:24 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:24 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:24 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:33:24 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:33:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:33:25 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:33:26 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:33:26 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:33:33 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-30 20:33:37 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:33:37 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:33:42 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-30 20:33:47 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:47 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:47 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-30 20:33:47 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-30 20:33:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:47 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:33:48 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:33:48 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:36:29 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:36:30 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:36:32 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:36:32 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:36:53 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:36:53 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:37:22 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:37:22 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:37:51 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:37:51 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:38:15 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:38:15 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:38:17 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:38:17 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:38:31 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:38:31 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:39:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:39:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:39:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:39:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:39:16 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:39:16 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:39:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:39:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:39:16 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:39:16 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:39:18 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:39:18 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:39:26 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:39:26 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:49:39 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:49:39 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:49:39 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:49:39 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:49:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:49:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:49:40 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:49:40 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:49:46 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:49:46 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:50:13 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:50:13 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 20:50:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:50:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:50:57 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:50:57 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:50:58 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:50:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:50:58 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 20:50:58 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:53:48 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 20:53:49 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 20:53:53 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 20:53:53 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:17:04 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:17:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:17:04 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:17:04 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:17:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:17:05 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:17:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 21:17:05 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 21:17:13 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:17:13 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:17:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:17:19 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-30 21:17:19 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:17:24 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:17:24 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:18:47 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 python 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 21:18:47 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:19:28 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"随机生成一个表格","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-30 21:19:28 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:36:43 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:36:44 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:36:49 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:36:49 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:47:17 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:47:18 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:47:23 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:47:23 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:51:03 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:51:03 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-30 21:51:25 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:51:25 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:51:25 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:51:25 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-30 21:51:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 21:51:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:51:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-30 21:51:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-30 21:51:30 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-30 21:51:30 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:28:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:28:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:28:23 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:28:23 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:28:24 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:28:24 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:28:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:28:24 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:28:27 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:28:27 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:29:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:29:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:29:06 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:29:06 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:29:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:29:07 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:29:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:29:07 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:29:10 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:29:10 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:32:21 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:32:21 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:32:28 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:32:28 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:36:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:36:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:37:05 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:37:05 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:39:34 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:39:34 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:39:41 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:39:41 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:39:53 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:39:53 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:40:11 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"rust 和 go 有啥区别","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:40:11 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:43:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:43:26 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:43:26 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:43:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:43:26 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:43:26 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:43:37 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:43:37 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:44:01 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:44:01 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:46:00 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"go 语言是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:46:00 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:46:17 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"go 语言是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:46:17 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:50:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:50:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:50:03 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:50:03 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 07:50:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:50:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:50:04 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 07:50:04 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 07:50:09 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"node 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:50:09 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:50:34 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:50:34 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:55:40 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:55:40 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:56:53 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 是啥","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 07:56:53 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:59:22 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用python","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:59:22 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:59:37 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:59:37 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 07:59:58 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 python 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 07:59:58 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:00:26 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"java 写一个冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:00:26 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:01:12 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"// MarkdownViewer.tsx\nimport React, { useMemo } from \"react\";\nimport ReactMarkdown from \"react-markdown\";\nimport remarkGfm from \"remark-gfm\";\nimport remarkBreaks from \"remark-breaks\";\nimport rehypeHighlight from \"rehype-highlight\";\nimport type { Components } from \"react-markdown\";\n\nimport {\n  Box,\n  Group,\n  Text,\n  ActionIcon,\n  Paper,\n  Anchor,\n  useMantineTheme,\n  Tooltip,\n} from \"@mantine/core\";\nimport { useClipboard } from \"@mantine/hooks\";\nimport { Copy, Check } from \"lucide-react\";\n\nimport \"highlight.js/styles/default.css\";\nimport \"./markdown-unified.css\";\n\nexport type MarkdownViewerProps = {\n  content: string;\n  className?: string;\n  allowHtml?: boolean;\n};\n\nfunction normalizeLang(className?: string): string | null {\n  if (!className) return null;\n  const match =\n    className.match(/language-([\\w+-]+)/) ||\n    className.match(/lang-([\\w+-]+)/) ||\n    className.match(/\\b([\\w+-]+)\\b/);\n  const lang = match?.[1]?.toLowerCase() || null;\n  if (!lang || lang === \"text\" || lang === \"plaintext\" || lang === \"none\")\n    return null;\n  return lang;\n}\n\nfunction extractText(node: any): string {\n  if (node == null) return \"\";\n  if (typeof node === \"string\" || typeof node === \"number\") return String(node);\n  if (Array.isArray(node)) return node.map(extractText).join(\"\");\n  if (typeof node === \"object\" && \"props\" in node) {\n    return extractText((node as any).props?.children);\n  }\n  return \"\";\n}\n\n/** 代码块（支持粘性复制 Header） */\nconst CodeBlock: React.FC<{\n  inline?: boolean;\n  className?: string;\n  children?: React.ReactNode;\n}> = ({ inline, className, children }) => {\n  const theme = useMantineTheme();\n  const clipboard = useClipboard({ timeout: 1500 });\n  const rawText = useMemo(\n    () => extractText(children).replace(/\\n$/, \"\"),\n    [children],\n  );\n  const lang = normalizeLang(className);\n\n  // 行内代码：维持你原来的样式\n  if (inline || !lang) {\n    return (\n      <Box\n        component=\"span\"\n        style={{\n          fontWeight: 600,\n          display: \"inline-block\",\n          verticalAlign: \"baseline\",\n          background: theme.colors.gray[2],\n          borderRadius: 4,\n          padding: \"0 4px\",\n        }}\n      >\n        {rawText}\n      </Box>\n    );\n  }\n\n  /** 主题相关色 */\n  const border = theme.colors.gray[3];\n  const headBg =\n    theme.colorScheme === \"dark\" ? theme.colors.dark[6] : theme.colors.gray[0];\n  const headBorder =\n    theme.colorScheme === \"dark\" ? theme.colors.dark[4] : theme.colors.gray[3];\n\n  return (\n    <Paper\n      withBorder\n      radius=\"md\"\n      className=\"markdown-codeblock\"\n      /* 外层容器不滚动，让内部内容容器滚动，便于 sticky 生效在代码块内部 */\n      style={{ overflow: \"hidden\", margin: \"12px 0\" }}\n    >\n      {/* 可滚动内容容器：header 放里面并 sticky 到顶部 */}\n      <Box\n        className=\"md-code-scroll\"\n        /* 注意：只要这里允许纵向滚动，sticky 就会相对它起作用 */\n        style={{\n          maxHeight: \"min(60vh, 560px)\", // 你可以按需调整代码块最大高度\n          overflow: \"auto\",\n          position: \"relative\",\n          /* 提升渲染稳定性 */\n          willChange: \"transform\",\n          contain: \"layout paint size\",\n        }}\n      >\n        {/* 粘性 Header：复制按钮在滚动时始终可见 */}\n        <Group\n          justify=\"space-between\"\n          align=\"center\"\n          px=\"xs\"\n          py={6}\n          className=\"md-code-header\"\n          style={{\n            position: \"sticky\",\n            top: 0,\n            zIndex: 2,\n            borderBottom: `1px solid ${headBorder}`,\n            background: headBg,\n            /* 在 header 底部做一个很轻的渐隐，滚动时更自然 */\n            boxShadow:\n              theme.colorScheme === \"dark\"\n                ? \"0 1px 0 rgba(255,255,255,0.04)\"\n                : \"0 1px 0 rgba(0,0,0,0.04)\",\n          }}\n        >\n          <Text fw={600} fz={12} tt=\"uppercase\" c=\"dimmed\">\n            {lang}\n          </Text>\n\n          <Tooltip label={clipboard.copied ? \"已复制\" : \"复制代码\"} withArrow>\n            <ActionIcon\n              variant=\"subtle\"\n              aria-label=\"复制代码\"\n              onClick={() => clipboard.copy(rawText)}\n              styles={{\n                root: { pointerEvents: \"auto\" },\n              }}\n            >\n              {clipboard.copied ? <Check size={16} /> : <Copy size={16} />}\n            </ActionIcon>\n          </Tooltip>\n        </Group>\n\n        {/* 代码正文：横向可滚，纵向也可滚（交给外层 md-code-scroll 控制） */}\n        <Box\n          component=\"pre\"\n          m={0}\n          p=\"xs\"\n          style={{\n            marginTop: 0,\n            overflowX: \"auto\",\n            overflowY: \"visible\", // 纵向滚动交给外层容器\n            borderTop: `1px solid ${border}`,\n            background:\n              theme.colorScheme === \"dark\" ? theme.colors.dark[7] : \"inherit\",\n          }}\n        >\n          <Box\n            component=\"code\"\n            className={className}\n            style={{\n              display: \"block\",\n              fontSize: \"inherit\",\n              lineHeight: 1.4,\n              /* 代码区域两端留白，避免贴边 */\n              paddingRight: 4,\n              paddingBottom: 2,\n            }}\n          >\n            {children}\n          </Box>\n        </Box>\n      </Box>\n    </Paper>\n  );\n};\n\nconst MarkdownViewer: React.FC<MarkdownViewerProps> = ({\n  content,\n  className,\n  allowHtml = false,\n}) => {\n  const theme = useMantineTheme();\n  const border = theme.colors.gray[3];\n  const headBg = theme.colors.gray[1];\n\n  // @ts-ignore\n  const components: Components = {\n    code: ({ inline, className, children, ...props }) => (\n      <CodeBlock inline={inline} className={className} {...props}>\n        {children}\n      </CodeBlock>\n    ),\n    a: ({ href, children }) => (\n      <Anchor href={href} target=\"_blank\" rel=\"noreferrer noopener\">\n        {children}\n      </Anchor>\n    ),\n\n    /** ------- 表格渲染支持（带自适应滚动与样式） ------- */\n    table: ({ children }) => (\n      <Box\n        className=\"md-table-container\"\n        style={{\n          overflowX: \"hidden\",\n          margin: \"12px 0\",\n          borderRadius: 8,\n          borderWidth: 1,\n          borderStyle: \"solid\",\n          borderColor: theme.colors.gray[3],\n        }}\n      >\n        <Box\n          component=\"table\"\n          className=\"md-table\"\n          style={{\n            width: \"100%\",\n            borderCollapse: \"collapse\",\n            border: `1px solid ${border}`,\n          }}\n        >\n          {children}\n        </Box>\n      </Box>\n    ),\n    thead: ({ children }) => (\n      <Box component=\"thead\" style={{ background: headBg }}>\n        {children}\n      </Box>\n    ),\n    tbody: ({ children }) => <Box component=\"tbody\">{children}</Box>,\n    tr: ({ children }) => <Box component=\"tr\">{children}</Box>,\n    th: ({ children }) => (\n      <Box\n        component=\"th\"\n        style={{\n          textAlign: \"left\",\n          padding: \"8px 10px\",\n          borderBottom: `1px solid ${border}`,\n          borderRight: `1px solid ${border}`,\n          fontWeight: 700,\n          position: \"sticky\",\n          top: 0, // 如果外层容器有固定高度 + overflow，可粘性表头\n          zIndex: 1,\n          background: headBg,\n        }}\n      >\n        {children}\n      </Box>\n    ),\n    td: ({ children }) => (\n      <Box\n        component=\"td\"\n        style={{\n          padding: \"8px 10px\",\n          borderBottom: `1px solid ${border}`,\n          borderRight: `1px solid ${border}`,\n          verticalAlign: \"top\",\n        }}\n      >\n        {children}\n      </Box>\n    ),\n  };\n\n  return (\n    <Box className={`markdown-unified ${className || \"\"}`}>\n      <ReactMarkdown\n        remarkPlugins={[remarkGfm, remarkBreaks]}\n        rehypePlugins={\n          [\n            [rehypeHighlight as any, { detect: true, ignoreMissing: true }],\n          ] as any\n        }\n        skipHtml={!allowHtml}\n        components={components}\n      >\n        {content}\n      </ReactMarkdown>\n    </Box>\n  );\n};\n\nexport { MarkdownViewer };\n这是啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:01:12 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:01:38 | WARNING | Stream_generator cancelled due to client disconnect
+2025-10-31 08:02:38 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:02:38 | INFO | ➡️ POST /api/wiki/find-wikis Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:02:38 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-31 08:02:38 | INFO | ⬅️ POST /api/wiki/find-wikis -> 200
+2025-10-31 08:02:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:02:38 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:02:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:02:39 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:02:46 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 可以做啥","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:02:46 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:07:30 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 python 写一段脚本","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:07:30 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:07:48 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用python 写一段冒泡排序","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:07:48 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:11:55 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:11:55 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:12:16 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用pytnon 写一个 冒泡排序","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 08:12:16 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:13:59 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:13:59 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:14:29 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"python 写一个冒泡排序","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 08:14:29 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:20:31 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 写一个冒泡排序脚本","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 08:20:31 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:26:18 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:26:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:26:18 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:26:18 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:26:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 08:26:19 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 08:26:19 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:26:19 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:26:25 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 是撒","modelName":"qwen-plus","modelProvider":"qwen"}
+2025-10-31 08:26:25 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:35:08 | INFO | ➡️ POST /api/model-provider/find-model-provider Request Body:{"tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:35:08 | INFO | ➡️ POST /api/model/find-models Request Body:{"modelType":"textGeneration","tenantId":"16434718-6806-455a-a7b5-948c4fe11ee3"}
+2025-10-31 08:35:08 | INFO | ⬅️ POST /api/model-provider/find-model-provider -> 200
+2025-10-31 08:35:08 | INFO | ⬅️ POST /api/model/find-models -> 200
+2025-10-31 08:39:21 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"nodejs 写一个脚本 冒泡排序","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 08:39:21 | INFO | ⬅️ POST /api/session/chat -> 200
+2025-10-31 08:46:21 | INFO | ➡️ POST /api/session/chat Request Body:{"prompt":"使用 python写一个冒泡排序","modelName":"deepseek-v3.1","modelProvider":"deepseek"}
+2025-10-31 08:46:21 | INFO | ⬅️ POST /api/session/chat -> 200
