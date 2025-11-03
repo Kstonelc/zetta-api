@@ -52,6 +52,7 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
                         logger.error("Client disconnected")
                         break
                     text = None
+                    print(111, chunk)
                     # LangChain 常见分支
                     if hasattr(chunk, "content"):  # AIMessageChunk / BaseMessageChunk
                         text = chunk.content
@@ -158,6 +159,27 @@ async def find_conversations(
         return response
 
 
+@router.post("/find-conversation")
+async def find_conversation(
+    body: ConversationQueryRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        conversation_id = body.conversationId
+
+        conversation = (
+            db.query(Conversation).filter(Conversation.id == conversation_id).first()
+        )
+        response = {"ok": True, "data": conversation}
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "find conversation failed"}
+    finally:
+        return response
+
+
 @router.post("/find-messages")
 async def find_messages(
     body: ConversationMessageQueryRequest,
@@ -259,8 +281,8 @@ async def create_message(
 def generate_conversation_name(db, conversation_id):
     try:
         conv = db.query(Conversation).filter(Conversation.id == conversation_id).first()
-        if conv is None or conv.name:
-            return
+        # if conv is None or conv.name:
+        #     return
         res = (
             db.query(Message.content)
             .filter(

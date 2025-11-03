@@ -9,8 +9,9 @@ class ConversationCreateRequest(BaseModel):
 
 
 class ConversationQueryRequest(BaseModel):
-    tenantId: UUID
-    userId: UUID
+    tenantId: Optional[UUID] = None
+    userId: Optional[UUID] = None
+    conversationId: Optional[UUID] = None
     conversationStatus: Optional[int] = None
 
 
