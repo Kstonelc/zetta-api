@@ -1,4 +1,13 @@
-from enum import Enum
+from enum import Enum, IntEnum
+
+
+# 数字枚举
+class NumberEnum(IntEnum):
+    def __new__(cls, value, text):
+        obj = int.__new__(cls, value)
+        obj._value_ = value
+        obj.text = text
+        return obj
 
 
 class QWModelType(str, Enum):
@@ -44,12 +53,9 @@ class UserRole(str, Enum):
     Owner = "owner"  # 所有者
 
 
-class WikiType(Enum):
+class WikiType(NumberEnum):
     Structured = (1 << 0, "结构化")
     Unstructured = (1 << 1, "非结构化")
-
-    def __init__(self, value, text):
-        self.text = text
 
 
 class FileType(Enum):
@@ -69,17 +75,13 @@ class FileType(Enum):
         return all_suffixes
 
 
-class SenderType(Enum):
+class SenderType(NumberEnum):
     User = (1 << 0, "user")
     Assistant = (1 << 1, "assistant")
     System = (1 << 2, "system")
 
 
-class ConversationStatus(Enum):
+class ConversationStatus(NumberEnum):
     Active = (1 << 0, "active")
     Archived = (1 << 1, "archived")
     Temporary = (1 << 2, "temporary")
-
-    def __init__(self, value, text):
-        self.value = value
-        self.text = text

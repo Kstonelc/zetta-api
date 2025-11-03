@@ -9,7 +9,7 @@ class ModelProviderQueryRequest(BaseModel):
     modelProviderId: Optional[UUID] = None
 
 
-class ModelProviderAddRequest(BaseModel):
+class ModelProviderCreateRequest(BaseModel):
     modelProviderName: str
     modelProviderDesc: Optional[str] = None
 
@@ -20,7 +20,7 @@ class ModelProviderUpdateRequest(BaseModel):
     modelProviderId: UUID
 
 
-class ModelAddRequest(BaseModel):
+class ModelCreateRequest(BaseModel):
     modelName: str
     modelDisplayName: Optional[str] = None
     modelProviderId: UUID

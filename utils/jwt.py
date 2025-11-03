@@ -13,7 +13,7 @@ from typing import Optional
 
 SECRET_KEY = "bichon"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 10080  # 一周
+ACCESS_TOKEN_EXPIRE_MINUTES = 100800000 # 一周
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:

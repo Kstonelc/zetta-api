@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy import any_, and_
 from sqlalchemy.orm import Session, joinedload
 from schemas.model import (
-    ModelAddRequest,
+    ModelCreateRequest,
     ModelUpdateRequest,
     ModelQueryRequest,
 )
@@ -15,7 +15,7 @@ router = APIRouter(prefix="/api/model", tags=["Model"])
 
 @router.post("/create-model")
 async def create_model(
-    body: ModelAddRequest,
+    body: ModelCreateRequest,
     db: Session = Depends(get_db),
     token=Depends(verify_token),
 ):

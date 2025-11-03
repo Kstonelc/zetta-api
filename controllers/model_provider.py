@@ -4,7 +4,7 @@ from sqlalchemy import and_
 
 from llm.qwen import QWProvider
 from schemas.model import (
-    ModelProviderAddRequest,
+    ModelProviderCreateRequest,
     ModelProviderQueryRequest,
     ModelProviderUpdateRequest,
 )
@@ -20,7 +20,7 @@ router = APIRouter(prefix="/api/model-provider", tags=["ModelProvider"])
 
 @router.post("/create-model-provider")
 async def create_model_provider(
-    body: ModelProviderAddRequest,
+    body: ModelProviderCreateRequest,
     db: Session = Depends(get_db),
     token=Depends(verify_token),
 ):
