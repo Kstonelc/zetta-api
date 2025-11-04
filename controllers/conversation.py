@@ -113,6 +113,7 @@ async def create_conversation(
             tenant_id=tenant_id,
             user_id=user_id,
             status=ConversationStatus.Temporary.value,
+            name="新的对话",
         )
         db.add(new_conversation)
         db.commit()
@@ -138,7 +139,7 @@ async def find_conversations(
 
         filters = [
             Conversation.active.is_(True),
-            Conversation.status == conversation_status,
+            Conversation.status.in_(conversation_status),
         ]
         if tenant_id is not None:
             filters.append(Conversation.tenant_id == tenant_id)
@@ -148,7 +149,7 @@ async def find_conversations(
         conversations = (
             db.query(Conversation)
             .filter(and_(*filters))
-            .order_by(Conversation.created_at)
+            .order_by(desc(Conversation.created_at))
             .all()
         )
         response = {"ok": True, "data": conversations}
@@ -263,11 +264,15 @@ async def create_message(
         )
         db.commit()
 
-        background_tasks.add_task(
-            generate_conversation_name,
-            db,
-            conversation_id,
+        # background_tasks.add_task(
+        #     generate_conversation_name,
+        #     db,
+        #     conversation_id,
+        # )
+        db.query(Conversation).filter(Conversation.id == conversation_id).update(
+            {"name": user_content}, synchronize_session=False
         )
+        db.commit()
 
         response = {"ok": True, "data": "create message success"}
 

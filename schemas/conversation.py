@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from uuid import UUID
 from pydantic import BaseModel
 
@@ -12,7 +12,7 @@ class ConversationQueryRequest(BaseModel):
     tenantId: Optional[UUID] = None
     userId: Optional[UUID] = None
     conversationId: Optional[UUID] = None
-    conversationStatus: Optional[int] = None
+    conversationStatus: Optional[List[int]] = None
 
 
 class ConversationMessageQueryRequest(BaseModel):
