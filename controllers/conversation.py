@@ -12,10 +12,12 @@ from enums import LLMProvider, ConversationStatus, SenderType
 from models.conversation import Message
 from models import get_db, Conversation
 from schemas.conversation import (
+    ConversationChatRequest,
     ConversationCreateRequest,
     ConversationQueryRequest,
     ConversationMessageQueryRequest,
     ConversationMessageCreateRequest,
+    ConversationMessageUpdateRequest,
 )
 from fastapi import BackgroundTasks
 from utils.jwt import verify_token
@@ -25,23 +27,39 @@ router = APIRouter(prefix="/api/conversation", tags=["conversation"])
 
 
 @router.post("/chat")
-async def send_message(request: Request, db: Session = Depends(get_db)):
+async def chat(
+    request: Request,
+    body: ConversationChatRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+
+    def update_conversation_message(db, assistant_message_id, final_text):
+        db.query(Message).filter(Message.id == assistant_message_id).update(
+            {
+                "content": final_text,
+            }
+        )
+        db.commit()
+
     try:
-        body = await request.json()
-        prompt_text = body.get("prompt")
-        model_name = body.get("modelName")
-        modelProvider = body.get("modelProvider")
+        prompt_text = body.promptText
+        model_name = body.modelName
+        modelProvider = body.modelProvider
+        assistant_message_id = body.assistantMessageId
 
         llm = LLMFactory.create(
             modelProvider,
-            model=model_name,
+            model="deepseek-r1",
             api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
+            enable_deep_think=True,
         )
 
         prompt = PromptTemplate.from_template("{prompt_text}")
         chain = prompt | llm
 
         async def stream_generator():
+            final_text = ""
             try:
                 if await request.is_disconnected():
                     logger.error("Client disconnected")
@@ -65,6 +83,7 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
                         text = ""
 
                     if text:
+                        final_text += text
                         # 统一成 bytes，避免编码问题
                         yield text.encode("utf-8")
 
@@ -74,6 +93,21 @@ async def send_message(request: Request, db: Session = Depends(get_db)):
             except Exception as e:
                 if not await request.is_disconnected():
                     yield f"\n[Stream Error] {str(e)}\n"
+            finally:
+                # 流结束时触发的操作
+                logger.info(f"Stream ended. Final text length: {len(final_text)}")
+
+                # 更新数据库
+                if final_text and assistant_message_id:
+                    try:
+                        update_conversation_message(
+                            db, assistant_message_id, final_text
+                        )
+                        logger.info(
+                            f"Message {assistant_message_id} updated successfully"
+                        )
+                    except Exception as e:
+                        logger.error(f"Failed to update message: {e}")
 
         return StreamingResponse(
             stream_generator(), media_type="text/plain; charset=utf-8"
@@ -214,7 +248,6 @@ async def find_messages(
 @router.post("/create-message")
 async def create_message(
     body: ConversationMessageCreateRequest,
-    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db),
     token=Depends(verify_token),
 ):
@@ -264,17 +297,18 @@ async def create_message(
         )
         db.commit()
 
-        # background_tasks.add_task(
-        #     generate_conversation_name,
-        #     db,
-        #     conversation_id,
-        # )
         db.query(Conversation).filter(Conversation.id == conversation_id).update(
             {"name": user_content}, synchronize_session=False
         )
         db.commit()
 
-        response = {"ok": True, "data": "create message success"}
+        response = {
+            "ok": True,
+            "data": {
+                "user_message_id": m_user.id,
+                "assistant_message_id": m_assistant.id,
+            },
+        }
 
     except Exception as e:
         logger.error(e)
@@ -283,24 +317,26 @@ async def create_message(
         return response
 
 
-def generate_conversation_name(db, conversation_id):
+@router.post("/update-message")
+async def update_message(
+    body: ConversationMessageUpdateRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
     try:
-        conv = db.query(Conversation).filter(Conversation.id == conversation_id).first()
-        # if conv is None or conv.name:
-        #     return
-        res = (
-            db.query(Message.content)
-            .filter(
-                Message.conversation_id == conversation_id,
-                Message.role == SenderType.User.value,
-            )
-            .order_by(Message.sequence)
-            .first()
+        message_id = body.messageId
+        assistant_content = body.assistantContent
+
+        db.query(Message).filter(Message.id == message_id).update(
+            {"content": assistant_content}
         )
-        if res:
-            user_content = res.content
-        else:
-            user_content = None
-        print("用户输入的内容", type(user_content), user_content)
+        db.commit()
+
+        response = {"ok": True, "data": "update message success"}
+
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "update message failed"}
     finally:
-        db.close()
+        return response

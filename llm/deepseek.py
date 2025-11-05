@@ -18,9 +18,13 @@ class DeepseekProvider(LLM):
     max_tokens: Optional[int] = Field(default=None)
     request_timeout: int = Field(default=60, description="请求超时时间")
 
+    # ✅ 新增开关
+    enable_deep_think: bool = Field(default=False, description="是否启用深度思考模式")
+
     _client: ChatOpenAI = PrivateAttr()
 
     def model_post_init(self, __context: Any) -> None:
+        """初始化底层 ChatOpenAI 客户端"""
         self._client = ChatOpenAI(
             model=self.model,
             api_key=self.api_key,
@@ -28,6 +32,10 @@ class DeepseekProvider(LLM):
             temperature=self.temperature,
             max_tokens=self.max_tokens,
             timeout=self.request_timeout,
+            # ✅ 若开启深度思考模式，在初始化时附加额外 body
+            extra_body=(
+                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
+            ),
         )
 
     @property
@@ -40,6 +48,7 @@ class DeepseekProvider(LLM):
             "model": self.model,
             "base_url": self.base_url,
             "request_timeout": self.request_timeout,
+            "enable_deep_think": self.enable_deep_think,
         }
 
     def _call(
@@ -51,8 +60,14 @@ class DeepseekProvider(LLM):
     ) -> str:
         assert self._client is not None, "LangChain ChatOpenAI not initialized"
 
-        # ChatOpenAI 正确用法：invoke
-        msg: AIMessage = self._client.invoke(prompt, stop=stop, **kwargs)
+        msg: AIMessage = self._client.invoke(
+            prompt,
+            stop=stop,
+            extra_body=(
+                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
+            ),
+            **kwargs,
+        )
         return msg.content if isinstance(msg.content, str) else str(msg.content)
 
     def _stream(
@@ -64,16 +79,16 @@ class DeepseekProvider(LLM):
     ) -> Iterator[GenerationChunk]:
         assert self._client is not None, "LangChain ChatOpenAI not initialized"
 
-        for chunk in self._client.stream(prompt, stop=stop, **kwargs):
+        for chunk in self._client.stream(
+            prompt,
+            stop=stop,
+            extra_body=(
+                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
+            ),
+            **kwargs,
+        ):
             if isinstance(chunk, AIMessageChunk) and chunk.content:
                 text = chunk.content
                 if run_manager and text:
                     run_manager.on_llm_new_token(text)
                 yield GenerationChunk(text=text)
-
-    def test_api_key(self, test_prompt: str = "你好") -> bool:
-        try:
-            self._client.invoke(test_prompt)
-            return True
-        except Exception as e:
-            return False

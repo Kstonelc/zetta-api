@@ -3,6 +3,13 @@ from uuid import UUID
 from pydantic import BaseModel
 
 
+class ConversationChatRequest(BaseModel):
+    promptText: str
+    modelName: str
+    modelProvider: str
+    assistantMessageId: UUID
+
+
 class ConversationCreateRequest(BaseModel):
     tenantId: UUID
     userId: UUID
@@ -22,4 +29,9 @@ class ConversationMessageQueryRequest(BaseModel):
 class ConversationMessageCreateRequest(BaseModel):
     conversationId: UUID
     userContent: str
+    assistantContent: Optional[str] = None
+
+
+class ConversationMessageUpdateRequest(BaseModel):
+    messageId: UUID
     assistantContent: Optional[str] = None
