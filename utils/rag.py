@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import List
 
 from langchain_core.documents import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters.character import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import (
     TextLoader,
     PyPDFLoader,

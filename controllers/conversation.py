@@ -50,7 +50,7 @@ async def chat(
 
         llm = LLMFactory.create(
             modelProvider,
-            model="deepseek-r1",
+            model=model_name,
             api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
             enable_deep_think=True,
         )
@@ -70,7 +70,6 @@ async def chat(
                         logger.error("Client disconnected")
                         break
                     text = None
-                    print(111, chunk)
                     # LangChain 常见分支
                     if hasattr(chunk, "content"):  # AIMessageChunk / BaseMessageChunk
                         text = chunk.content

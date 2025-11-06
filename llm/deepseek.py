@@ -3,8 +3,10 @@ from pydantic import Field, PrivateAttr
 from langchain_core.language_models.llms import LLM
 from langchain_core.outputs import GenerationChunk
 from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import AIMessage, AIMessageChunk
+from langchain_core.messages import AIMessage  # 用于 _call 返回类型
+
+import os
+from openai import OpenAI  # 直接使用 openai-python SDK
 
 
 class DeepseekProvider(LLM):
@@ -18,25 +20,19 @@ class DeepseekProvider(LLM):
     max_tokens: Optional[int] = Field(default=None)
     request_timeout: int = Field(default=60, description="请求超时时间")
 
-    # ✅ 新增开关
     enable_deep_think: bool = Field(default=False, description="是否启用深度思考模式")
 
-    _client: ChatOpenAI = PrivateAttr()
+    _client: OpenAI = PrivateAttr()
 
     def model_post_init(self, __context: Any) -> None:
-        """初始化底层 ChatOpenAI 客户端"""
-        self._client = ChatOpenAI(
-            model=self.model,
-            api_key=self.api_key,
+        """初始化底层 OpenAI 客户端"""
+        # 设置环境变量或直接传 api_key/base_url
+        client = OpenAI(
+            api_key=self.api_key or os.getenv("OPENAI_API_KEY"),
             base_url=self.base_url,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens,
             timeout=self.request_timeout,
-            # ✅ 若开启深度思考模式，在初始化时附加额外 body
-            extra_body=(
-                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
-            ),
         )
+        self._client = client
 
     @property
     def _llm_type(self) -> str:
@@ -58,17 +54,22 @@ class DeepseekProvider(LLM):
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any,
     ) -> str:
-        assert self._client is not None, "LangChain ChatOpenAI not initialized"
-
-        msg: AIMessage = self._client.invoke(
-            prompt,
+        # 一次性调用（非流式）
+        extra = {"enable_thinking": True} if self.enable_deep_think else {}
+        messages = [{"role": "user", "content": prompt}]
+        response = self._client.chat.completions.create(
+            model=self.model,
+            messages=messages,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            stream=False,
+            extra_body=extra,
             stop=stop,
-            extra_body=(
-                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
-            ),
             **kwargs,
         )
-        return msg.content if isinstance(msg.content, str) else str(msg.content)
+        # 假设 SDK 返回标准结构
+        answer = response.choices[0].message.content
+        return answer
 
     def _stream(
         self,
@@ -77,18 +78,43 @@ class DeepseekProvider(LLM):
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any,
     ) -> Iterator[GenerationChunk]:
-        assert self._client is not None, "LangChain ChatOpenAI not initialized"
-
-        for chunk in self._client.stream(
-            prompt,
+        extra = {"enable_thinking": True} if self.enable_deep_think else {}
+        messages = [{"role": "user", "content": prompt}]
+        # 流式调用
+        stream_resp = self._client.chat.completions.create(
+            model=self.model,
+            messages=messages,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            stream=True,
+            extra_body=extra,
             stop=stop,
-            extra_body=(
-                {"reasoning": {"effort": "high"}} if self.enable_deep_think else None
-            ),
             **kwargs,
-        ):
-            if isinstance(chunk, AIMessageChunk) and chunk.content:
-                text = chunk.content
-                if run_manager and text:
-                    run_manager.on_llm_new_token(text)
-                yield GenerationChunk(text=text)
+        )
+        thinking_buf = []
+        answer_buf = []
+        is_answering = False
+
+        for chunk in stream_resp:
+            # chunk 结构可能依 SDK 版本不同
+            # 我们假设 chunk.choices[0].delta 有两字段： reasoning_content / content
+            delta = chunk.choices[0].delta
+            # 捕捉思考内容
+            r = getattr(delta, "reasoning_content", None)
+            if r is not None and not is_answering:
+                print(222, r)
+                thinking_buf.append(r)
+                # 可选：立刻把思考 token 输出
+                yield GenerationChunk(text=r)
+            # 捕捉答案内容
+            c = getattr(delta, "content", None)
+            if c is not None:
+                print(444, c)
+                # 第一次出现 content，标记为回答阶段
+                if not is_answering:
+                    is_answering = True
+                # 回调每个 token 给 run_manager
+                if run_manager:
+                    run_manager.on_llm_new_token(c)
+                answer_buf.append(c)
+                yield GenerationChunk(text=c)
