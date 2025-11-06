@@ -1,15 +1,30 @@
 from typing import Any, Dict, Iterator, List, Optional
+
 from pydantic import Field, PrivateAttr
-from langchain_core.language_models.llms import LLM
-from langchain_core.outputs import GenerationChunk
+from openai import OpenAI
+
+from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.messages import AIMessage  # 用于 _call 返回类型
+from langchain_core.messages import (
+    BaseMessage,
+    HumanMessage,
+    AIMessage,
+    SystemMessage,
+    ToolMessage,
+    FunctionMessage,
+    ChatMessage,
+    AIMessageChunk,
+)
+from langchain_core.outputs import (
+    ChatGeneration,
+    ChatGenerationChunk,
+    ChatResult,
+)
 
-import os
-from openai import OpenAI  # 直接使用 openai-python SDK
 
+class DeepseekProvider(BaseChatModel):
+    """OpenAI 兼容 Chat 模型的 LangChain 适配器（阻塞与流式）"""
 
-class DeepseekProvider(LLM):
     model: str = Field(default="deepseek-v3.1", description="模型名")
     api_key: Optional[str] = Field(default=None, description="API Key")
     base_url: Optional[str] = Field(
@@ -24,19 +39,18 @@ class DeepseekProvider(LLM):
 
     _client: OpenAI = PrivateAttr()
 
+    # ===== 生命周期 =====
     def model_post_init(self, __context: Any) -> None:
-        """初始化底层 OpenAI 客户端"""
-        # 设置环境变量或直接传 api_key/base_url
-        client = OpenAI(
-            api_key=self.api_key or os.getenv("OPENAI_API_KEY"),
+        self._client = OpenAI(
+            api_key=self.api_key,
             base_url=self.base_url,
             timeout=self.request_timeout,
         )
-        self._client = client
 
+    # ===== BaseChatModel 必需属性 =====
     @property
     def _llm_type(self) -> str:
-        return "openai-compatible"
+        return "openai-compatible-chat"
 
     @property
     def _identifying_params(self) -> Dict[str, Any]:
@@ -44,77 +58,119 @@ class DeepseekProvider(LLM):
             "model": self.model,
             "base_url": self.base_url,
             "request_timeout": self.request_timeout,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
             "enable_deep_think": self.enable_deep_think,
         }
 
-    def _call(
+    # ===== 公用：消息转换 =====
+    def _lc_to_openai_messages(
+        self, messages: List[BaseMessage]
+    ) -> List[Dict[str, Any]]:
+        """
+        LangChain BaseMessage -> OpenAI ChatCompletion 格式
+        """
+        out: List[Dict[str, Any]] = []
+        for m in messages:
+            if isinstance(m, HumanMessage):
+                out.append({"role": "user", "content": m.content})
+            elif isinstance(m, AIMessage):
+                out.append({"role": "assistant", "content": m.content})
+            elif isinstance(m, SystemMessage):
+                out.append({"role": "system", "content": m.content})
+            elif isinstance(m, ToolMessage):
+                out.append({"role": "tool", "content": m.content, "name": m.tool_name})
+            elif isinstance(m, FunctionMessage):
+                out.append({"role": "function", "content": m.content, "name": m.name})
+            elif isinstance(m, ChatMessage):
+                out.append({"role": m.role, "content": m.content})
+            else:
+                out.append({"role": "user", "content": m.content})
+        return out
+
+    # ===== 阻塞：_generate =====
+    def _generate(
         self,
-        prompt: str,
+        messages: List[BaseMessage],
         stop: Optional[List[str]] = None,
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any,
-    ) -> str:
-        # 一次性调用（非流式）
-        extra = {"enable_thinking": True} if self.enable_deep_think else {}
-        messages = [{"role": "user", "content": prompt}]
-        response = self._client.chat.completions.create(
+    ) -> ChatResult:
+        """
+        阻塞调用：返回完整的 ChatResult
+        """
+        oai_messages = self._lc_to_openai_messages(messages)
+        extra_body = {"enable_thinking": True} if self.enable_deep_think else {}
+
+        resp = self._client.chat.completions.create(
             model=self.model,
-            messages=messages,
+            messages=oai_messages,
             temperature=self.temperature,
             max_tokens=self.max_tokens,
             stream=False,
-            extra_body=extra,
             stop=stop,
+            extra_body=extra_body,
             **kwargs,
         )
-        # 假设 SDK 返回标准结构
-        answer = response.choices[0].message.content
-        return answer
 
+        msg_content = resp.choices[0].message.content or ""
+        reasoning = getattr(resp.choices[0].message, "reasoning_content", None)
+
+        ai_msg = AIMessage(
+            content=msg_content,
+            additional_kwargs={"reasoning_content": reasoning} if reasoning else {},
+        )
+
+        gen = ChatGeneration(message=ai_msg)
+        return ChatResult(
+            generations=[gen], llm_output={"raw": resp}, usage_metadata=usage
+        )
+
+    # ===== 流式：_stream =====
     def _stream(
         self,
-        prompt: str,
+        messages: List[BaseMessage],
         stop: Optional[List[str]] = None,
         run_manager: Optional[CallbackManagerForLLMRun] = None,
         **kwargs: Any,
-    ) -> Iterator[GenerationChunk]:
-        extra = {"enable_thinking": True} if self.enable_deep_think else {}
-        messages = [{"role": "user", "content": prompt}]
-        # 流式调用
-        stream_resp = self._client.chat.completions.create(
+    ) -> Iterator[ChatGenerationChunk]:
+        oai_messages = self._lc_to_openai_messages(messages)
+        extra_body = {"enable_thinking": True} if self.enable_deep_think else {}
+
+        stream = self._client.chat.completions.create(
             model=self.model,
-            messages=messages,
+            messages=oai_messages,
             temperature=self.temperature,
             max_tokens=self.max_tokens,
             stream=True,
-            extra_body=extra,
             stop=stop,
+            extra_body=extra_body,
             **kwargs,
         )
-        thinking_buf = []
-        answer_buf = []
-        is_answering = False
 
-        for chunk in stream_resp:
-            # chunk 结构可能依 SDK 版本不同
-            # 我们假设 chunk.choices[0].delta 有两字段： reasoning_content / content
-            delta = chunk.choices[0].delta
-            # 捕捉思考内容
+        for ev in stream:
+            delta = ev.choices[0].delta
+
+            # 1) 思考阶段（若有）
             r = getattr(delta, "reasoning_content", None)
-            if r is not None and not is_answering:
-                print(222, r)
-                thinking_buf.append(r)
-                # 可选：立刻把思考 token 输出
-                yield GenerationChunk(text=r)
-            # 捕捉答案内容
-            c = getattr(delta, "content", None)
-            if c is not None:
-                print(444, c)
-                # 第一次出现 content，标记为回答阶段
-                if not is_answering:
-                    is_answering = True
-                # 回调每个 token 给 run_manager
+            if r:
                 if run_manager:
-                    run_manager.on_llm_new_token(c)
-                answer_buf.append(c)
-                yield GenerationChunk(text=c)
+                    run_manager.on_llm_new_token(r, metadata={"phase": "thinking"})
+                yield ChatGenerationChunk(
+                    message=AIMessageChunk(
+                        content=r,
+                        additional_kwargs={"phase": "thinking"},
+                    ),
+                )
+
+            # 2) 最终回答阶段
+            c = getattr(delta, "content", None)
+            if c:
+                if run_manager:
+                    run_manager.on_llm_new_token(c, metadata={"phase": "answer"})
+                yield ChatGenerationChunk(
+                    message=AIMessageChunk(
+                        content=c,
+                        additional_kwargs={"phase": "answer"},
+                    ),
+                )

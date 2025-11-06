@@ -56,7 +56,8 @@ class Message(BaseModel):
     conversation_id = Column(UUID, ForeignKey("conversation.id"), nullable=False)
     sequence = Column(BigInteger, nullable=False)  # 序列
     role = Column(Integer, nullable=False)  # 发送者类型
-    tokens = Column(Integer, nullable=True)
+    tokens = Column(Integer, nullable=True)  # 消耗的token
+    thinking = Column(Text, nullable=True)  # 思考过程
     content = Column(Text, nullable=False)
 
     conversation = relationship("Conversation", back_populates="messages")

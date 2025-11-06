@@ -8,9 +8,11 @@ from sqlalchemy.testing.suite.test_reflection import users
 
 from llm.llm_factory import LLMFactory
 import asyncio
+import json
 from enums import LLMProvider, ConversationStatus, SenderType
 from models.conversation import Message
 from models import get_db, Conversation
+from langchain_core.messages import HumanMessage
 from schemas.conversation import (
     ConversationChatRequest,
     ConversationCreateRequest,
@@ -26,6 +28,11 @@ from utils.logger import logger
 router = APIRouter(prefix="/api/conversation", tags=["conversation"])
 
 
+def json_line(obj: dict) -> bytes:
+    # NDJSON：每个 JSON 结尾加换行；确保 utf-8 不转义中文
+    return (json.dumps(obj, ensure_ascii=False) + "\n").encode("utf-8")
+
+
 @router.post("/chat")
 async def chat(
     request: Request,
@@ -34,11 +41,9 @@ async def chat(
     token=Depends(verify_token),
 ):
 
-    def update_conversation_message(db, assistant_message_id, final_text):
+    def update_conversation_message(db, assistant_message_id, answer_buf, thinking_buf):
         db.query(Message).filter(Message.id == assistant_message_id).update(
-            {
-                "content": final_text,
-            }
+            {"content": answer_buf, "thinking": thinking_buf}
         )
         db.commit()
 
@@ -59,33 +64,48 @@ async def chat(
         chain = prompt | llm
 
         async def stream_generator():
-            final_text = ""
+            answer_buf = ""
+            thinking_buf = ""
             try:
                 if await request.is_disconnected():
                     logger.error("Client disconnected")
                     return
 
-                async for chunk in chain.astream({"prompt_text": prompt_text}):
-                    if await request.is_disconnected():
-                        logger.error("Client disconnected")
-                        break
-                    text = None
-                    # LangChain 常见分支
-                    if hasattr(chunk, "content"):  # AIMessageChunk / BaseMessageChunk
-                        text = chunk.content
-                    elif hasattr(chunk, "delta"):  # 一些模型的 token 增量字段
-                        text = chunk.delta
-                    elif isinstance(chunk, str):
-                        text = chunk
+                for chunk in chain.stream([HumanMessage(content=prompt_text)]):
+                    if hasattr(chunk, "content"):
+                        ak = getattr(chunk, "additional_kwargs", None) or {}
+                        phase = ak.get("phase")  # thinking" or "answer" or None
+                        reasoning_delta = ak.get("reasoning_content")
+
+                        if phase == "thinking" or reasoning_delta is not None:
+                            delta = (
+                                reasoning_delta
+                                if reasoning_delta is not None
+                                else (chunk.content or "")
+                            )
+                            if delta:
+                                thinking_buf += delta
+                                yield json_line({"type": "thinking", "delta": delta})
+                        else:
+                            delta = chunk.content or ""
+                            if delta:
+                                answer_buf += delta
+                                yield json_line({"type": "answer", "delta": delta})
                     else:
-                        # 兜底：不要把对象 repr 输出到前端
-                        text = ""
+                        # 退化为 str：按答案处理
+                        text_delta = str(chunk)
+                        if text_delta:
+                            answer_buf += text_delta
+                            yield json_line({"type": "answer", "delta": text_delta})
 
-                    if text:
-                        final_text += text
-                        # 统一成 bytes，避免编码问题
-                        yield text.encode("utf-8")
-
+                # 正常结束
+                yield json_line(
+                    {
+                        "type": "done",
+                        "answerLength": len(answer_buf),
+                        "thinkingLength": len(thinking_buf),
+                    }
+                )
             except (asyncio.CancelledError, GeneratorExit):
                 logger.warning("Stream_generator cancelled due to client disconnect")
                 raise
@@ -94,19 +114,12 @@ async def chat(
                     yield f"\n[Stream Error] {str(e)}\n"
             finally:
                 # 流结束时触发的操作
-                logger.info(f"Stream ended. Final text length: {len(final_text)}")
+                logger.info(f"Stream ended. Final text length: {len(answer_buf)}")
 
                 # 更新数据库
-                if final_text and assistant_message_id:
-                    try:
-                        update_conversation_message(
-                            db, assistant_message_id, final_text
-                        )
-                        logger.info(
-                            f"Message {assistant_message_id} updated successfully"
-                        )
-                    except Exception as e:
-                        logger.error(f"Failed to update message: {e}")
+                update_conversation_message(
+                    db, assistant_message_id, answer_buf, thinking_buf
+                )
 
         return StreamingResponse(
             stream_generator(), media_type="text/plain; charset=utf-8"

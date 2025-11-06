@@ -9,6 +9,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.http.models import PointStruct, Filter, FieldCondition, MatchValue
 from qdrant_client.models import Distance, VectorParams
 from typing import List, Dict, Optional
+from config import settings
 import threading
 
 
@@ -18,8 +19,8 @@ class VectorWrapper:
 
     def __new__(
         cls,
-        host: str = "121.5.5.83",
-        port: int = 6333,
+        host: str = settings.VECTOR_DB_HOST,
+        port: int = settings.VECTOR_DB_PORT,
         collection_name: str = "default",
         vector_dim: int = 768,  # 根据模型选择
     ):
