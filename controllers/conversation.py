@@ -7,12 +7,13 @@ from langchain_core.prompts import PromptTemplate
 from sqlalchemy.testing.suite.test_reflection import users
 
 from llm.llm_factory import LLMFactory
+from llm.web_search import web_search
 import asyncio
 import json
 from enums import LLMProvider, ConversationStatus, SenderType
 from models.conversation import Message
 from models import get_db, Conversation
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from schemas.conversation import (
     ConversationChatRequest,
     ConversationCreateRequest,
@@ -24,12 +25,13 @@ from schemas.conversation import (
 from fastapi import BackgroundTasks
 from utils.jwt import verify_token
 from utils.logger import logger
+from utils.common import get_domain
 
 router = APIRouter(prefix="/api/conversation", tags=["conversation"])
 
 
 def json_line(obj: dict) -> bytes:
-    # NDJSON：每个 JSON 结尾加换行；确保 utf-8 不转义中文
+    # NDJSON 每个JSON 结尾加换行
     return (json.dumps(obj, ensure_ascii=False) + "\n").encode("utf-8")
 
 
@@ -52,26 +54,91 @@ async def chat(
         model_name = body.modelName
         modelProvider = body.modelProvider
         assistant_message_id = body.assistantMessageId
+        is_deep_think = body.isDeepThink
+        is_online = body.isOnline
+
+        print(222, is_deep_think, is_online)
 
         llm = LLMFactory.create(
             modelProvider,
             model=model_name,
             api_key="sk-72b635b190514c8b90cfcbfe750fa61a",
-            enable_deep_think=True,
+            enable_deep_think=is_deep_think,
         )
-
-        prompt = PromptTemplate.from_template("{prompt_text}")
-        chain = prompt | llm
 
         async def stream_generator():
             answer_buf = ""
             thinking_buf = ""
+
+            if is_online:
+                # 联网搜索
+                yield json_line(
+                    {
+                        "type": "search_begin",
+                        "delta": "正在搜索",
+                        "section": "search:web",
+                    }
+                )
+                search_res = ""
+                try:
+                    search_res = web_search(prompt_text)
+                    if search_res.status_code == 200:
+                        data = search_res.json().get("data")
+                        search_res = json.dumps(data)
+                        site_data = data.get("webPages").get("value")
+                        site_icons = []
+                        for site_icon in site_data:
+                            # TODO 图标请求地址
+                            site_icons.append(
+                                "https://favicon.im/zh/"
+                                + get_domain(site_icon.get("url"))
+                            )
+                        yield json_line(
+                            {
+                                "type": "search_done",
+                                "delta": site_icons,
+                                "section": "search:web",
+                            }
+                        )
+                    else:
+                        yield json_line(
+                            {
+                                "type": "search_error",
+                                "delta": "联网搜索失败",
+                                "section": "search:web",
+                            }
+                        )
+                except Exception as e:
+                    yield json_line(
+                        {
+                            "type": "search_error",
+                            "delta": str(e),
+                            "section": "search:web",
+                        }
+                    )
+
             try:
                 if await request.is_disconnected():
                     logger.error("Client disconnected")
                     return
 
-                for chunk in chain.stream([HumanMessage(content=prompt_text)]):
+                # 构建消息列表
+                system_prompt = """你是一个有帮助的AI助手。请根据以下指导原则回答：
+                    1. 如果提供了搜索信息，请基于这些信息生成准确、客观的回答
+                    2. 如果信息复杂，请先总结再详细说明
+                    3. 保持回答专业且易于理解"""
+                prompts = []
+                prompts.append(SystemMessage(content=system_prompt))
+                if is_online:
+                    augmented_query = f"""用户问题：{prompt_text}
+                        以下是从网络搜索到的相关信息：
+                    {search_res}
+                    请根据以上信息，为用户提供一个全面、准确的回答。如果搜索结果不充分，可以结合你的知识进行补充。"""
+                    prompts.append(HumanMessage(content=augmented_query))
+                else:
+                    prompts.append(HumanMessage(content=prompt_text))
+
+                for chunk in llm.stream(prompts):
                     if hasattr(chunk, "content"):
                         ak = getattr(chunk, "additional_kwargs", None) or {}
                         phase = ak.get("phase")  # thinking" or "answer" or None

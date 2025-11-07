@@ -8,6 +8,7 @@
 from passlib.context import CryptContext
 from cryptography.fernet import Fernet
 import random
+import tldextract
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -39,6 +40,18 @@ def encrypt(plaintext: str) -> str:
 
 def decrypt(ciphertext: str) -> str:
     return fernet.decrypt(ciphertext.encode()).decode()
+
+
+# endregion
+
+
+# region 网站
+
+
+def get_domain(url: str) -> str:
+    ext = tldextract.extract(url)
+    main_domain = f"{ext.domain}.{ext.suffix}"
+    return main_domain
 
 
 # endregion

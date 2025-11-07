@@ -8,6 +8,8 @@ class ConversationChatRequest(BaseModel):
     modelName: str
     modelProvider: str
     assistantMessageId: UUID
+    isOnline: bool
+    isDeepThink: bool
 
 
 class ConversationCreateRequest(BaseModel):

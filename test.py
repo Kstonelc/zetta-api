@@ -1,5 +1,5 @@
 from langchain_core.messages import HumanMessage
-from llm.deepseek_base_chat_model import DeepseekProvider
+from llm.deepseek import DeepseekProvider
 
 provider = DeepseekProvider(
     api_key="sk-72b635b190514c8b90cfcbfe750fa61a", enable_deep_think=True

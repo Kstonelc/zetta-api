@@ -122,9 +122,7 @@ class DeepseekProvider(BaseChatModel):
         )
 
         gen = ChatGeneration(message=ai_msg)
-        return ChatResult(
-            generations=[gen], llm_output={"raw": resp}, usage_metadata=usage
-        )
+        return ChatResult(generations=[gen], llm_output={"raw": resp})
 
     # ===== 流式：_stream =====
     def _stream(
@@ -153,7 +151,7 @@ class DeepseekProvider(BaseChatModel):
 
             # 1) 思考阶段（若有）
             r = getattr(delta, "reasoning_content", None)
-            if r:
+            if r and self.enable_deep_think:
                 if run_manager:
                     run_manager.on_llm_new_token(r, metadata={"phase": "thinking"})
                 yield ChatGenerationChunk(
