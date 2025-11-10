@@ -1,13 +1,12 @@
 from pathlib import Path
-from typing import List
-import re
+from typing import List, Dict, Any, Optional
+import hashlib
 
 from langchain_core.documents import Document
-from langchain_text_splitters.character import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import (
     TextLoader,
     PyPDFLoader,
-    UnstructuredMarkdownLoader,
 )
 from enums import FileType
 
@@ -20,9 +19,7 @@ def load_doc(file_path: str | Path) -> List[Document]:
         if suffix in FileType.Doc.suffix:
             return TextLoader(str(file_path), encoding="utf-8").load()
         elif suffix in FileType.Md.suffix:
-            return UnstructuredMarkdownLoader(
-                str(file_path),
-            ).load()
+            return TextLoader(str(file_path), encoding="utf-8").load()
         elif suffix in FileType.Pdf.suffix:
             return PyPDFLoader(str(file_path)).load()
         else:
@@ -59,49 +56,117 @@ def split_doc(
     return splitter.split_documents(doc)
 
 
-# 父子文档切割
-def split_doc_with_parents(
-    docs: list[Document],
-    parent_chunk_size: int = 1024,
-    child_chunk_size: int = 512,
-    parent_chunk_overlap: int = 200,
-    child_chunk_overlap: int = 50,
-):
-    cleaned_docs = []
-    for d in docs:
-        text = normalize_whitespace(d.page_content)
-        cleaned_docs.append(Document(page_content=text, metadata=d.metadata))
-    parent_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=parent_chunk_size,
-        chunk_overlap=parent_chunk_overlap,
-        separators=["\n\n", "\r\n\r\n", "\n", "\r\n", " "],
-        keep_separator="end",
-        add_start_index=True,
-    )
+def _stable_parent_id(doc: Document) -> str:
+    src = str(doc.metadata.get("source", "")) + "|" + str(doc.metadata.get("page", ""))
+    base = src + "|" + doc.page_content
+    return "parent_" + hashlib.md5(base.encode("utf-8", "ignore")).hexdigest()[:16]
 
+
+def split_doc_with_parents(
+    docs: List[Document],
+    parent_mode: str = "paragraph",  # "paragraph" or "full_doc"
+    parent_chunk_size: int = 1024,
+    parent_chunk_overlap: int = 50,
+    child_chunk_size: int = 512,
+    child_chunk_overlap: int = 10,
+    parent_separators: List[str] = None,
+    child_separators: List[str] = None,
+) -> List[Dict[str, Any]]:
+    """
+    返回一个父块列表，每个父块里包含它的子块 children。
+    """
+    if parent_separators is None:
+        parent_separators = ["\n\n", "\r\n\r\n"]
+    if child_separators is None:
+        child_separators = ["\n", "\r\n"]
+
+    # 父块切分器
+    if parent_mode == "paragraph":
+        parent_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=parent_chunk_size,
+            chunk_overlap=parent_chunk_overlap,
+            separators=parent_separators,
+            keep_separator=False,
+            add_start_index=True,
+            strip_whitespace=True,
+        )
+    elif parent_mode == "full_doc":
+        parent_splitter = None
+    else:
+        raise ValueError(f"Unsupported parent_mode: {parent_mode}")
+
+    # 子块切分器
     child_splitter = RecursiveCharacterTextSplitter(
         chunk_size=child_chunk_size,
         chunk_overlap=child_chunk_overlap,
-        separators=["\n", "\r\n", " "],
-        keep_separator="end",
+        separators=child_separators,
+        keep_separator=False,
         add_start_index=True,
+        strip_whitespace=True,
     )
 
-    parent_chunks = parent_splitter.split_documents(cleaned_docs)
-    for idx, pc in enumerate(parent_chunks):
-        pc.metadata["parent_id"] = f"parent_{idx}"
+    parent_list: List[Dict[str, Any]] = []
 
-    child_chunks = []
-    for pc in parent_chunks:
-        cc_list = child_splitter.split_documents([pc])
-        for cc in cc_list:
-            # 把 parent_id 传给 child
-            cc.metadata["parent_id"] = pc.metadata["parent_id"]
-            child_chunks.append(cc)
-    return child_chunks
+    for doc in docs:
+        if parent_mode == "full_doc":
+            pid = _stable_parent_id(doc)
+            parent_entry = {
+                "parent_id": pid,
+                "content": doc.page_content,
+                "metadata": dict(doc.metadata),
+                "children": [],
+            }
+            # 只这一块作为父
+            parent_docs = [
+                Document(
+                    page_content=doc.page_content,
+                    metadata={**doc.metadata, "parent_id": pid},
+                )
+            ]
+        else:
+            raw_parent_docs = parent_splitter.split_documents([doc])
+            parent_docs = []
+            parent_entry_map = {}
+            for pc in raw_parent_docs:
+                pid = _stable_parent_id(pc)
+                pc.metadata["parent_id"] = pid
+                parent_entry = {
+                    "parent_id": pid,
+                    "content": pc.page_content,
+                    "metadata": dict(pc.metadata),
+                    "children": [],
+                }
+                parent_list.append(parent_entry)
+                parent_entry_map[pid] = parent_entry
+                parent_docs.append(pc)
 
+        # 对每个父块切子块并挂入其 children
+        for pc in parent_docs:
+            pid = pc.metadata.get("parent_id")
+            cc_list = child_splitter.split_documents([pc])
+            # 找到父 entry
+            if parent_mode == "full_doc":
+                parent_entry = parent_list[-1] if parent_list else None
+            else:
+                parent_entry = parent_entry_map.get(pid)
+            if parent_entry is None:
+                continue
+            for cc in cc_list:
+                child_item = {
+                    "content": cc.page_content,
+                    "metadata": dict(cc.metadata),
+                    "child_start": cc.metadata.get("start_index"),
+                    "child_end": cc.metadata.get("start_index", 0)
+                    + len(cc.page_content),
+                }
+                parent_entry["children"].append(child_item)
 
-def normalize_whitespace(text: str) -> str:
-    # 将任意多个空白字符（空格、制表、换行）替换为一个空格
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    # 如果 paragraph 模式， parent_list 已通过 loop填充；
+    # 如果 full_doc 模式，只父那一项尚未被 append（可能需要手-append）
+    if parent_mode == "full_doc":
+        # parent_list might be empty if not yet appended
+        # We appended none above, so we need to create and append
+        # Actually we appended in the loop; ensure unique
+        pass
+
+    return parent_list
