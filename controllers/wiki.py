@@ -12,14 +12,14 @@ from schemas.wiki import (
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
-from enums import FileType
+from enums import FileType, WikiChunkType
 from utils.jwt import verify_token
 from langchain_community.vectorstores import Qdrant
 from qdrant_client.http.models import Distance
 from config import settings
 from llm.qwen import QWEmbeddings
 from utils.logger import logger
-from utils.rag import load_doc, split_doc
+from utils.rag import load_doc, split_doc, split_doc_with_parents
 
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
@@ -145,11 +145,27 @@ async def preview_file_chunks(
     response = {}
     try:
         file_path = body.filePath
-        chunkSize = body.chunkSize
-        chunkOverlap = body.chunkOverlap
+        chunk_type = body.chunkType
+        chunk_size = body.chunkSize
+        chunk_overlap = body.chunkOverlap
+        parent_chunk_size = body.parentChunkSize
+        parent_chunk_overlap = body.parentChunkOverlap
+        child_chunk_size = body.childChunkSize
+        child_chunk_overlap = body.childChunkOverlap
 
         doc = load_doc(file_path)
-        split_docs = split_doc(doc, chunkSize, chunkOverlap)
+        match chunk_type:
+            case WikiChunkType.Classical.value:
+                split_docs = split_doc(doc, chunk_size, chunk_overlap)
+            case WikiChunkType.ParentChild.value:
+                split_docs = split_doc_with_parents(
+                    doc,
+                    parent_chunk_size,
+                    parent_chunk_overlap,
+                    child_chunk_size,
+                    child_chunk_overlap,
+                )
+
         response = {
             "ok": True,
             "data": split_docs,

@@ -58,6 +58,11 @@ class WikiType(NumberEnum):
     Unstructured = (1 << 1, "非结构化")
 
 
+class WikiChunkType(NumberEnum):
+    Classical = (1 << 0, "classical")
+    ParentChild = (1 << 1, "parentChild")
+
+
 class FileType(Enum):
     Md = (1 << 0, [".md", ".txt"], "md")
     Doc = (1 << 1, [".doc", ".docx"], "doc")

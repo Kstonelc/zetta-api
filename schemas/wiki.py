@@ -20,8 +20,13 @@ class WikiQueryRequest(BaseModel):
 
 class WikiPreviewFileChunkRequest(BaseModel):
     filePath: str
-    chunkSize: int
-    chunkOverlap: int
+    chunkType: int
+    chunkSize: Optional[int] = None
+    chunkOverlap: Optional[int] = None
+    parentChunkSize: Optional[int] = None
+    parentChunkOverlap: Optional[int] = None
+    childChunkSize: Optional[int] = None
+    childChunkOverlap: Optional[int] = None
 
 
 class WikiIndexFileRequest(BaseModel):

@@ -57,8 +57,6 @@ async def chat(
         is_deep_think = body.isDeepThink
         is_online = body.isOnline
 
-        print(222, is_deep_think, is_online)
-
         llm = LLMFactory.create(
             modelProvider,
             model=model_name,
