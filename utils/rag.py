@@ -1,9 +1,13 @@
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 import hashlib
+import re
 
 from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_text_splitters import (
+    RecursiveCharacterTextSplitter,
+    MarkdownHeaderTextSplitter,
+)
 from langchain_community.document_loaders import (
     TextLoader,
     PyPDFLoader,
@@ -32,7 +36,7 @@ def load_doc(file_path: str | Path) -> List[Document]:
 def split_doc(
     doc: Document, chunk_size: int = 1204, chunk_overlap: int = 50
 ) -> List[Document]:
-    # 使用MD文件的切割器
+    # 使用递归积切分器
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
@@ -56,117 +60,155 @@ def split_doc(
     return splitter.split_documents(doc)
 
 
-def _stable_parent_id(doc: Document) -> str:
-    src = str(doc.metadata.get("source", "")) + "|" + str(doc.metadata.get("page", ""))
-    base = src + "|" + doc.page_content
+def _is_markdown(doc: Document) -> bool:
+    """根据 source 后缀或正文特征做一个轻量判定。"""
+    src = str(doc.metadata.get("source", "")).lower()
+    if src.endswith(".md") or src.endswith(".markdown"):
+        return True
+    # 兜底：检测常见 markdown 结构
+    return bool(re.search(r"(^|\n)#{1,3}\s+\S+", doc.page_content))
+
+
+def _stable_parent_id_from_text(text: str, meta: Dict[str, Any]) -> str:
+    src = str(meta.get("source", "")) + "|" + str(meta.get("page", ""))
+    base = src + "|" + text
     return "parent_" + hashlib.md5(base.encode("utf-8", "ignore")).hexdigest()[:16]
 
 
 def split_doc_with_parents(
     docs: List[Document],
-    parent_mode: str = "paragraph",  # "paragraph" or "full_doc"
-    parent_chunk_size: int = 1024,
-    parent_chunk_overlap: int = 50,
-    child_chunk_size: int = 512,
-    child_chunk_overlap: int = 10,
-    parent_separators: List[str] = None,
-    child_separators: List[str] = None,
+    parent_chunk_size: int = 1000,
+    parent_chunk_overlap: int = 100,
+    child_chunk_size: int = 400,
+    child_chunk_overlap: int = 50,
 ) -> List[Dict[str, Any]]:
     """
-    返回一个父块列表，每个父块里包含它的子块 children。
+    仅区分 Markdown 与 非 Markdown 的父子切分：
+    - Markdown：按 H1/H2/H3 切父块，并把标题文本回填到父块 content 顶部
+    - 非 Markdown：用递归切父块（偏段落）
+    - 子块：统一递归切分，优先换行，再标点
+    返回：[{parent_id, content, metadata, children:[{content, metadata, child_start, child_end}]}]
     """
-    if parent_separators is None:
-        parent_separators = ["\n\n", "\r\n\r\n"]
-    if child_separators is None:
-        child_separators = ["\n", "\r\n"]
-
-    # 父块切分器
-    if parent_mode == "paragraph":
-        parent_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=parent_chunk_size,
-            chunk_overlap=parent_chunk_overlap,
-            separators=parent_separators,
-            keep_separator=False,
-            add_start_index=True,
-            strip_whitespace=True,
-        )
-    elif parent_mode == "full_doc":
-        parent_splitter = None
-    else:
-        raise ValueError(f"Unsupported parent_mode: {parent_mode}")
-
-    # 子块切分器
-    child_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=child_chunk_size,
-        chunk_overlap=child_chunk_overlap,
-        separators=child_separators,
+    # 非 MD 父块切分（偏段落）
+    parent_splitter_generic = RecursiveCharacterTextSplitter(
+        chunk_size=parent_chunk_size,
+        chunk_overlap=parent_chunk_overlap,
+        separators=["\n\n", "\r\n\r\n", "\n", "\r\n", " "],
         keep_separator=False,
         add_start_index=True,
         strip_whitespace=True,
     )
 
-    parent_list: List[Dict[str, Any]] = []
+    # 子块统一切分器（优先换行，再中英标点，最后空格）
+    child_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=child_chunk_size,
+        chunk_overlap=child_chunk_overlap,
+        separators=["\n", "\r\n", "。", "！", "？", ".", "!", "?", " "],
+        keep_separator=False,
+        add_start_index=True,
+        strip_whitespace=True,
+    )
+
+    results: List[Dict[str, Any]] = []
 
     for doc in docs:
-        if parent_mode == "full_doc":
-            pid = _stable_parent_id(doc)
-            parent_entry = {
-                "parent_id": pid,
-                "content": doc.page_content,
-                "metadata": dict(doc.metadata),
-                "children": [],
-            }
-            # 只这一块作为父
-            parent_docs = [
-                Document(
-                    page_content=doc.page_content,
-                    metadata={**doc.metadata, "parent_id": pid},
-                )
+        if _is_markdown(doc):
+            # 1) Markdown：标题切父块
+            md_headers = [
+                ("#", "H1"),
+                ("##", "H2"),
+                ("###", "H3"),
+                ("####", "H4"),
+                ("#####", "H5"),
             ]
-        else:
-            raw_parent_docs = parent_splitter.split_documents([doc])
-            parent_docs = []
-            parent_entry_map = {}
-            for pc in raw_parent_docs:
-                pid = _stable_parent_id(pc)
-                pc.metadata["parent_id"] = pid
+            md_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=md_headers)
+            sections = md_splitter.split_text(doc.page_content)
+
+            for sec in sections:
+                # 回填标题文本，避免丢失层级上下文
+                h1 = sec.metadata.get("H1")
+                h2 = sec.metadata.get("H2")
+                h3 = sec.metadata.get("H3")
+                h4 = sec.metadata.get("H4")
+                h5 = sec.metadata.get("H5")
+                header_lines = []
+                if h1:
+                    header_lines.append(f"# {h1}")
+                if h2:
+                    header_lines.append(f"## {h2}")
+                if h3:
+                    header_lines.append(f"### {h3}")
+                if h4:
+                    header_lines.append(f"#### {h4}")
+                if h5:
+                    header_lines.append(f"##### {h5}")
+                header_text = "\n".join(header_lines)
+                parent_text = (header_text + "\n\n" if header_text else "") + (
+                    sec.page_content or ""
+                )
+
+                parent_meta = {**doc.metadata, **sec.metadata}
+                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+
+                # 2) 子块：对 parent_text 再做一次统一子分 chunk
+                parent_doc = Document(page_content=parent_text, metadata=parent_meta)
+                children_docs = child_splitter.split_documents([parent_doc])
+
                 parent_entry = {
-                    "parent_id": pid,
-                    "content": pc.page_content,
-                    "metadata": dict(pc.metadata),
+                    "parent_id": parent_id,
+                    "content": parent_text,
+                    "metadata": dict(parent_meta),
                     "children": [],
                 }
-                parent_list.append(parent_entry)
-                parent_entry_map[pid] = parent_entry
-                parent_docs.append(pc)
 
-        # 对每个父块切子块并挂入其 children
-        for pc in parent_docs:
-            pid = pc.metadata.get("parent_id")
-            cc_list = child_splitter.split_documents([pc])
-            # 找到父 entry
-            if parent_mode == "full_doc":
-                parent_entry = parent_list[-1] if parent_list else None
-            else:
-                parent_entry = parent_entry_map.get(pid)
-            if parent_entry is None:
-                continue
-            for cc in cc_list:
-                child_item = {
-                    "content": cc.page_content,
-                    "metadata": dict(cc.metadata),
-                    "child_start": cc.metadata.get("start_index"),
-                    "child_end": cc.metadata.get("start_index", 0)
-                    + len(cc.page_content),
+                for cc in children_docs:
+                    start = int(cc.metadata.get("start_index", 0) or 0)
+                    end = start + len(cc.page_content)
+                    child_meta = dict(parent_meta)
+                    parent_entry["children"].append(
+                        {
+                            "content": cc.page_content,
+                            "metadata": child_meta,
+                            "child_start": start,
+                            "child_end": end,
+                        }
+                    )
+
+                results.append(parent_entry)
+
+        else:
+            # 非 Markdown：直接段落式父块
+            parent_docs = parent_splitter_generic.split_documents([doc])
+
+            for pc in parent_docs:
+                parent_meta = dict(pc.metadata)
+                parent_text = pc.page_content
+                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+
+                # 子块
+                parent_doc = Document(page_content=parent_text, metadata=parent_meta)
+                children_docs = child_splitter.split_documents([parent_doc])
+
+                parent_entry = {
+                    "parent_id": parent_id,
+                    "content": parent_text,
+                    "metadata": parent_meta,
+                    "children": [],
                 }
-                parent_entry["children"].append(child_item)
 
-    # 如果 paragraph 模式， parent_list 已通过 loop填充；
-    # 如果 full_doc 模式，只父那一项尚未被 append（可能需要手-append）
-    if parent_mode == "full_doc":
-        # parent_list might be empty if not yet appended
-        # We appended none above, so we need to create and append
-        # Actually we appended in the loop; ensure unique
-        pass
+                for cc in children_docs:
+                    start = int(cc.metadata.get("start_index", 0) or 0)
+                    end = start + len(cc.page_content)
+                    child_meta = dict(parent_meta)
+                    parent_entry["children"].append(
+                        {
+                            "content": cc.page_content,
+                            "metadata": child_meta,
+                            "child_start": start,
+                            "child_end": end,
+                        }
+                    )
 
-    return parent_list
+                results.append(parent_entry)
+
+    return results

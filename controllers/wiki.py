@@ -160,7 +160,6 @@ async def preview_file_chunks(
             case WikiChunkType.ParentChild.value:
                 split_docs = split_doc_with_parents(
                     doc,
-                    "paragraph",
                     parent_chunk_size,
                     parent_chunk_overlap,
                     child_chunk_size,

@@ -55,3 +55,13 @@ def get_domain(url: str) -> str:
 
 
 # endregion
+
+
+# region 文件转换
+
+
+def convert_pdf_to_md(file_path: str) -> str:
+    pass
+
+
+# endregion
