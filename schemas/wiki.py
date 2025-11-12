@@ -30,8 +30,13 @@ class WikiPreviewFileChunkRequest(BaseModel):
 
 
 class WikiIndexFileRequest(BaseModel):
-    chunks: List[Dict]
-    apiKey: str
+    filesPath: List[str]
+    wikiName: str
+    chunkType: int
+    parentChunkSize: Optional[int] = None
+    parentChunkOverlap: Optional[int] = None
+    childChunkSize: Optional[int] = None
+    childChunkOverlap: Optional[int] = None
 
 
 class WikiRecallDocsRequest(BaseModel):

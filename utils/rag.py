@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Tuple
 import hashlib
 import re
 
@@ -69,13 +69,37 @@ def _is_markdown(doc: Document) -> bool:
     return bool(re.search(r"(^|\n)#{1,3}\s+\S+", doc.page_content))
 
 
+def _is_pdf(doc: Document) -> bool:
+    """根据 source 后缀或正文特征做一个轻量判定。"""
+    src = str(doc.metadata.get("source", "")).lower()
+    if src.endswith(".pdf"):
+        return True
+    # 兜底：检测常见 pdf 特征
+    return bool(re.search(r"^%PDF-", doc.page_content))
+
+
 def _stable_parent_id_from_text(text: str, meta: Dict[str, Any]) -> str:
     src = str(meta.get("source", "")) + "|" + str(meta.get("page", ""))
     base = src + "|" + text
     return "parent_" + hashlib.md5(base.encode("utf-8", "ignore")).hexdigest()[:16]
 
 
-def split_doc_with_parents(
+def normalize_pdf_text(s: str) -> str:
+    # 统一换行
+    s = s.replace("\r\n", "\n").replace("\r", "\n")
+    # 去软连字符 & 多余空白
+    s = s.replace("\u00ad", "")  # soft hyphen
+    s = re.sub(r"[ \t\u00A0\u3000]+", " ", s)  # NBSP/全角空格 -> 普通空格
+    # 各类项目符号统一为换行 + 连字符
+    bullets = r"[\u2022\u25CF\u25CB\u25A0\u25AA\u25E6\u2043\u2219\uF0B7]"  # •●○■▪◦⁃∙
+    s = re.sub(rf"\s*{bullets}\s*", "\n- ", s)
+    # 常见中文编号（1. / 1、 / （1））前插入换行，便于切分
+    s = re.sub(r"(?<!\n)(\n?\s*)(\(?\d{1,3}\)|\d{1,3}[\.、])\s*", r"\n\2 ", s)
+    return s
+
+
+# preview 模式下使用
+def preview_doc_with_parents(
     docs: List[Document],
     parent_chunk_size: int = 1000,
     parent_chunk_overlap: int = 100,
@@ -103,7 +127,18 @@ def split_doc_with_parents(
     child_splitter = RecursiveCharacterTextSplitter(
         chunk_size=child_chunk_size,
         chunk_overlap=child_chunk_overlap,
-        separators=["\n", "\r\n", "。", "！", "？", ".", "!", "?", " "],
+        separators=[
+            "\n\n",
+            "\n",  # 段/行
+            "- ",  # 归一化后的项目符号行
+            "。",
+            "！",
+            "？",
+            ".",
+            "!",
+            "?",  # 句读
+            " ",  # 兜底
+        ],
         keep_separator=False,
         add_start_index=True,
         strip_whitespace=True,
@@ -112,6 +147,9 @@ def split_doc_with_parents(
     results: List[Dict[str, Any]] = []
 
     for doc in docs:
+        # 预处理 pdf 文件 TODO
+        if _is_pdf(doc):
+            doc.page_content = normalize_pdf_text(doc.page_content)
         if _is_markdown(doc):
             # 1) Markdown：标题切父块
             md_headers = [
@@ -212,3 +250,179 @@ def split_doc_with_parents(
                 results.append(parent_entry)
 
     return results
+
+
+# rag 分块
+def split_docs_with_parents(
+    docs: List[Document],
+    parent_chunk_size: int = 1000,
+    parent_chunk_overlap: int = 100,
+    child_chunk_size: int = 400,
+    child_chunk_overlap: int = 50,
+    return_parent_docs: bool = False,  # 需要父块 Document 时打开
+) -> Tuple[List[Document], List[Document]]:
+    """
+    输入：原始 Document 列表（通常为每页/每文件）
+    输出：
+      - parent_docs: 父块级 Document（可选，用于 Parent-Child 检索回填）
+      - child_docs : 子块级 Document（直接用于向量库）
+    元数据约定（写入 child_docs.metadata）：
+      - source / page（沿用原文）
+      - parent_id（稳定ID）
+      - child_start / child_end（在父块内的偏移）
+      - H1..H5（Markdown 标题，如有）
+      - is_parent=False（便于调试）
+    """
+    parent_splitter_generic = RecursiveCharacterTextSplitter(
+        chunk_size=parent_chunk_size,
+        chunk_overlap=parent_chunk_overlap,
+        separators=["\n\n", "\r\n\r\n", "\n", "\r\n", " "],
+        keep_separator=False,
+        add_start_index=True,
+        strip_whitespace=True,
+    )
+
+    child_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=child_chunk_size,
+        chunk_overlap=child_chunk_overlap,
+        separators=[
+            "\n\n",
+            "\n",
+            "- ",
+            "。",
+            "！",
+            "？",
+            ".",
+            "!",
+            "?",
+            " ",
+        ],
+        keep_separator=False,
+        add_start_index=True,
+        strip_whitespace=True,
+    )
+
+    parent_docs: List[Document] = []
+    child_docs: List[Document] = []
+
+    for doc in docs:
+        if _is_pdf(doc):
+            txt = normalize_pdf_text(doc.page_content or "")
+        base_meta = dict(doc.metadata or {})
+
+        if _is_markdown(doc):
+            md_headers = [
+                ("#", "H1"),
+                ("##", "H2"),
+                ("###", "H3"),
+                ("####", "H4"),
+                ("#####", "H5"),
+            ]
+            md_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=md_headers)
+            sections = md_splitter.split_text(doc)
+
+            for sec in sections:
+                # 回填标题
+                h1 = sec.metadata.get("H1")
+                h2 = sec.metadata.get("H2")
+                h3 = sec.metadata.get("H3")
+                h4 = sec.metadata.get("H4")
+                h5 = sec.metadata.get("H5")
+                header_lines = []
+                if h1:
+                    header_lines.append(f"# {h1}")
+                if h2:
+                    header_lines.append(f"## {h2}")
+                if h3:
+                    header_lines.append(f"### {h3}")
+                if h4:
+                    header_lines.append(f"#### {h4}")
+                if h5:
+                    header_lines.append(f"##### {h5}")
+                header_text = "\n".join(header_lines)
+                parent_text = (header_text + "\n\n" if header_text else "") + (
+                    sec.page_content or ""
+                )
+
+                parent_meta = {**base_meta, **sec.metadata}
+                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+
+                # 父块 Document（可选）
+                if return_parent_docs:
+                    parent_docs.append(
+                        Document(
+                            page_content=parent_text,
+                            metadata={
+                                **parent_meta,
+                                "parent_id": parent_id,
+                                "is_parent": True,
+                            },
+                        )
+                    )
+
+                # 子块 -> Documents
+                tmp_parent_doc = Document(
+                    page_content=parent_text, metadata=parent_meta
+                )
+                children = child_splitter.split_documents([tmp_parent_doc])
+
+                for cc in children:
+                    start = int(cc.metadata.get("start_index", 0) or 0)
+                    end = start + len(cc.page_content)
+                    child_docs.append(
+                        Document(
+                            page_content=cc.page_content,
+                            metadata={
+                                **parent_meta,
+                                "parent_id": parent_id,
+                                "child_start": start,
+                                "child_end": end,
+                                "is_parent": False,
+                            },
+                        )
+                    )
+
+        else:
+            # 非 Markdown：段落式父块
+            generic_parents = parent_splitter_generic.split_documents(
+                [Document(page_content=doc, metadata=base_meta)]
+            )
+            for pc in generic_parents:
+                parent_text = pc.page_content
+                parent_meta = dict(pc.metadata or {})
+                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+
+                if return_parent_docs:
+                    parent_docs.append(
+                        Document(
+                            page_content=parent_text,
+                            metadata={
+                                **parent_meta,
+                                "parent_id": parent_id,
+                                "is_parent": True,
+                            },
+                        )
+                    )
+
+                tmp_parent_doc = Document(
+                    page_content=parent_text, metadata=parent_meta
+                )
+                children = child_splitter.split_documents([tmp_parent_doc])
+
+                for cc in children:
+                    start = int(cc.metadata.get("start_index", 0) or 0)
+                    end = start + len(cc.page_content)
+                    child_docs.append(
+                        Document(
+                            page_content=cc.page_content,
+                            metadata={
+                                **parent_meta,
+                                "parent_id": parent_id,
+                                "child_start": start,
+                                "child_end": end,
+                                "is_parent": False,
+                            },
+                        )
+                    )
+
+    return (parent_docs, child_docs)

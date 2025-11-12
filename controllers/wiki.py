@@ -19,7 +19,12 @@ from qdrant_client.http.models import Distance
 from config import settings
 from llm.qwen import QWEmbeddings
 from utils.logger import logger
-from utils.rag import load_doc, split_doc, split_doc_with_parents
+from utils.rag import (
+    load_doc,
+    split_doc,
+    preview_doc_with_parents,
+    split_docs_with_parents,
+)
 
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
@@ -146,20 +151,18 @@ async def preview_file_chunks(
     try:
         file_path = body.filePath
         chunk_type = body.chunkType
-        chunk_size = body.chunkSize
-        chunk_overlap = body.chunkOverlap
         parent_chunk_size = body.parentChunkSize
         parent_chunk_overlap = body.parentChunkOverlap
         child_chunk_size = body.childChunkSize
         child_chunk_overlap = body.childChunkOverlap
 
-        doc = load_doc(file_path)
+        docs = load_doc(file_path)
         match chunk_type:
             case WikiChunkType.Classical.value:
-                split_docs = split_doc(doc, chunk_size, chunk_overlap)
+                split_docs = split_doc(docs, parent_chunk_size, parent_chunk_overlap)
             case WikiChunkType.ParentChild.value:
-                split_docs = split_doc_with_parents(
-                    doc,
+                split_docs = preview_doc_with_parents(
+                    docs,
                     parent_chunk_size,
                     parent_chunk_overlap,
                     child_chunk_size,
@@ -185,24 +188,53 @@ async def index_file(
 ):
     response = {}
     try:
-        docs = body.docs
-        api_key = body.apiKey
+        files_path = body.filesPath
+        wiki_name = body.wikiName
+        chunk_type = body.chunkType
+        parent_chunk_size = body.parentChunkSize
+        parent_chunk_overlap = body.parentChunkOverlap
+        child_chunk_size = body.childChunkSize
+        child_chunk_overlap = body.childChunkOverlap
 
-        # 1 切割文档
-
-        # 2 向量化处理
+        # 向量化处理
         qw_embedding = QWEmbeddings(
             api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
         )
         vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
-        vs = Qdrant.from_documents(
-            documents=docs,
-            embedding=qw_embedding,
-            url=vector_db_url,
-            collection_name="bichon",
-            distance_func=Distance.COSINE,
-        )
-        vs.add_documents(docs)
+        all_parent_docs = []
+        all_child_docs = []
+
+        for file_path in files_path:
+            docs = load_doc(file_path)
+            match chunk_type:
+                case WikiChunkType.Classical.value:
+                    split_docs = split_doc(
+                        docs, parent_chunk_size, parent_chunk_overlap
+                    )
+                case WikiChunkType.ParentChild.value:
+                    parent_docs, child_docs = split_docs_with_parents(
+                        docs,
+                        parent_chunk_size,
+                        parent_chunk_overlap,
+                        child_chunk_size,
+                        child_chunk_overlap,
+                        return_parent_docs=True,
+                    )
+                    print("==========", child_docs)
+                    all_parent_docs.extend(parent_docs)
+                    all_child_docs.extend(child_docs)
+        if chunk_type == WikiChunkType.ParentChild.value:
+            # 父到pgsql
+            # 子到向量数据库
+            pass
+        # vs = Qdrant.from_documents(
+        #     documents=docs,
+        #     embedding=qw_embedding,
+        #     url=vector_db_url,
+        #     collection_name="bichon",
+        #     distance_func=Distance.COSINE,
+        # )
+        # vs.add_documents(docs)
         response = {
             "ok": True,
             "data": [],
