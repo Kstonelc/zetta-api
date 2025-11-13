@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from starlette.status import HTTP_422_UNPROCESSABLE_ENTITY, HTTP_401_UNAUTHORIZED
 from contextlib import asynccontextmanager
 import uvicorn
-from controllers import conversation, test, user, model, model_provider, tenant, wiki
+from controllers import conversation, user, model, model_provider, tenant, wiki
 from middlewares import RequestLoggingMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from utils.vector_db import vector_client
@@ -56,7 +56,6 @@ app.add_middleware(
 
 # 注册 routers
 app.include_router(user.router)
-app.include_router(test.router)
 app.include_router(model.router)
 app.include_router(model_provider.router)
 app.include_router(tenant.router)

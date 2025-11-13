@@ -1,7 +1,6 @@
 from uuid import UUID
 from pydantic import BaseModel
-from typing import Optional, List
-from enums import ModelProviderUpdateType, ModelType
+from typing import Optional
 
 
 class ModelProviderQueryRequest(BaseModel):
@@ -15,7 +14,7 @@ class ModelProviderCreateRequest(BaseModel):
 
 
 class ModelProviderUpdateRequest(BaseModel):
-    modelProviderUpdateType: ModelProviderUpdateType
+    modelProviderUpdateType: int
     modelProviderApiKey: Optional[str] = None
     modelProviderId: UUID
 
@@ -29,7 +28,7 @@ class ModelCreateRequest(BaseModel):
 
 
 class ModelQueryRequest(BaseModel):
-    modelType: ModelType
+    modelType: int
     tenantId: Optional[UUID] = None
 
 

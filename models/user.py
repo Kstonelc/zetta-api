@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String
+from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import relationship
 from .base import BaseModel
 
@@ -10,7 +10,7 @@ class User(BaseModel):
     avatar = Column(String(255), nullable=True)
     email = Column(String(255), unique=True, index=True, nullable=False)
     password = Column(String(255), nullable=False)
-    status = Column(String(32), nullable=False)
+    status = Column(Integer, nullable=False)
     secret = Column(String(32), nullable=True)  # 用于邮箱验证的验证码
 
     tenant_user_joins = relationship(

@@ -1,7 +1,6 @@
 from sqlalchemy import (
     Column,
     String,
-    Text,
     text,
 )
 from sqlalchemy.dialects.postgresql import JSONB
@@ -14,7 +13,7 @@ class Tenant(BaseModel):
     __tablename__ = "tenant"
 
     name = Column(String(255), nullable=False)
-    encrypt_public_key = Column(Text, nullable=True)  # 用于大模型api_key加密
+    encrypt_public_key = Column(String(255), nullable=True)  # 用于大模型api_key加密
     plan = Column(
         String(255),
         nullable=True,
@@ -41,7 +40,9 @@ class Tenant(BaseModel):
     )
 
     model_provider_tenant_joins = relationship(
-        "ModelProviderTenantJoin", back_populates="tenant", passive_deletes=True,
+        "ModelProviderTenantJoin",
+        back_populates="tenant",
+        passive_deletes=True,
     )
 
     model_providers = relationship(

@@ -12,7 +12,6 @@ class Wiki(BaseModel):
     type = Column(Integer, nullable=False)  # 结构化数据和非结构化数据
     embedding_id = Column(UUID, ForeignKey("model.id"))  # 嵌入模型ID
     rerank_id = Column(UUID, ForeignKey("model.id"))
-    sim_thresh = Column(Float, nullable=False)  # 相似度阈值
     tenant_id = Column(UUID, nullable=False)
     # user_id = Column(UUID, nullable=False)
     desc = Column(String, nullable=True)

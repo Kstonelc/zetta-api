@@ -2,8 +2,6 @@ from pydantic import BaseModel, EmailStr, constr
 from uuid import UUID
 from typing import Optional, List
 
-from enums import UserRole
-
 
 class UserEmailRegisterRequest(BaseModel):
     userName: str
@@ -43,7 +41,7 @@ class UserUpdatePasswordRequest(BaseModel):
 class UserInviteRequest(BaseModel):
     userEmail: List[EmailStr]
     fromUserId: UUID
-    userRole: UserRole
+    userRole: int
     tenantId: UUID
 
 

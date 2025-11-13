@@ -29,28 +29,28 @@ class LLMProvider(str, Enum):
             return None
 
 
-class ModelType(str, Enum):
-    TextEmbedding = "textEmbedding"
-    TextGeneration = "textGeneration"
-    ReRank = "reRank"
+class ModelType(NumberEnum):
+    TextEmbedding = (1 << 0, "textEmbedding")
+    TextGeneration = (1 << 1, "textGeneration")
+    ReRank = (1 << 2, "reRank")
 
 
-class ModelProviderUpdateType(str, Enum):
-    Update = "update"
-    Clear = "clear"
+class ModelProviderUpdateType(NumberEnum):
+    Update = (1 << 0, "update")
+    Clear = (1 << 1, "clear")
 
 
-class UserStatus(str, Enum):
-    Pending = "pending"
-    Active = "active"
-    Banned = "banned"
+class UserStatus(NumberEnum):
+    Pending = (1 << 0, "pending")
+    Active = (1 << 1, "active")
+    Banned = (1 << 2, "banned")
 
 
-class UserRole(str, Enum):
-    Admin = "admin"  # 超级管理员
-    Editor = "editor"  # 可以编辑
-    Normal = "normal"  # 可以使用
-    Owner = "owner"  # 所有者
+class UserRole(NumberEnum):
+    Admin = (1 << 0, "admin")
+    Editor = (1 << 1, "editor")
+    Normal = (1 << 2, "normal")
+    Owner = (1 << 3, "owner")
 
 
 class WikiType(NumberEnum):

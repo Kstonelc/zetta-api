@@ -8,7 +8,7 @@ from sqlalchemy import (
     PrimaryKeyConstraint,
     UniqueConstraint,
     Boolean,
-    String,
+    Integer,
 )
 
 
@@ -35,14 +35,12 @@ class ModelProviderTenantJoin(BaseModel):
     )
 
     tenant = relationship(
-        "Tenant",
-        back_populates="model_provider_tenant_joins",
-        passive_deletes=True
+        "Tenant", back_populates="model_provider_tenant_joins", passive_deletes=True
     )
     model_provider = relationship(
         "ModelProvider",
         back_populates="model_provider_tenant_joins",
-        passive_deletes=True
+        passive_deletes=True,
     )
 
 
@@ -58,13 +56,19 @@ class TenantUserJoin(BaseModel):
         UniqueConstraint("tenant_id", "user_id", name="unique_tenant_user_join"),
     )
 
-    tenant_id = Column(UUID, ForeignKey("tenant.id",  ondelete="SET NULL"), nullable=False)
+    tenant_id = Column(
+        UUID, ForeignKey("tenant.id", ondelete="SET NULL"), nullable=False
+    )
     user_id = Column(UUID, ForeignKey("user.id", ondelete="SET NULL"), nullable=False)
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户
-    role = Column(String(16), nullable=False, server_default="normal")
+    role = Column(Integer, nullable=False, server_default="normal")
     invited_by = Column(UUID, nullable=True)
 
-    tenant = relationship("Tenant", back_populates="tenant_user_joins", passive_deletes=True)
-    user = relationship("User", back_populates="tenant_user_joins", passive_deletes=True)
+    tenant = relationship(
+        "Tenant", back_populates="tenant_user_joins", passive_deletes=True
+    )
+    user = relationship(
+        "User", back_populates="tenant_user_joins", passive_deletes=True
+    )

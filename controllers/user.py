@@ -280,7 +280,7 @@ async def invite_user(
                 name=email,
                 email=email,
                 password=hash_password(email),
-                status=UserStatus.Pending,
+                status=UserStatus.Pending.value,
                 active=True,
                 tenant_user_joins=[
                     TenantUserJoin(
@@ -340,7 +340,7 @@ async def activate(body: UserActivateRequest, db: Session = Depends(get_db)):
             .filter(
                 User.active.is_(True),
                 User.email == user_email,
-                User.status == UserStatus.Pending,
+                User.status == UserStatus.Pending.value,
             )
             .first()
         )

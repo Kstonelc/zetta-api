@@ -108,7 +108,7 @@ async def update_model_provider(
             return
 
         # 验证 api_key
-        if not model_provider_update_type == ModelProviderUpdateType.Clear:
+        if not model_provider_update_type == ModelProviderUpdateType.Clear.value:
             model_provider_name = provider.name
             llm = LLMFactory.create(
                 model_provider_name,
@@ -124,7 +124,7 @@ async def update_model_provider(
             "ok": True,
             "data": (
                 "API KEY 更新成功"
-                if model_provider_update_type == ModelProviderUpdateType.Update
+                if model_provider_update_type == ModelProviderUpdateType.Update.value
                 else "移除API KEY成功"
             ),
         }
