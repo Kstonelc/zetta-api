@@ -17,7 +17,7 @@ async def find_admin(body: Request, db: Session = Depends(get_db)):
     try:
         res = (
             db.query(TenantUserJoin)
-            .filter(TenantUserJoin.role == UserRole.Owner.value)
+            .filter(TenantUserJoin.role == UserRole.Admin.value)
             .first()
         )
         if not res:

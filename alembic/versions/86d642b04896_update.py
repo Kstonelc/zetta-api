@@ -1,8 +1,8 @@
-"""update enums type
+"""update
 
-Revision ID: b8e3cc02d08f
+Revision ID: 86d642b04896
 Revises: 7554cfa72c1d
-Create Date: 2025-11-13 18:44:24.786887
+Create Date: 2025-11-13 19:52:09.004750
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'b8e3cc02d08f'
+revision: str = '86d642b04896'
 down_revision: Union[str, Sequence[str], None] = '7554cfa72c1d'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -39,7 +39,7 @@ def upgrade() -> None:
     sa.Column('tenant_id', sa.UUID(), nullable=False),
     sa.Column('user_id', sa.UUID(), nullable=False),
     sa.Column('current', sa.Boolean(), server_default='false', nullable=False),
-    sa.Column('role', sa.Integer(), server_default='normal', nullable=False),
+    sa.Column('role', sa.Integer(), nullable=False),
     sa.Column('invited_by', sa.UUID(), nullable=True),
     sa.Column('id', sa.UUID(), server_default=sa.text('uuid_generate_v4()'), nullable=False),
     sa.Column('active', sa.Boolean(), nullable=False),

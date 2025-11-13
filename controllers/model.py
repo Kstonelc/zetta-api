@@ -97,7 +97,7 @@ async def find_models(
         model_type = body.modelType
         tenant_id = body.tenantId
 
-        filters = [Model.active.is_(True), model_type.value == any_(Model.types)]
+        filters = [Model.active.is_(True), model_type == any_(Model.types)]
         if tenant_id is not None:
             filters.append(Tenant.id == tenant_id)
 

@@ -10,6 +10,7 @@ from sqlalchemy import (
     Boolean,
     Integer,
 )
+from enums import UserRole
 
 
 class ModelProviderTenantJoin(BaseModel):
@@ -63,7 +64,7 @@ class TenantUserJoin(BaseModel):
     current = Column(
         Boolean, nullable=False, server_default="false"
     )  # 当前用户激活的租户
-    role = Column(Integer, nullable=False, server_default="normal")
+    role = Column(Integer, nullable=False)
     invited_by = Column(UUID, nullable=True)
 
     tenant = relationship(

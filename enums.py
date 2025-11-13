@@ -49,8 +49,8 @@ class UserStatus(NumberEnum):
 class UserRole(NumberEnum):
     Admin = (1 << 0, "admin")
     Editor = (1 << 1, "editor")
-    Normal = (1 << 2, "normal")
-    Owner = (1 << 3, "owner")
+    Owner = (1 << 2, "owner")
+    Visitor = (1 << 3, "visitor")
 
 
 class WikiType(NumberEnum):

@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1471bb71-4f7e-49a7-83af-63f59ead4f87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/conversation.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/conversation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/b8e3cc02d08f_update_enums_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tenant.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tenant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/wiki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/rag.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/join.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/tenant_user.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/user.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,26 +34,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_ASCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
-        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1471bb71-4f7e-49a7-83af-63f59ead4f87" name="Changes" comment="" />
@@ -60,6 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1761206494191</updated>
       <workItem from="1761206496644" duration="21000" />
+      <workItem from="1763032313942" duration="1532000" />
+      <workItem from="1763033857476" duration="8144000" />
     </task>
     <servers />
   </component>
