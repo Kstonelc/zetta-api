@@ -12,6 +12,7 @@ from schemas.wiki import (
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
+from models.document import Document, ParentChunk, ChildChunk
 from enums import FileType, WikiChunkType
 from utils.jwt import verify_token
 from langchain_community.vectorstores import Qdrant
@@ -206,6 +207,8 @@ async def index_file(
 
         for file_path in files_path:
             docs = load_doc(file_path)
+            # 插入 document
+            # new_document = Document()
             match chunk_type:
                 case WikiChunkType.Classical.value:
                     split_docs = split_doc(
@@ -220,21 +223,18 @@ async def index_file(
                         child_chunk_overlap,
                         return_parent_docs=True,
                     )
-                    print("==========", child_docs)
                     all_parent_docs.extend(parent_docs)
                     all_child_docs.extend(child_docs)
         if chunk_type == WikiChunkType.ParentChild.value:
-            # 父到pgsql
-            # 子到向量数据库
-            pass
-        # vs = Qdrant.from_documents(
-        #     documents=docs,
-        #     embedding=qw_embedding,
-        #     url=vector_db_url,
-        #     collection_name="bichon",
-        #     distance_func=Distance.COSINE,
-        # )
-        # vs.add_documents(docs)
+            # 子块进向量数据库
+            vs = Qdrant.from_documents(
+                documents=all_child_docs,
+                embedding=qw_embedding,
+                url=vector_db_url,
+                collection_name=wiki_name,
+                distance_func=Distance.COSINE,
+            )
+            vs.add_documents(all_child_docs)
         response = {
             "ok": True,
             "data": [],

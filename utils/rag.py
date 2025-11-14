@@ -259,20 +259,9 @@ def split_docs_with_parents(
     parent_chunk_overlap: int = 100,
     child_chunk_size: int = 400,
     child_chunk_overlap: int = 50,
-    return_parent_docs: bool = False,  # 需要父块 Document 时打开
+    return_parent_docs: bool = False,
 ) -> Tuple[List[Document], List[Document]]:
-    """
-    输入：原始 Document 列表（通常为每页/每文件）
-    输出：
-      - parent_docs: 父块级 Document（可选，用于 Parent-Child 检索回填）
-      - child_docs : 子块级 Document（直接用于向量库）
-    元数据约定（写入 child_docs.metadata）：
-      - source / page（沿用原文）
-      - parent_id（稳定ID）
-      - child_start / child_end（在父块内的偏移）
-      - H1..H5（Markdown 标题，如有）
-      - is_parent=False（便于调试）
-    """
+
     parent_splitter_generic = RecursiveCharacterTextSplitter(
         chunk_size=parent_chunk_size,
         chunk_overlap=parent_chunk_overlap,
@@ -285,18 +274,7 @@ def split_docs_with_parents(
     child_splitter = RecursiveCharacterTextSplitter(
         chunk_size=child_chunk_size,
         chunk_overlap=child_chunk_overlap,
-        separators=[
-            "\n\n",
-            "\n",
-            "- ",
-            "。",
-            "！",
-            "？",
-            ".",
-            "!",
-            "?",
-            " ",
-        ],
+        separators=["\n\n", "\n", "- ", "。", "！", "？", ".", "!", "?", " "],
         keep_separator=False,
         add_start_index=True,
         strip_whitespace=True,
@@ -306,11 +284,15 @@ def split_docs_with_parents(
     child_docs: List[Document] = []
 
     for doc in docs:
-        if _is_pdf(doc):
-            txt = normalize_pdf_text(doc.page_content or "")
+        # NOTE: 兜底，保证是字符串
+        text = doc.page_content or ""
         base_meta = dict(doc.metadata or {})
 
+        if _is_pdf(doc):
+            text = normalize_pdf_text(text)  # 不要就地改 doc.page_content，避免副作用
+
         if _is_markdown(doc):
+            # FIX: split_text 需要字符串，而不是 Document
             md_headers = [
                 ("#", "H1"),
                 ("##", "H2"),
@@ -319,10 +301,12 @@ def split_docs_with_parents(
                 ("#####", "H5"),
             ]
             md_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=md_headers)
-            sections = md_splitter.split_text(doc)
+            sections: List[Document] = md_splitter.split_text(
+                text
+            )  # <- 返回的是 Document 列表
 
             for sec in sections:
-                # 回填标题
+                # 回填标题头
                 h1 = sec.metadata.get("H1")
                 h2 = sec.metadata.get("H2")
                 h3 = sec.metadata.get("H3")
@@ -340,14 +324,15 @@ def split_docs_with_parents(
                 if h5:
                     header_lines.append(f"##### {h5}")
                 header_text = "\n".join(header_lines)
+
                 parent_text = (header_text + "\n\n" if header_text else "") + (
                     sec.page_content or ""
                 )
-
                 parent_meta = {**base_meta, **sec.metadata}
+
+                # 稳定父ID
                 parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
 
-                # 父块 Document（可选）
                 if return_parent_docs:
                     parent_docs.append(
                         Document(
@@ -360,7 +345,7 @@ def split_docs_with_parents(
                         )
                     )
 
-                # 子块 -> Documents
+                # 按父块再切子块
                 tmp_parent_doc = Document(
                     page_content=parent_text, metadata=parent_meta
                 )
@@ -368,7 +353,7 @@ def split_docs_with_parents(
 
                 for cc in children:
                     start = int(cc.metadata.get("start_index", 0) or 0)
-                    end = start + len(cc.page_content)
+                    end = start + len(cc.page_content or "")
                     child_docs.append(
                         Document(
                             page_content=cc.page_content,
@@ -383,12 +368,15 @@ def split_docs_with_parents(
                     )
 
         else:
-            # 非 Markdown：段落式父块
-            generic_parents = parent_splitter_generic.split_documents(
-                [Document(page_content=doc, metadata=base_meta)]
+            # 非 Markdown：先用段落/字符递归切父块
+            # FIX: 这里要传字符串，而不是 Document 对象
+            original_doc = Document(page_content=text, metadata=base_meta)
+            generic_parents: List[Document] = parent_splitter_generic.split_documents(
+                [original_doc]
             )
+
             for pc in generic_parents:
-                parent_text = pc.page_content
+                parent_text = pc.page_content or ""
                 parent_meta = dict(pc.metadata or {})
                 parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
 
@@ -411,7 +399,7 @@ def split_docs_with_parents(
 
                 for cc in children:
                     start = int(cc.metadata.get("start_index", 0) or 0)
-                    end = start + len(cc.page_content)
+                    end = start + len(cc.page_content or "")
                     child_docs.append(
                         Document(
                             page_content=cc.page_content,

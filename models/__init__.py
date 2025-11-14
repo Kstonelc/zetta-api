@@ -16,5 +16,6 @@ __all__ = [
     "TenantUserJoin",
     "Wiki",
     "Conversation",
+    "Document",
     "get_db",
 ]
