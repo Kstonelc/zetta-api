@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1471bb71-4f7e-49a7-83af-63f59ead4f87" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/b8e3cc02d08f_update_enums_type.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tenant.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tenant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/wiki.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/join.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/join.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/tenant_user.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/user.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -37,3 +37,7 @@ class ChildChunk(BaseModel):
     parent_id = Column(UUID, ForeignKey("parent_chunk.id"), nullable=False)
     document_id = Column(UUID, ForeignKey("document.id"), nullable=False)
     wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
+    index_in_parent = Column(Integer, nullable=False)
+    content = Column(Text, nullable=False)
+    embedding_status = Column(Integer, nullable=False)
+    vector_point_id = Column(Text, nullable=True)

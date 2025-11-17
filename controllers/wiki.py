@@ -30,6 +30,7 @@ from utils.rag import (
     split_docs_with_parents,
 )
 
+
 router = APIRouter(prefix="/api/wiki", tags=["Wiki"])
 
 
@@ -264,6 +265,7 @@ async def index_file(
                         child_metadata = c_doc.metadata
                         parent_id = child_metadata["parent_id"]
                         parent_chunk_id = parent_id_to_chunk_id.get(parent_id)
+                        index_in_parent = child_metadata["index_in_parent"]
 
                         child_chunk_id = uuid.uuid4()
                         point_id = str(child_chunk_id)
@@ -282,9 +284,6 @@ async def index_file(
                         )
                         child_metadata.update(
                             {
-                                "wiki_id": str(wiki_id),
-                                "document_id": str(doc_id),
-                                "parent_id": str(parent_id),
                                 "child_chunk_id": str(child_chunk_id),
                             }
                         )
@@ -298,16 +297,20 @@ async def index_file(
                     if child_chunks:
                         db.execute(insert(ChildChunk), child_chunks)
                     db.commit()
-        # if chunk_type == WikiChunkType.ParentChild.value:
-        #     # 子块进向量数据库
-        #     vs = Qdrant.from_documents(
-        #         documents=all_child_docs,
-        #         embedding=qw_embedding,
-        #         url=vector_db_url,
-        #         collection_name=wiki_id,  # TODO wiki name
-        #         distance_func=Distance.COSINE,
-        #     )
-        #     vs.add_documents(all_child_docs)
+        if chunk_type == WikiChunkType.ParentChild.value:
+            # 子块进向量数据库
+            if all_child_docs:
+                vs = Qdrant.from_documents(
+                    documents=all_child_docs,
+                    embedding=qw_embedding,
+                    url=vector_db_url,
+                    collection_name="bichon",
+                    distance_func=Distance.COSINE,
+                )
+                vs.add_documents(
+                    documents=all_child_docs,
+                    ids=[doc.metadata["child_chunk_id"] for doc in all_child_docs],
+                )
         response = {
             "ok": True,
             "data": [],
@@ -333,6 +336,7 @@ def recall_docs(
         qw_embedding = QWEmbeddings(
             api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
         )
+
         vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
         vs = Qdrant.from_existing_collection(
             embedding=qw_embedding,
@@ -342,9 +346,6 @@ def recall_docs(
         )
 
         docs_scores = vs.similarity_search_with_score(query_content, k=5)
-        res = long_running_task.delay({"data": "test"})
-        task_id = res.id
-        print("任务Id", task_id)
         response = {
             "ok": True,
             "data": docs_scores,
