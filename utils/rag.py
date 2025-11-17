@@ -283,16 +283,17 @@ def split_docs_with_parents(
     parent_docs: List[Document] = []
     child_docs: List[Document] = []
 
+    # 一个原始 doc 内部的父块序号累加器
     for doc in docs:
-        # NOTE: 兜底，保证是字符串
         text = doc.page_content or ""
         base_meta = dict(doc.metadata or {})
 
         if _is_pdf(doc):
-            text = normalize_pdf_text(text)  # 不要就地改 doc.page_content，避免副作用
+            text = normalize_pdf_text(text)
+
+        parent_index_counter = 0  # 当前 document 内父块 index
 
         if _is_markdown(doc):
-            # FIX: split_text 需要字符串，而不是 Document
             md_headers = [
                 ("#", "H1"),
                 ("##", "H2"),
@@ -301,12 +302,10 @@ def split_docs_with_parents(
                 ("#####", "H5"),
             ]
             md_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=md_headers)
-            sections: List[Document] = md_splitter.split_text(
-                text
-            )  # <- 返回的是 Document 列表
+            sections: List[Document] = md_splitter.split_text(text)
 
             for sec in sections:
-                # 回填标题头
+                # 拼标题
                 h1 = sec.metadata.get("H1")
                 h2 = sec.metadata.get("H2")
                 h3 = sec.metadata.get("H3")
@@ -328,48 +327,61 @@ def split_docs_with_parents(
                 parent_text = (header_text + "\n\n" if header_text else "") + (
                     sec.page_content or ""
                 )
-                parent_meta = {**base_meta, **sec.metadata}
 
-                # 稳定父ID
-                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+                # 原 splitter 没给 markdown 段落 start_index，这里就不算偏移，给个 None
+                start_offset = sec.metadata.get("start_index")
+                if start_offset is None:
+                    start_offset = 0
+                end_offset = start_offset + len(parent_text)
+
+                parent_index = parent_index_counter
+                parent_index_counter += 1
+
+                parent_id = _stable_parent_id_from_text(parent_text, base_meta)
+
+                parent_meta = {
+                    **base_meta,
+                    **sec.metadata,
+                    "parent_id": parent_id,  # 逻辑父 ID，用来做映射
+                    "parent_index": parent_index,  # -> ParentChunk.index
+                    "start_offset": start_offset,  # -> ParentChunk.start_offset
+                    "end_offset": end_offset,  # -> ParentChunk.end_offset
+                    "type": 1,  # 自定义：1=markdown父块
+                    "is_parent": True,
+                }
 
                 if return_parent_docs:
                     parent_docs.append(
-                        Document(
-                            page_content=parent_text,
-                            metadata={
-                                **parent_meta,
-                                "parent_id": parent_id,
-                                "is_parent": True,
-                            },
-                        )
+                        Document(page_content=parent_text, metadata=parent_meta)
                     )
 
-                # 按父块再切子块
+                # 子块切分
                 tmp_parent_doc = Document(
                     page_content=parent_text, metadata=parent_meta
                 )
                 children = child_splitter.split_documents([tmp_parent_doc])
 
-                for cc in children:
+                for idx_in_parent, cc in enumerate(children):
                     start = int(cc.metadata.get("start_index", 0) or 0)
                     end = start + len(cc.page_content or "")
+
+                    child_meta = {
+                        **parent_meta,
+                        "is_parent": False,
+                        "child_start": start,  # 在父块内的 offset
+                        "child_end": end,
+                        "index_in_parent": idx_in_parent,  # -> ChildChunk.index_in_parent
+                    }
+
                     child_docs.append(
                         Document(
                             page_content=cc.page_content,
-                            metadata={
-                                **parent_meta,
-                                "parent_id": parent_id,
-                                "child_start": start,
-                                "child_end": end,
-                                "is_parent": False,
-                            },
+                            metadata=child_meta,
                         )
                     )
 
         else:
-            # 非 Markdown：先用段落/字符递归切父块
-            # FIX: 这里要传字符串，而不是 Document 对象
+            # 普通文本 / PDF：先按 parent_splitter 切父块
             original_doc = Document(page_content=text, metadata=base_meta)
             generic_parents: List[Document] = parent_splitter_generic.split_documents(
                 [original_doc]
@@ -377,19 +389,30 @@ def split_docs_with_parents(
 
             for pc in generic_parents:
                 parent_text = pc.page_content or ""
-                parent_meta = dict(pc.metadata or {})
-                parent_id = _stable_parent_id_from_text(parent_text, parent_meta)
+                pm = dict(pc.metadata or {})
+
+                start_offset = int(pm.get("start_index", 0) or 0)
+                end_offset = start_offset + len(parent_text)
+
+                parent_index = parent_index_counter
+                parent_index_counter += 1
+
+                parent_id = _stable_parent_id_from_text(parent_text, base_meta)
+
+                parent_meta = {
+                    **base_meta,
+                    **pm,
+                    "parent_id": parent_id,
+                    "parent_index": parent_index,
+                    "start_offset": start_offset,
+                    "end_offset": end_offset,
+                    "type": 0,  # 自定义：0=普通父块
+                    "is_parent": True,
+                }
 
                 if return_parent_docs:
                     parent_docs.append(
-                        Document(
-                            page_content=parent_text,
-                            metadata={
-                                **parent_meta,
-                                "parent_id": parent_id,
-                                "is_parent": True,
-                            },
-                        )
+                        Document(page_content=parent_text, metadata=parent_meta)
                     )
 
                 tmp_parent_doc = Document(
@@ -397,19 +420,22 @@ def split_docs_with_parents(
                 )
                 children = child_splitter.split_documents([tmp_parent_doc])
 
-                for cc in children:
+                for idx_in_parent, cc in enumerate(children):
                     start = int(cc.metadata.get("start_index", 0) or 0)
                     end = start + len(cc.page_content or "")
+
+                    child_meta = {
+                        **parent_meta,
+                        "is_parent": False,
+                        "child_start": start,
+                        "child_end": end,
+                        "index_in_parent": idx_in_parent,
+                    }
+
                     child_docs.append(
                         Document(
                             page_content=cc.page_content,
-                            metadata={
-                                **parent_meta,
-                                "parent_id": parent_id,
-                                "child_start": start,
-                                "child_end": end,
-                                "is_parent": False,
-                            },
+                            metadata=child_meta,
                         )
                     )
 

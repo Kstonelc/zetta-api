@@ -31,7 +31,7 @@ class WikiPreviewFileChunkRequest(BaseModel):
 
 class WikiIndexFileRequest(BaseModel):
     filesPath: List[str]
-    wikiName: str
+    wikiId: UUID
     chunkType: int
     parentChunkSize: Optional[int] = None
     parentChunkOverlap: Optional[int] = None

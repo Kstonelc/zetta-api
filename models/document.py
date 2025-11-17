@@ -7,14 +7,14 @@ from .base import BaseModel
 
 class Document(BaseModel):
     __tablename__ = "document"
-    __table_args__ = Index("index_document_wiki_id_status", "wiki_id", "status")
+    __table_args__ = (Index("index_document_wiki_id_status", "wiki_id", "status"),)
 
     wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
     source_uri = Column(String, nullable=False)
     title = Column(String, nullable=False)
     status = Column(Integer, nullable=False)
     hash = Column(String, nullable=True)
-    metadata = Column(JSONB, nullable=True)
+    extra_metadata = Column(JSONB, nullable=True)
 
 
 class ParentChunk(BaseModel):

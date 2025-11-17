@@ -8,6 +8,7 @@
 from passlib.context import CryptContext
 from cryptography.fernet import Fernet
 import random
+import hashlib
 import tldextract
 
 
@@ -40,6 +41,14 @@ def encrypt(plaintext: str) -> str:
 
 def decrypt(ciphertext: str) -> str:
     return fernet.decrypt(ciphertext.encode()).decode()
+
+
+def file_hash(file_path: str, algorithm: str = "sha256", chunk_size: int = 8192) -> str:
+    h = hashlib.new(algorithm)
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(chunk_size), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 # endregion
