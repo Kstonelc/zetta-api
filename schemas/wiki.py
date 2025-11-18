@@ -29,7 +29,7 @@ class WikiPreviewFileChunkRequest(BaseModel):
     childChunkOverlap: Optional[int] = None
 
 
-class WikiIndexFileRequest(BaseModel):
+class WikiIndexDocumentRequest(BaseModel):
     filesPath: List[str]
     wikiId: UUID
     chunkType: int

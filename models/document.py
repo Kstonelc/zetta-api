@@ -41,3 +41,16 @@ class ChildChunk(BaseModel):
     content = Column(Text, nullable=False)
     embedding_status = Column(Integer, nullable=False)
     vector_point_id = Column(Text, nullable=True)
+
+
+# 文件索引任务
+class DocumentIndexTask(BaseModel):
+    __tablename__ = "document_index_task"
+
+    wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
+    file_name = Column(String, nullable=False, default="")
+    status = Column(Integer, nullable=False)
+    total_chunks = Column(Integer, nullable=True)
+    processed_chunks = Column(Integer, nullable=True)
+    current_phase = Column(Integer, nullable=True)  # 当前阶段
+    error_message = Column(Text, nullable=True)
