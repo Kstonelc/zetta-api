@@ -47,7 +47,6 @@ async def create_wiki(
         wiki_type = body.wikiType
         wiki_embedding_id = body.wikiEmbeddingId
         wiki_rerank_id = body.wikiRerankId
-        wiki_sim_thresh = body.wikiSimThresh
 
         if db.query(Wiki).filter(Wiki.active.is_(True), Wiki.name == wiki_name).first():
             response = {"ok": False, "message": "知识库已存在"}
@@ -62,7 +61,6 @@ async def create_wiki(
             type=wiki_type,
             embedding_id=wiki_embedding_id,
             rerank_id=wiki_rerank_id,
-            sim_thresh=wiki_sim_thresh,
         )
         db.add(new_wiki)
         db.commit()

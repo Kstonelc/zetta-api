@@ -11,7 +11,6 @@ class WikiCreateRequest(BaseModel):
     userId: UUID
     wikiEmbeddingId: UUID
     wikiRerankId: UUID
-    wikiSimThresh: float
 
 
 class WikiQueryRequest(BaseModel):
