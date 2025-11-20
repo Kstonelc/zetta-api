@@ -56,6 +56,7 @@ const data = [
     },
   ];
 const [value, setValue] = useState(null);
+
 <WheelPicker
   key={1}
   data={data}
