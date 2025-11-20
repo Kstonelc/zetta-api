@@ -38,6 +38,11 @@ class WikiIndexDocumentRequest(BaseModel):
     childChunkOverlap: Optional[int] = None
 
 
+class WikiIndexProgressRequest(BaseModel):
+    fileNames: List[str]
+    wikiId: UUID
+
+
 class WikiRecallDocsRequest(BaseModel):
     wikiName: str
     queryContent: str

@@ -4,6 +4,7 @@ from sqlalchemy import insert
 from pathlib import Path
 import shutil
 import uuid
+import os
 
 from schemas.wiki import (
     WikiCreateRequest,
@@ -11,6 +12,7 @@ from schemas.wiki import (
     WikiPreviewFileChunkRequest,
     WikiIndexDocumentRequest,
     WikiRecallDocsRequest,
+    WikiIndexProgressRequest,
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
@@ -206,17 +208,27 @@ async def index_document(
 
 @router.post("/index-document/progress")
 async def index_document_progress(
-    body: WikiIndexDocumentRequest, db: Session = Depends(get_db)
+    body: WikiIndexProgressRequest, db: Session = Depends(get_db)
 ):
     response = {}
     try:
         wiki_id = body.wikiId
+        # TODO 是否使用文件名
+        file_names = body.fileNames
 
         document_index_tasks = (
             db.query(DocumentIndexTask)
-            .filter(DocumentIndexTask.wiki_id == wiki_id)
+            .filter(
+                DocumentIndexTask.active.is_(True),
+                DocumentIndexTask.wiki_id == wiki_id,
+                DocumentIndexTask.file_name.in_(file_names),
+            )
             .all()
         )
+        response = {
+            "ok": True,
+            "data": document_index_tasks,
+        }
     except Exception as e:
         logger.error(e)
         response = {"ok": False, "message": "索引查询失败"}
@@ -289,7 +301,7 @@ def run_document_index_task(
             # 创建文件索引任务
             doc_task = DocumentIndexTask(
                 wiki_id=wiki_id,
-                file_name=file_path,
+                file_name=os.path.basename(file_path),
                 status=1,
                 total_chunks=0,
                 processed_chunks=0,
