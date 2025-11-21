@@ -67,7 +67,7 @@ async def create_wiki(
         db.add(new_wiki)
         db.commit()
 
-        response = {"ok": True, "data": new_wiki.id, "message": "创建成功"}
+        response = {"ok": True, "data": new_wiki, "message": "创建成功"}
     except Exception as e:
         db.rollback()
         logger.error(e)
