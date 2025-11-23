@@ -10,6 +10,8 @@ class Document(BaseModel):
     __table_args__ = (Index("index_document_wiki_id_status", "wiki_id", "status"),)
 
     wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
+    chunk_type = Column(Integer, nullable=False, default=0)
+    size = Column(Integer, nullable=False, default=0)
     source_uri = Column(String, nullable=False)
     title = Column(String, nullable=False)
     status = Column(Integer, nullable=False)

@@ -90,3 +90,9 @@ class ConversationStatus(NumberEnum):
     Active = (1 << 0, "active")
     Archived = (1 << 1, "archived")
     Temporary = (1 << 2, "temporary")
+
+
+class DocumentIndexStatus(NumberEnum):
+    Processing = (1 << 0, "解析中")
+    Success = (1 << 1, "完成")
+    Failed = (1 << 2, "错误")

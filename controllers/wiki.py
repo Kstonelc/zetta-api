@@ -13,11 +13,12 @@ from schemas.wiki import (
     WikiIndexDocumentRequest,
     WikiRecallDocsRequest,
     WikiIndexProgressRequest,
+    WikiDocumentQueryRequest,
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
 from models.document import Document, ParentChunk, ChildChunk, DocumentIndexTask
-from enums import FileType, WikiChunkType
+from enums import FileType, WikiChunkType, DocumentIndexStatus
 from utils.jwt import verify_token
 from langchain_community.vectorstores import Qdrant
 from qdrant_client.http.models import Distance
@@ -44,6 +45,7 @@ async def create_wiki(
     try:
         tenant_id = body.tenantId
         user_id = body.userId
+        wiki_id = body.wikiId
         wiki_name = body.wikiName
         wiki_desc = body.wikiDesc if body.wikiDesc else ""
         wiki_type = body.wikiType
@@ -55,6 +57,7 @@ async def create_wiki(
             return
 
         new_wiki = Wiki(
+            id=wiki_id if wiki_id else str(uuid.uuid4()),
             active=True,
             name=wiki_name,
             desc=wiki_desc,
@@ -95,6 +98,26 @@ async def find_wikis(
         response = {
             "ok": True,
             "data": wikis,
+        }
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "查询失败"}
+    finally:
+        return response
+
+
+@router.post("/find-wiki")
+async def find_wiki(
+    body: WikiQueryRequest, db: Session = Depends(get_db), token=Depends(verify_token)
+):
+    response = {}
+    try:
+        wikiId = body.wikiId
+
+        wiki = db.query(Wiki).get(wikiId)
+        response = {
+            "ok": True,
+            "data": wiki,
         }
     except Exception as e:
         logger.error(e)
@@ -270,6 +293,32 @@ def recall_docs(
         return response
 
 
+@router.post("/find-docs")
+def find_documents(
+    body: WikiDocumentQueryRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        wiki_id = body.wikiId
+
+        docs = (
+            db.query(Document)
+            .filter(Document.active.is_(True), Document.wiki_id == wiki_id)
+            .all()
+        )
+        response = {
+            "ok": True,
+            "data": docs,
+        }
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "查询文档失败"}
+    finally:
+        return response
+
+
 def run_document_index_task(
     body,
     db,
@@ -278,6 +327,7 @@ def run_document_index_task(
         files_path = body.filesPath
         wiki_id = body.wikiId
         chunk_type = body.chunkType
+        doc_size = body.docSize  # TODO 前端传
         parent_chunk_size = body.parentChunkSize
         parent_chunk_overlap = body.parentChunkOverlap
         child_chunk_size = body.childChunkSize
@@ -301,8 +351,8 @@ def run_document_index_task(
             # 创建文件索引任务
             doc_task = DocumentIndexTask(
                 wiki_id=wiki_id,
-                file_name=os.path.basename(file_path),
-                status=1,
+                file_name=file_path,
+                status=DocumentIndexStatus.Processing,
                 total_chunks=0,
                 processed_chunks=0,
                 current_phase=1,
@@ -318,8 +368,10 @@ def run_document_index_task(
                 new_doc = Document(
                     wiki_id=wiki_id,
                     source_uri=file_path,
+                    chunk_type=chunk_type,
+                    size=doc_size,
                     title=Path(file_path).name,
-                    status=1,
+                    status=DocumentIndexStatus.Processing,
                     hash=file_hash(file_path),
                     extra_metadata={},
                 )
@@ -350,7 +402,6 @@ def run_document_index_task(
                         parent_id_to_chunk_id = {}
                         for p_doc in parent_docs:
                             parent_metadata = p_doc.metadata
-                            print("metadata", parent_metadata)
                             parent_chunk_id = uuid.uuid4()
                             parent_id_to_chunk_id[parent_metadata["parent_id"]] = (
                                 parent_chunk_id
@@ -432,12 +483,16 @@ def run_document_index_task(
                             db.commit()
 
                         # 文件完成
-                        doc_task.status = 2  # done
+                        doc_task.status = DocumentIndexStatus.Success  # done
                         doc_task.current_phase = 16
                         db.commit()
+
+                        new_doc.status = DocumentIndexStatus.Success
+                        db.commit()
+
             except Exception as e:
-                doc_task.status = 4  # error
-                doc_task.current_phase = "error"
+                doc_task.status = DocumentIndexStatus.Failed  # error
+                doc_task.current_phase = 32
                 doc_task.error_message = str(e)
                 db.commit()
     except Exception as e:

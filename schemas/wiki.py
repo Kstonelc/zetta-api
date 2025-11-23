@@ -5,6 +5,7 @@ from typing import Optional, List, Dict
 
 class WikiCreateRequest(BaseModel):
     wikiName: str
+    wikiId: Optional[UUID]
     wikiDesc: Optional[str] = None
     wikiType: int
     tenantId: UUID
@@ -14,7 +15,8 @@ class WikiCreateRequest(BaseModel):
 
 
 class WikiQueryRequest(BaseModel):
-    tenantId: UUID
+    tenantId: Optional[UUID] = None
+    wikiId: Optional[UUID] = None
 
 
 class WikiPreviewFileChunkRequest(BaseModel):
@@ -46,3 +48,7 @@ class WikiIndexProgressRequest(BaseModel):
 class WikiRecallDocsRequest(BaseModel):
     wikiName: str
     queryContent: str
+
+
+class WikiDocumentQueryRequest(BaseModel):
+    wikiId: UUID
