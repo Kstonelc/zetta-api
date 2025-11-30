@@ -96,3 +96,12 @@ class DocumentIndexStatus(NumberEnum):
     Processing = (1 << 0, "解析中")
     Success = (1 << 1, "完成")
     Failed = (1 << 2, "错误")
+
+
+class DocumentIndexTaskPhase(NumberEnum):
+    IndexStart = (1 << 0, "开始索引")
+    Chunking = (1 << 1, "开始文档切分")
+    Chunked = (1 << 2, "切分完成")
+    DbUpdated = (1 << 3, "数据库写入完成")
+    VectorDbUpdated = (1 << 4, "向量数据库写入完成")
+    IndexFailed = (1 << 5, "索引文件失败")

@@ -31,7 +31,7 @@ class WikiPreviewFileChunkRequest(BaseModel):
 
 
 class WikiIndexDocumentRequest(BaseModel):
-    filesPath: List[str]
+    filesInfo: List[object]
     wikiId: UUID
     chunkType: int
     parentChunkSize: Optional[int] = None
@@ -46,7 +46,7 @@ class WikiIndexProgressRequest(BaseModel):
 
 
 class WikiRecallDocsRequest(BaseModel):
-    wikiName: str
+    wikiId: UUID
     queryContent: str
 
 
