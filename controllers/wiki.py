@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, UploadFile, File, BackgroundTasks
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 from sqlalchemy import insert
 from pathlib import Path
 import shutil
@@ -18,10 +18,11 @@ from schemas.wiki import (
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
 from models.document import Document, ParentChunk, ChildChunk, DocumentIndexTask
-from enums import FileType, WikiChunkType, DocumentIndexStatus
+from enums import FileType, WikiChunkType, DocumentIndexStatus, DocumentIndexTaskPhase
 from utils.jwt import verify_token
+from qdrant_client import QdrantClient
+from qdrant_client.http import models as qmodels
 from langchain_community.vectorstores import Qdrant
-from qdrant_client.http.models import Distance
 from config import settings
 from llm.qwen import QWEmbeddings
 from utils.common import file_hash
@@ -112,9 +113,9 @@ async def find_wiki(
 ):
     response = {}
     try:
-        wikiId = body.wikiId
+        wiki_id = body.wikiId
 
-        wiki = db.query(Wiki).get(wikiId)
+        wiki = db.query(Wiki).options(joinedload(Wiki.embedding_model)).get(wiki_id)
         response = {
             "ok": True,
             "data": wiki,
@@ -267,7 +268,7 @@ def recall_docs(
 ):
     response = {}
     try:
-        wiki_name = body.wikiName
+        wiki_id = body.wikiId
         query_content = body.queryContent
 
         qw_embedding = QWEmbeddings(
@@ -278,7 +279,8 @@ def recall_docs(
         vs = Qdrant.from_existing_collection(
             embedding=qw_embedding,
             url=vector_db_url,
-            collection_name="bichon",
+            path=None,
+            collection_name=str(wiki_id),
         )
 
         docs_scores = vs.similarity_search_with_score(query_content, k=5)
@@ -324,10 +326,9 @@ def run_document_index_task(
     db,
 ):
     try:
-        files_path = body.filesPath
+        files_info = body.filesInfo
         wiki_id = body.wikiId
         chunk_type = body.chunkType
-        doc_size = body.docSize  # TODO 前端传
         parent_chunk_size = body.parentChunkSize
         parent_chunk_overlap = body.parentChunkOverlap
         child_chunk_size = body.childChunkSize
@@ -337,17 +338,36 @@ def run_document_index_task(
         qw_embedding = QWEmbeddings(
             api_key=settings.QIANWEN_API_KEY, model="text-embedding-v1"
         )
+        # TODO 精简逻辑
         vector_db_url = f"http://{settings.VECTOR_DB_HOST}:{settings.VECTOR_DB_PORT}"
+        collection_name = str(wiki_id)
+        vector_size = qw_embedding.embed_query("test").__len__()
+        client = QdrantClient(url=vector_db_url)
+        try:
+            client.get_collection(collection_name)
+            print(f"Collection '{collection_name}' already exists.")
+        except Exception:
+            print(f"Creating collection '{collection_name}' ...")
+            client.create_collection(
+                collection_name=collection_name,
+                vectors_config=qmodels.VectorParams(
+                    size=vector_size,
+                    distance=qmodels.Distance.COSINE,
+                ),
+            )
+
         vs = Qdrant.from_existing_collection(
             embedding=qw_embedding,
             url=vector_db_url,
-            collection_name="bichon",
+            collection_name=wiki_id,
             path=None,
         )
         all_parent_docs = []
         all_child_docs = []
 
-        for file_path in files_path:
+        for file_info in files_info:
+            file_path = file_info.get("filePath")
+            file_size = file_info.get("fileSize")
             # 创建文件索引任务
             doc_task = DocumentIndexTask(
                 wiki_id=wiki_id,
@@ -355,7 +375,7 @@ def run_document_index_task(
                 status=DocumentIndexStatus.Processing,
                 total_chunks=0,
                 processed_chunks=0,
-                current_phase=1,
+                current_phase=DocumentIndexTaskPhase.IndexStart,
                 error_message=None,
             )
             db.add(doc_task)
@@ -369,7 +389,7 @@ def run_document_index_task(
                     wiki_id=wiki_id,
                     source_uri=file_path,
                     chunk_type=chunk_type,
-                    size=doc_size,
+                    size=file_size,
                     title=Path(file_path).name,
                     status=DocumentIndexStatus.Processing,
                     hash=file_hash(file_path),
@@ -385,7 +405,7 @@ def run_document_index_task(
                             docs, parent_chunk_size, parent_chunk_overlap
                         )
                     case WikiChunkType.ParentChild.value:
-                        doc_task.current_phase = 2
+                        doc_task.current_phase = DocumentIndexTaskPhase.Chunking
                         db.commit()
                         parent_chunks = []
                         child_chunks = []
@@ -448,7 +468,7 @@ def run_document_index_task(
 
                         # 更新总 child chunk 数
                         doc_task.total_chunks = len(child_docs)
-                        doc_task.current_phase = 4
+                        doc_task.current_phase = DocumentIndexTaskPhase.Chunked
                         db.commit()
 
                         all_parent_docs.extend(parent_docs)
@@ -459,13 +479,13 @@ def run_document_index_task(
                         if child_chunks:
                             db.execute(insert(ChildChunk), child_chunks)
                         db.commit()
-                        doc_task.current_phase = 8
+                        doc_task.current_phase = DocumentIndexTaskPhase.DbUpdated
                         db.commit()
 
                 if chunk_type == WikiChunkType.ParentChild.value:
                     # 子块进向量数据库
                     if all_child_docs:
-                        doc_task.current_phase = 8
+                        doc_task.current_phase = DocumentIndexTaskPhase.DbUpdated
                         db.commit()
                         BATCH_SIZE = 100
                         processed = 0
@@ -484,7 +504,7 @@ def run_document_index_task(
 
                         # 文件完成
                         doc_task.status = DocumentIndexStatus.Success  # done
-                        doc_task.current_phase = 16
+                        doc_task.current_phase = DocumentIndexTaskPhase.VectorDbUpdated
                         db.commit()
 
                         new_doc.status = DocumentIndexStatus.Success
@@ -492,7 +512,7 @@ def run_document_index_task(
 
             except Exception as e:
                 doc_task.status = DocumentIndexStatus.Failed  # error
-                doc_task.current_phase = 32
+                doc_task.current_phase = DocumentIndexTaskPhase.IndexFailed
                 doc_task.error_message = str(e)
                 db.commit()
     except Exception as e:

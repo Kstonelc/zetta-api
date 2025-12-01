@@ -15,6 +15,7 @@ class Wiki(BaseModel):
     tenant_id = Column(UUID, nullable=False)
     user_id = Column(UUID, nullable=False)
     desc = Column(String, nullable=True)
+    chunk_type = Column(Integer, nullable=False, default=0)  # 分段类型
 
     # 不建立相互的外键管理 单方面的
     embedding_model = relationship(
