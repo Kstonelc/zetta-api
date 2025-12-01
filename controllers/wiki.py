@@ -115,7 +115,11 @@ async def find_wiki(
     try:
         wiki_id = body.wikiId
 
-        wiki = db.query(Wiki).options(joinedload(Wiki.embedding_model)).get(wiki_id)
+        wiki = (
+            db.query(Wiki)
+            .options(joinedload(Wiki.embedding_model), joinedload(Wiki.rerank_model))
+            .get(wiki_id)
+        )
         response = {
             "ok": True,
             "data": wiki,
@@ -283,7 +287,7 @@ def recall_docs(
             collection_name=str(wiki_id),
         )
 
-        docs_scores = vs.similarity_search_with_score(query_content, k=5)
+        docs_scores = vs.similarity_search_with_score(query_content, k=10)
         response = {
             "ok": True,
             "data": docs_scores,
