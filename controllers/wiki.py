@@ -286,7 +286,7 @@ def recall_docs(
             path=None,
             collection_name=str(wiki_id),
         )
-
+        # 和父块做聚合
         docs_scores = vs.similarity_search_with_score(query_content, k=10)
         response = {
             "ok": True,

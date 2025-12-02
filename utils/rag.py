@@ -265,7 +265,7 @@ def split_docs_with_parents(
     parent_splitter_generic = RecursiveCharacterTextSplitter(
         chunk_size=parent_chunk_size,
         chunk_overlap=parent_chunk_overlap,
-        separators=["\n\n", "\r\n\r\n", "\n", "\r\n", " "],
+        separators=["\n\n", "\n"],
         keep_separator=False,
         add_start_index=True,
         strip_whitespace=True,
@@ -274,7 +274,7 @@ def split_docs_with_parents(
     child_splitter = RecursiveCharacterTextSplitter(
         chunk_size=child_chunk_size,
         chunk_overlap=child_chunk_overlap,
-        separators=["\n\n", "\n", "- ", "。", "！", "？", ".", "!", "?", " "],
+        separators=["\n\n", "\n"],
         keep_separator=False,
         add_start_index=True,
         strip_whitespace=True,
