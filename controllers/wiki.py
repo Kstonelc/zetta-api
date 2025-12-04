@@ -17,7 +17,7 @@ from schemas.wiki import (
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
-from models.document import Document, ParentChunk, ChildChunk, DocumentIndexTask
+from models.document import Document, ParentChunk, ChildChunk, DocumentIndexTask, Node
 from enums import FileType, WikiChunkType, DocumentIndexStatus, DocumentIndexTaskPhase
 from utils.jwt import verify_token
 from qdrant_client import QdrantClient
@@ -311,7 +311,8 @@ def find_documents(
 
         docs = (
             db.query(Document)
-            .filter(Document.active.is_(True), Document.wiki_id == wiki_id)
+            .join(Node)
+            .filter(Node.active.is_(True), Document.wiki_id == wiki_id)
             .all()
         )
         response = {

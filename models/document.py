@@ -1,5 +1,5 @@
 from openai.types.conversations import TextContent
-from sqlalchemy import Column, Integer, String, ForeignKey, Index, Text
+from sqlalchemy import Column, Integer, String, ForeignKey, Index, Text, Boolean
 from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import relationship
 from .base import BaseModel
@@ -17,6 +17,16 @@ class Document(BaseModel):
     status = Column(Integer, nullable=False)
     hash = Column(String, nullable=True)
     extra_metadata = Column(JSONB, nullable=True)
+    node_id = Column(UUID, ForeignKey("node.id"), nullable=True)
+
+
+class Node(BaseModel):
+    __tablename__ = "node"
+
+    name = Column(String, nullable=False)  # 文件或文件夹的名字
+    parent_id = Column(UUID, ForeignKey("node.id"), nullable=True)  # 父节点ID
+    is_folder = Column(Boolean, nullable=False)  # 是否为文件夹
+    wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
 
 
 class ParentChunk(BaseModel):
