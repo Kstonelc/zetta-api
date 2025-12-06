@@ -14,6 +14,7 @@ from schemas.wiki import (
     WikiRecallDocsRequest,
     WikiIndexProgressRequest,
     WikiDocumentQueryRequest,
+    WikiFolderCreateRequest,
 )
 from celery_task.tasks import long_running_task
 from models import Wiki, get_db
@@ -308,11 +309,15 @@ def find_documents(
     response = {}
     try:
         wiki_id = body.wikiId
+        parent_id = body.parentId
 
         docs = (
-            db.query(Document)
-            .join(Node)
-            .filter(Node.active.is_(True), Document.wiki_id == wiki_id)
+            db.query(Node)
+            .options(
+                joinedload(Node.doc_info),
+                joinedload(Node.parent),
+                joinedload(Node.children),
+            )
             .all()
         )
         response = {
@@ -322,6 +327,53 @@ def find_documents(
     except Exception as e:
         logger.error(e)
         response = {"ok": False, "message": "查询文档失败"}
+    finally:
+        return response
+
+
+@router.post("/create-folder")
+def create_folder(
+    body: WikiFolderCreateRequest,
+    db: Session = Depends(get_db),
+    token=Depends(verify_token),
+):
+    response = {}
+    try:
+        wiki_id = body.wikiId
+        folder_name = body.folderName
+        parent_id = body.parentId if body.parentId else None
+
+        if (
+            db.query(Node)
+            .filter(
+                Node.active.is_(True),
+                Node.wiki_id == wiki_id,
+                Node.name == folder_name,
+                Node.is_folder.is_(True),
+            )
+            .first()
+        ):
+            response = {"ok": False, "message": "文件夹已存在"}
+            return
+
+        new_node = Node(
+            name=folder_name,
+            wiki_id=wiki_id,
+            is_folder=True,
+            active=True,
+            parent_id=parent_id,
+        )
+
+        db.add(new_node)
+        db.commit()
+
+        response = {
+            "ok": True,
+            "data": new_node,
+        }
+    except Exception as e:
+        logger.error(e)
+        response = {"ok": False, "message": "创建文件夹失败"}
     finally:
         return response
 

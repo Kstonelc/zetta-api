@@ -52,3 +52,10 @@ class WikiRecallDocsRequest(BaseModel):
 
 class WikiDocumentQueryRequest(BaseModel):
     wikiId: UUID
+    parentId: Optional[UUID] = None
+
+
+class WikiFolderCreateRequest(BaseModel):
+    wikiId: UUID
+    folderName: str
+    parentId: Optional[UUID] = None

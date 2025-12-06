@@ -7,9 +7,7 @@ from .base import BaseModel
 
 class Document(BaseModel):
     __tablename__ = "document"
-    __table_args__ = (Index("index_document_wiki_id_status", "wiki_id", "status"),)
 
-    wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
     chunk_type = Column(Integer, nullable=False, default=0)
     size = Column(Integer, nullable=False, default=0)
     source_uri = Column(String, nullable=False)
@@ -19,14 +17,26 @@ class Document(BaseModel):
     extra_metadata = Column(JSONB, nullable=True)
     node_id = Column(UUID, ForeignKey("node.id"), nullable=True)
 
+    node = relationship("Node", back_populates="doc_info")
+
 
 class Node(BaseModel):
     __tablename__ = "node"
 
+    id = Column(UUID, primary_key=True)
     name = Column(String, nullable=False)  # 文件或文件夹的名字
     parent_id = Column(UUID, ForeignKey("node.id"), nullable=True)  # 父节点ID
     is_folder = Column(Boolean, nullable=False)  # 是否为文件夹
     wiki_id = Column(UUID, ForeignKey("wiki.id"), nullable=False)
+
+    parent = relationship(
+        "Node", remote_side=lambda: [Node.id], back_populates="children"
+    )
+    children = relationship(
+        "Node", back_populates="parent", cascade="all, delete-orphan"
+    )
+
+    doc_info = relationship("Document", back_populates="node", uselist=False)
 
 
 class ParentChunk(BaseModel):
