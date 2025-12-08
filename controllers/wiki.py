@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, UploadFile, File, BackgroundTasks
-from sqlalchemy.orm import Session, joinedload
+from sqlalchemy.orm import Session, joinedload, selectinload
 from sqlalchemy import insert
 from pathlib import Path
 import shutil
@@ -314,9 +314,14 @@ def find_documents(
         docs = (
             db.query(Node)
             .options(
-                joinedload(Node.doc_info),
-                joinedload(Node.parent),
-                joinedload(Node.children),
+                selectinload(Node.doc_info),
+                # 递归关系中只加载一级
+                selectinload(Node.children).noload("*"),
+            )
+            .filter(
+                Node.active.is_(True),
+                Node.wiki_id == wiki_id,
+                Node.parent_id == parent_id,
             )
             .all()
         )
