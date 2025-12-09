@@ -23,7 +23,6 @@ class Document(BaseModel):
 class Node(BaseModel):
     __tablename__ = "node"
 
-    id = Column(UUID, primary_key=True)
     name = Column(String, nullable=False)  # 文件或文件夹的名字
     parent_id = Column(UUID, ForeignKey("node.id"), nullable=True)  # 父节点ID
     is_folder = Column(Boolean, nullable=False)  # 是否为文件夹
