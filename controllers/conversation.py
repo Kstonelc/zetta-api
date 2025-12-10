@@ -10,6 +10,7 @@ from llm.llm_factory import LLMFactory
 from llm.web_search import web_search
 import asyncio
 import json
+import time
 from enums import LLMProvider, ConversationStatus, SenderType
 from models.conversation import Message
 from models import get_db, Conversation
@@ -68,53 +69,6 @@ async def chat(
             answer_buf = ""
             thinking_buf = ""
 
-            if is_online:
-                # 联网搜索
-                yield json_line(
-                    {
-                        "type": "search_begin",
-                        "delta": "正在搜索",
-                        "section": "search:web",
-                    }
-                )
-                search_res = ""
-                try:
-                    search_res = web_search(prompt_text)
-                    if search_res.status_code == 200:
-                        data = search_res.json().get("data")
-                        search_res = json.dumps(data)
-                        site_data = data.get("webPages").get("value")
-                        site_icons = []
-                        for site_icon in site_data:
-                            # TODO 图标请求地址
-                            site_icons.append(
-                                "https://favicon.im/zh/"
-                                + get_domain(site_icon.get("url"))
-                            )
-                        yield json_line(
-                            {
-                                "type": "search_done",
-                                "delta": site_icons,
-                                "section": "search:web",
-                            }
-                        )
-                    else:
-                        yield json_line(
-                            {
-                                "type": "search_error",
-                                "delta": "联网搜索失败",
-                                "section": "search:web",
-                            }
-                        )
-                except Exception as e:
-                    yield json_line(
-                        {
-                            "type": "search_error",
-                            "delta": str(e),
-                            "section": "search:web",
-                        }
-                    )
-
             try:
                 if await request.is_disconnected():
                     logger.error("Client disconnected")
@@ -127,14 +81,25 @@ async def chat(
                     3. 保持回答专业且易于理解"""
                 prompts = []
                 prompts.append(SystemMessage(content=system_prompt))
-                if is_online:
-                    augmented_query = f"""用户问题：{prompt_text}
-                        以下是从网络搜索到的相关信息：
-                    {search_res}
-                    请根据以上信息，为用户提供一个全面、准确的回答。如果搜索结果不充分，可以结合你的知识进行补充。"""
-                    prompts.append(HumanMessage(content=augmented_query))
-                else:
-                    prompts.append(HumanMessage(content=prompt_text))
+                prompts.append(HumanMessage(content=prompt_text))
+
+                # yield json_line(
+                #     {
+                #         "type": "retrieve_start",
+                #         "delta": "正在检索",
+                #         "section": "retrieve_start",
+                #     }
+                # )
+
+                # time.sleep(4)
+
+                # yield json_line(
+                #     {
+                #         "type": "retrieve_end",
+                #         "delta": "检索完成",
+                #         "section": "retrieve_end",
+                #     }
+                # )
 
                 for chunk in llm.stream(prompts):
                     if hasattr(chunk, "content"):
