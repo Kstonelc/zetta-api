@@ -30,7 +30,7 @@ from utils.common import file_hash
 from utils.logger import logger
 from utils.rag import (
     load_doc,
-    split_doc,
+    split_to_fixed_chunks,
     preview_doc_with_parents,
     split_docs_with_parents,
 )
@@ -193,7 +193,9 @@ async def preview_file_chunks(
         docs = load_doc(file_path)
         match chunk_type:
             case WikiChunkType.Classical.value:
-                split_docs = split_doc(docs, parent_chunk_size, parent_chunk_overlap)
+                split_docs = split_to_fixed_chunks(
+                    docs, parent_chunk_size, parent_chunk_overlap
+                )
             case WikiChunkType.ParentChild.value:
                 split_docs = preview_doc_with_parents(
                     docs,
@@ -463,7 +465,7 @@ def run_document_index_task(
 
                 match chunk_type:
                     case WikiChunkType.Classical.value:
-                        split_docs = split_doc(
+                        split_docs = split_to_fixed_chunks(
                             docs, parent_chunk_size, parent_chunk_overlap
                         )
                     case WikiChunkType.ParentChild.value:

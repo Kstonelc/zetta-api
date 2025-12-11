@@ -7,57 +7,17 @@ from langchain_core.documents import Document
 from langchain_text_splitters import (
     RecursiveCharacterTextSplitter,
     MarkdownHeaderTextSplitter,
+    CharacterTextSplitter,
 )
 from langchain_community.document_loaders import (
     TextLoader,
     PyPDFLoader,
+    UnstructuredMarkdownLoader,
 )
 from enums import FileType
 
 
-# 文档加载器
-def load_doc(file_path: str | Path) -> List[Document]:
-    file_path = Path(file_path)
-    suffix = file_path.suffix.lower()
-    try:
-        if suffix in FileType.Doc.suffix:
-            return TextLoader(str(file_path), encoding="utf-8").load()
-        elif suffix in FileType.Md.suffix:
-            return TextLoader(str(file_path), encoding="utf-8").load()
-        elif suffix in FileType.Pdf.suffix:
-            return PyPDFLoader(str(file_path)).load()
-        else:
-            raise ValueError(f"不支持的文件类型: {suffix}")
-    except Exception as e:
-        raise ValueError(f"加载文件失败: {e}")
-
-
-# 常规文档切割
-def split_doc(
-    doc: Document, chunk_size: int = 1204, chunk_overlap: int = 50
-) -> List[Document]:
-    # 使用递归积切分器
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-        separators=[
-            "\n## ",
-            "\n### ",
-            "\n#### ",
-            "\n\n",
-            "\n",
-            "。",
-            ".",
-            "!",
-            "?",
-            "；",
-            ";",
-            "，",
-            ",",
-            " ",
-        ],
-    )
-    return splitter.split_documents(doc)
+# region 文件类型判断
 
 
 def _is_markdown(doc: Document) -> bool:
@@ -76,6 +36,37 @@ def _is_pdf(doc: Document) -> bool:
         return True
     # 兜底：检测常见 pdf 特征
     return bool(re.search(r"^%PDF-", doc.page_content))
+
+
+# endregion
+
+
+# 文档加载器
+def load_doc(file_path: str | Path) -> List[Document]:
+    file_path = Path(file_path)
+    suffix = file_path.suffix.lower()
+    try:
+        if suffix in FileType.Doc.suffix:
+            return TextLoader(str(file_path), encoding="utf-8").load()
+        elif suffix in FileType.Md.suffix:
+            return UnstructuredMarkdownLoader(str(file_path), encoding="utf-8").load()
+        elif suffix in FileType.Pdf.suffix:
+            return PyPDFLoader(str(file_path)).load()
+        else:
+            raise ValueError(f"不支持的文件类型: {suffix}")
+    except Exception as e:
+        raise ValueError(f"加载文件失败: {e}")
+
+
+# 固定字符数分块
+def split_to_fixed_chunks(
+    doc: Document, chunk_size: int = 1204, chunk_overlap: int = 50
+) -> List[Document]:
+    splitter = CharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+    )
+    return splitter.split_documents(doc)
 
 
 def _stable_parent_id_from_text(text: str, meta: Dict[str, Any]) -> str:

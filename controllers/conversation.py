@@ -10,7 +10,6 @@ from llm.llm_factory import LLMFactory
 from llm.web_search import web_search
 import asyncio
 import json
-import time
 from enums import LLMProvider, ConversationStatus, SenderType
 from models.conversation import Message
 from models import get_db, Conversation
@@ -83,23 +82,23 @@ async def chat(
                 prompts.append(SystemMessage(content=system_prompt))
                 prompts.append(HumanMessage(content=prompt_text))
 
-                # yield json_line(
-                #     {
-                #         "type": "retrieve_start",
-                #         "delta": "正在检索",
-                #         "section": "retrieve_start",
-                #     }
-                # )
+                yield json_line(
+                    {
+                        "type": "retrieve_start",
+                        "delta": "正在检索",
+                        "section": "retrieve",
+                    }
+                )
 
-                # time.sleep(4)
+                await asyncio.sleep(4)
 
-                # yield json_line(
-                #     {
-                #         "type": "retrieve_end",
-                #         "delta": "检索完成",
-                #         "section": "retrieve_end",
-                #     }
-                # )
+                yield json_line(
+                    {
+                        "type": "retrieve_end",
+                        "delta": "检索完成",
+                        "section": "retrieve",
+                    }
+                )
 
                 for chunk in llm.stream(prompts):
                     if hasattr(chunk, "content"):

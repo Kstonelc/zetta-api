@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1471bb71-4f7e-49a7-83af-63f59ead4f87" name="Changes" comment="">
+    <list default="true" id="1471bb71-4f7e-49a7-83af-63f59ead4f87" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/conversation.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/conversation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/wiki.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag_example/md_splitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/rag_example/pdf_to_md.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/rag.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rag.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +35,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -59,10 +64,23 @@
       <workItem from="1763032313942" duration="1532000" />
       <workItem from="1763033857476" duration="8144000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1765366138942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765366138942</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
